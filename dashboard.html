@@ -307,7 +307,7 @@ th[data-tip], td[data-tip] { cursor: help; }
     <h1>Long-Term Investing <span class="amp">Monitor</span></h1>
     <span class="date">Sunday, July 19, 2026</span>
   </header>
-  <p class="kicker-sub">Built for long-term holding decisions: an automated macro read, who the institutions are actually positioned (CFTC data), and a six-check Bull Score on every name. AI infrastructure and nuclear at the core, plus Big Tech, healthcare and ETFs.</p>
+  <p class="kicker-sub">Built for long-term holding decisions, in priority order: the macro regime, a six-check Bull Score on every name (valuation, profitability, balance sheet, trend), and the briefing. Flow and positioning data lives in the collapsed timing tools at the bottom: it helps you time buys, never choose them.</p>
   <p class="asof">Market data as of the Fri Jul 17, 2026 close. Macro series update automatically from FRED; COT positioning is the CFTC&#x27;s Jul 14 report. Refreshed daily.</p>
   <p class="tiphint">&#9432; Hover any KPI, column header, or macro chip for a plain-English explanation (on a phone, tap it).</p>
 
@@ -322,72 +322,6 @@ th[data-tip], td[data-tip] { cursor: help; }
 <div class="chip t-info" title="The date the next inflation report is released. These prints often move the whole market in one morning."><span class="chip-label">Next CPI print</span><span class="chip-value">~Aug 12</span><span class="chip-delta">July data, 8:30am ET</span></div>
 <div class="chip t-info" title="The date of the next Federal Reserve meeting, when it decides whether to raise, hold or cut interest rates."><span class="chip-label">Next FOMC</span><span class="chip-value">Jul 28-29</span><span class="chip-delta">hike odds collapsed to ~17% after cool CPI</span></div></div>
   <div class="indices" id="indices"></div>
-
-  
-    <section class="liq">
-      <h2 class="section-title">Liquidation Watch</h2>
-      <p class="section-sub">Are people pulling out? Distribution days count sessions down &ge;0.2% on above-average volume over the last 25 sessions: the classic footprint of institutional selling. Heavy events are drops &ge;1.5% on &ge;1.5x average volume within the last 5 sessions.</p>
-      <div class="liq-grid">
-        <div class="liq-card">
-          <h4>Market basis: where is the index, and who is selling it</h4>
-          <div class="table-wrap liq-tbl"><table class="mini"><thead><tr><th title="The index basket.">Index</th><th title="Distribution days: recent sessions the index fell on heavy volume, a sign big money is selling. 5 or more warns of a correction.">D-Days</th><th title="How far the index is above or below its 50-day average price.">vs 50D avg</th><th title="Where the index sits inside its last 30 days of range, from low (0%) to high (100%).">30D range pos</th></tr></thead><tbody><tr><td>SPY</td><td class="m-bad">5</td><td class="neg">-0.1%</td><td>55%</td></tr><tr><td>VOO</td><td class="m-warn">4</td><td class="neg">-0.2%</td><td>55%</td></tr><tr><td>QQQ</td><td class="m-warn">4</td><td class="neg">-3.3%</td><td>0%</td></tr><tr><td>SMH</td><td class="m-bad">8</td><td class="neg">-6.8%</td><td>0%</td></tr></tbody></table></div>
-          <p class="verdict m-bad">CAUTION: institutions are distributing. Heavy-volume selling is stacking up on the index itself; respect the tape and slow new buys.</p>
-        </div>
-        <div class="liq-card">
-          <h4>Heavy liquidation events, last 5 sessions</h4>
-          <p class="liq-list"><strong>SNDK</strong> (2 events), <strong>CCJ</strong> (2 events), <strong>IBM</strong> (2 events), <strong>TSM</strong> (1 event), <strong>DELL</strong> (1 event), <strong>VST</strong> (1 event), <strong>ORCL</strong> (1 event), <strong>LEU</strong> (1 event), <strong>ASTS</strong> (1 event), <strong>MP</strong> (1 event), <strong>LAC</strong> (1 event), <strong>TSSI</strong> (1 event)</p>
-          <h4 class="liq-h2">Most distribution days on the board (25 sessions)</h4>
-          <p class="liq-list"><strong>ORCL</strong> (14), <strong>TSM</strong> (9), <strong>SNDK</strong> (8), <strong>WCC</strong> (7), <strong>NUE</strong> (7), <strong>CCJ</strong> (7), <strong>ASML</strong> (6), <strong>MU</strong> (6)</p>
-        </div>
-      </div>
-    </section>
-
-  
-    <section class="cot">
-      <h2 class="section-title">Institutional Positioning (CFTC COT)</h2>
-      <p class="section-sub">Every Friday the CFTC publishes who holds what in the futures market (data as of Tuesday 2026-07-14). Two groups matter: <strong>asset managers</strong> (pensions, insurers, mutual funds: the slow, long-term money) and <strong>leveraged funds</strong> (hedge funds: the fast money). Net = long contracts minus short. This is the closest public, free equivalent to the prime-brokerage flow data Goldman Sachs sells its clients; the GS flow headlines, when they leak into the press, land in the Smart Money section below.</p>
-      <div class="table-wrap"><table class="mini cot-table"><thead><tr>
-        <th title="The futures contract.">Contract</th>
-        <th title="Asset managers' net position: pensions, insurers, mutual funds. Positive = net long (betting on / positioned for upside).">Asset mgrs net</th>
-        <th title="How the asset-manager net position changed versus last week's report.">wk chg</th>
-        <th title="Leveraged funds' net position: hedge funds. They are often net short index futures as a hedge on stock books, so the LEVEL matters less than the CHANGE.">Hedge funds net</th>
-        <th title="How the hedge-fund net position changed versus last week's report.">wk chg</th>
-        <th title="Plain-English read of the positioning.">Read</th>
-      </tr></thead><tbody>
-        <tr>
-          <td class="co">S&amp;P 500 e-mini</td>
-          <td class="pos">+940k</td>
-          <td><span class="neg">\u2193 30k wk</span></td>
-          <td class="neg">-365k</td>
-          <td><span class="neg">\u2193 3k wk</span></td>
-          <td class="cot-read">Real money (pensions, asset managers) stays heavily long the market; hedge funds hold the short/hedge side. Hedge funds added to shorts this week.</td>
-        </tr>
-        <tr>
-          <td class="co">Nasdaq-100 e-mini</td>
-          <td class="pos">+74k</td>
-          <td><span class="neg">\u2193 5k wk</span></td>
-          <td class="neg">-64k</td>
-          <td><span class="neg">\u2193 9k wk</span></td>
-          <td class="cot-read">Same split on tech: long-term money long, fast money short. The fast-money short grew this week: they are leaning against the tech bounce.</td>
-        </tr>
-        <tr>
-          <td class="co">10Y Treasury note</td>
-          <td class="pos">+2,512k</td>
-          <td><span class="pos">\u2191 86k wk</span></td>
-          <td class="neg">-2,080k</td>
-          <td><span class="neg">\u2193 76k wk</span></td>
-          <td class="cot-read">Asset managers long bonds (expecting yields to fall or hedging stocks); leveraged funds short them (the basis trade plus higher-for-longer bets).</td>
-        </tr>
-        <tr>
-          <td class="co">VIX futures</td>
-          <td class="neg">-43k</td>
-          <td><span class="neg">\u2193 4k wk</span></td>
-          <td class="pos">+10k</td>
-          <td><span class="pos">\u2191 5k wk</span></td>
-          <td class="cot-read">Positioning for calm.</td>
-        </tr></tbody></table></div>
-      <p class="verdict">This week&#x27;s tell: positioning barely moved. Nobody big changed their mind this week. A caution on reading COT: hedge-fund index shorts are often hedges on stock they own, not outright bearish bets, so watch the week-over-week CHANGE more than the level, and treat extremes (records either way) as contrarian signals.</p>
-    </section>
 
   
     <section class="picks-sec">
@@ -670,7 +604,73 @@ th[data-tip], td[data-tip] { cursor: help; }
       </section>
   </section>
 
-  <details class="fold"><summary><span class="fold-title">Smart Money &amp; Political Signals: Congress, 13Fs, prime-brokerage flow headlines</span><span class="fold-hint">expand</span></summary>
+  <details class="fold"><summary><span class="fold-title">Timing tool: Liquidation Watch (is big money selling right now?)</span><span class="fold-hint">expand</span></summary>
+    <section class="liq">
+      <h2 class="section-title">Liquidation Watch</h2>
+      <p class="section-sub">A TIMING aid, not a stock-picking one: it tells you when to be patient with new buys, never what to own. Distribution days count sessions down &ge;0.2% on above-average volume over the last 25 sessions: the classic footprint of institutional selling. Heavy events are drops &ge;1.5% on &ge;1.5x average volume within the last 5 sessions.</p>
+      <div class="liq-grid">
+        <div class="liq-card">
+          <h4>Market basis: where is the index, and who is selling it</h4>
+          <div class="table-wrap liq-tbl"><table class="mini"><thead><tr><th title="The index basket.">Index</th><th title="Distribution days: recent sessions the index fell on heavy volume, a sign big money is selling. 5 or more warns of a correction.">D-Days</th><th title="How far the index is above or below its 50-day average price.">vs 50D avg</th><th title="Where the index sits inside its last 30 days of range, from low (0%) to high (100%).">30D range pos</th></tr></thead><tbody><tr><td>SPY</td><td class="m-bad">5</td><td class="neg">-0.1%</td><td>55%</td></tr><tr><td>VOO</td><td class="m-warn">4</td><td class="neg">-0.2%</td><td>55%</td></tr><tr><td>QQQ</td><td class="m-warn">4</td><td class="neg">-3.3%</td><td>0%</td></tr><tr><td>SMH</td><td class="m-bad">8</td><td class="neg">-6.8%</td><td>0%</td></tr></tbody></table></div>
+          <p class="verdict m-bad">CAUTION: institutions are distributing. Heavy-volume selling is stacking up on the index itself; respect the tape and slow new buys.</p>
+        </div>
+        <div class="liq-card">
+          <h4>Heavy liquidation events, last 5 sessions</h4>
+          <p class="liq-list"><strong>SNDK</strong> (2 events), <strong>CCJ</strong> (2 events), <strong>IBM</strong> (2 events), <strong>TSM</strong> (1 event), <strong>DELL</strong> (1 event), <strong>VST</strong> (1 event), <strong>ORCL</strong> (1 event), <strong>LEU</strong> (1 event), <strong>ASTS</strong> (1 event), <strong>MP</strong> (1 event), <strong>LAC</strong> (1 event), <strong>TSSI</strong> (1 event)</p>
+          <h4 class="liq-h2">Most distribution days on the board (25 sessions)</h4>
+          <p class="liq-list"><strong>ORCL</strong> (14), <strong>TSM</strong> (9), <strong>SNDK</strong> (8), <strong>WCC</strong> (7), <strong>NUE</strong> (7), <strong>CCJ</strong> (7), <strong>ASML</strong> (6), <strong>MU</strong> (6)</p>
+        </div>
+      </div>
+    </section></details>
+
+  <details class="fold"><summary><span class="fold-title">Timing tool: CFTC institutional positioning (who is long, who is short)</span><span class="fold-hint">expand</span></summary>
+    <section class="cot">
+      <h2 class="section-title">Institutional Positioning (CFTC COT)</h2>
+      <p class="section-sub">A TIMING aid: hedge-fund positioning says nothing about where a business will be in five years, but extremes mark moments patient buyers get better prices. Every Friday the CFTC publishes who holds what in the futures market (data as of Tuesday 2026-07-14). Two groups matter: <strong>asset managers</strong> (pensions, insurers, mutual funds: the slow, long-term money) and <strong>leveraged funds</strong> (hedge funds: the fast money). Net = long contracts minus short. This is the closest public, free equivalent to the prime-brokerage flow data Goldman Sachs sells its clients; the GS flow headlines, when they leak into the press, land in the Smart Money section below.</p>
+      <div class="table-wrap"><table class="mini cot-table"><thead><tr>
+        <th title="The futures contract.">Contract</th>
+        <th title="Asset managers' net position: pensions, insurers, mutual funds. Positive = net long (betting on / positioned for upside).">Asset mgrs net</th>
+        <th title="How the asset-manager net position changed versus last week's report.">wk chg</th>
+        <th title="Leveraged funds' net position: hedge funds. They are often net short index futures as a hedge on stock books, so the LEVEL matters less than the CHANGE.">Hedge funds net</th>
+        <th title="How the hedge-fund net position changed versus last week's report.">wk chg</th>
+        <th title="Plain-English read of the positioning.">Read</th>
+      </tr></thead><tbody>
+        <tr>
+          <td class="co">S&amp;P 500 e-mini</td>
+          <td class="pos">+940k</td>
+          <td><span class="neg">\u2193 30k wk</span></td>
+          <td class="neg">-365k</td>
+          <td><span class="neg">\u2193 3k wk</span></td>
+          <td class="cot-read">Real money (pensions, asset managers) stays heavily long the market; hedge funds hold the short/hedge side. Hedge funds added to shorts this week.</td>
+        </tr>
+        <tr>
+          <td class="co">Nasdaq-100 e-mini</td>
+          <td class="pos">+74k</td>
+          <td><span class="neg">\u2193 5k wk</span></td>
+          <td class="neg">-64k</td>
+          <td><span class="neg">\u2193 9k wk</span></td>
+          <td class="cot-read">Same split on tech: long-term money long, fast money short. The fast-money short grew this week: they are leaning against the tech bounce.</td>
+        </tr>
+        <tr>
+          <td class="co">10Y Treasury note</td>
+          <td class="pos">+2,512k</td>
+          <td><span class="pos">\u2191 86k wk</span></td>
+          <td class="neg">-2,080k</td>
+          <td><span class="neg">\u2193 76k wk</span></td>
+          <td class="cot-read">Asset managers long bonds (expecting yields to fall or hedging stocks); leveraged funds short them (the basis trade plus higher-for-longer bets).</td>
+        </tr>
+        <tr>
+          <td class="co">VIX futures</td>
+          <td class="neg">-43k</td>
+          <td><span class="neg">\u2193 4k wk</span></td>
+          <td class="pos">+10k</td>
+          <td><span class="pos">\u2191 5k wk</span></td>
+          <td class="cot-read">Positioning for calm.</td>
+        </tr></tbody></table></div>
+      <p class="verdict">This week&#x27;s tell: positioning barely moved. Nobody big changed their mind this week. A caution on reading COT: hedge-fund index shorts are often hedges on stock they own, not outright bearish bets, so watch the week-over-week CHANGE more than the level, and treat extremes (records either way) as contrarian signals.</p>
+    </section></details>
+
+  <details class="fold"><summary><span class="fold-title">Timing tool: Smart Money &amp; Political Signals (Congress, 13Fs, prime-brokerage headlines)</span><span class="fold-hint">expand</span></summary>
     <section class="smart">
       <h2 class="section-title">Smart Money &amp; Political Signals</h2>
       <p class="section-sub">What the best-resourced players (Congress, famous funds, and the mega-caps themselves) are doing with their money. Treat it as a prompt to research, never as a reason to buy blind: disclosures lag the actual trade by up to 45 days and these players are often wrong.</p>
@@ -983,7 +983,7 @@ th[data-tip], td[data-tip] { cursor: help; }
         <p>How many of the six checks above pass right now. 5-6: the data supports a bull case (valuation, quality, safety, trend and flows all agree). 3-4: mixed, the thesis needs a specific reason. 0-2: the data argues against it; if you still want it, you are making a contrarian bet and should size it that way. Hover any score to see exactly which checks fail.</p>
         <span class="rule">5-6 green &middot; 3-4 amber &middot; 0-2 red</span></div>
       <div class="lg"><h4><span class="k">COT</span> Who is positioned where</h4>
-        <p>The CFTC's weekly Commitments of Traders filing shows the actual futures positions of asset managers (slow, long-term money) and leveraged funds (hedge funds). Watch the week-over-week change, not the level: hedge funds are structurally short index futures as a hedge. Extremes are contrarian: record shorts often precede rallies, record longs precede tops.</p>
+        <p>A timing aid only: it never makes something a good or bad business. The CFTC's weekly Commitments of Traders filing shows the actual futures positions of asset managers (slow, long-term money) and leveraged funds (hedge funds). Watch the week-over-week change, not the level: hedge funds are structurally short index futures as a hedge. Extremes are contrarian: record shorts often precede rallies, record longs precede tops.</p>
         <span class="rule">published Fridays, data as of Tuesday</span></div>
       <div class="lg"><h4><span class="k">Yield curve &amp; VIX</span> The two macro tells</h4>
         <p>The 10Y-2Y yield curve inverts (goes negative) when the bond market expects trouble: it has preceded most recessions by 6-18 months. The VIX prices expected turbulence: under 15 is calm, over 25 is fear. Long-term buyers do their best buying when the VIX is high, not when it is comfortable.</p>

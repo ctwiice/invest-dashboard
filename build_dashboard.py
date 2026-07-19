@@ -325,7 +325,7 @@ def liquidation_watch():
     return f"""
     <section class="liq">
       <h2 class="section-title">Liquidation Watch</h2>
-      <p class="section-sub">Are people pulling out? Distribution days count sessions down &ge;0.2% on above-average volume over the last 25 sessions: the classic footprint of institutional selling. Heavy events are drops &ge;1.5% on &ge;1.5x average volume within the last 5 sessions.</p>
+      <p class="section-sub">A TIMING aid, not a stock-picking one: it tells you when to be patient with new buys, never what to own. Distribution days count sessions down &ge;0.2% on above-average volume over the last 25 sessions: the classic footprint of institutional selling. Heavy events are drops &ge;1.5% on &ge;1.5x average volume within the last 5 sessions.</p>
       <div class="liq-grid">
         <div class="liq-card">
           <h4>Market basis: where is the index, and who is selling it</h4>
@@ -710,7 +710,7 @@ def cot_section():
     return f"""
     <section class="cot">
       <h2 class="section-title">Institutional Positioning (CFTC COT)</h2>
-      <p class="section-sub">Every Friday the CFTC publishes who holds what in the futures market (data as of Tuesday {E(date)}). Two groups matter: <strong>asset managers</strong> (pensions, insurers, mutual funds: the slow, long-term money) and <strong>leveraged funds</strong> (hedge funds: the fast money). Net = long contracts minus short. This is the closest public, free equivalent to the prime-brokerage flow data Goldman Sachs sells its clients; the GS flow headlines, when they leak into the press, land in the Smart Money section below.</p>
+      <p class="section-sub">A TIMING aid: hedge-fund positioning says nothing about where a business will be in five years, but extremes mark moments patient buyers get better prices. Every Friday the CFTC publishes who holds what in the futures market (data as of Tuesday {E(date)}). Two groups matter: <strong>asset managers</strong> (pensions, insurers, mutual funds: the slow, long-term money) and <strong>leveraged funds</strong> (hedge funds: the fast money). Net = long contracts minus short. This is the closest public, free equivalent to the prime-brokerage flow data Goldman Sachs sells its clients; the GS flow headlines, when they leak into the press, land in the Smart Money section below.</p>
       <div class="table-wrap"><table class="mini cot-table"><thead><tr>
         <th title="The futures contract.">Contract</th>
         <th title="Asset managers' net position: pensions, insurers, mutual funds. Positive = net long (betting on / positioned for upside).">Asset mgrs net</th>
@@ -1062,16 +1062,12 @@ th[data-tip], td[data-tip] {{ cursor: help; }}
     <h1>Long-Term Investing <span class="amp">Monitor</span></h1>
     <span class="date">{E(INS["date"])}</span>
   </header>
-  <p class="kicker-sub">Built for long-term holding decisions: an automated macro read, who the institutions are actually positioned (CFTC data), and a six-check Bull Score on every name. AI infrastructure and nuclear at the core, plus Big Tech, healthcare and ETFs.</p>
+  <p class="kicker-sub">Built for long-term holding decisions, in priority order: the macro regime, a six-check Bull Score on every name (valuation, profitability, balance sheet, trend), and the briefing. Flow and positioning data lives in the collapsed timing tools at the bottom: it helps you time buys, never choose them.</p>
   <p class="asof">{E(INS["asof"])} Refreshed daily.</p>
   <p class="tiphint">&#9432; Hover any KPI, column header, or macro chip for a plain-English explanation (on a phone, tap it).</p>
 
   <div class="macro">{macro_strip()}</div>
   <div class="indices" id="indices"></div>
-
-  {liquidation_watch()}
-
-  {cot_section()}
 
   {top_picks_section()}
 
@@ -1096,7 +1092,11 @@ th[data-tip], td[data-tip] {{ cursor: help; }}
     {sector_sections(2)}
   </section>
 
-  {fold("Smart Money &amp; Political Signals: Congress, 13Fs, prime-brokerage flow headlines", smart_money_section())}
+  {fold("Timing tool: Liquidation Watch (is big money selling right now?)", liquidation_watch())}
+
+  {fold("Timing tool: CFTC institutional positioning (who is long, who is short)", cot_section())}
+
+  {fold("Timing tool: Smart Money &amp; Political Signals (Congress, 13Fs, prime-brokerage headlines)", smart_money_section())}
 
   {fold("Quant Lab: backtests, trade levels &amp; Monte Carlo on the Top 3", quant_lab_section())}
 
@@ -1130,7 +1130,7 @@ th[data-tip], td[data-tip] {{ cursor: help; }}
         <p>How many of the six checks above pass right now. 5-6: the data supports a bull case (valuation, quality, safety, trend and flows all agree). 3-4: mixed, the thesis needs a specific reason. 0-2: the data argues against it; if you still want it, you are making a contrarian bet and should size it that way. Hover any score to see exactly which checks fail.</p>
         <span class="rule">5-6 green &middot; 3-4 amber &middot; 0-2 red</span></div>
       <div class="lg"><h4><span class="k">COT</span> Who is positioned where</h4>
-        <p>The CFTC's weekly Commitments of Traders filing shows the actual futures positions of asset managers (slow, long-term money) and leveraged funds (hedge funds). Watch the week-over-week change, not the level: hedge funds are structurally short index futures as a hedge. Extremes are contrarian: record shorts often precede rallies, record longs precede tops.</p>
+        <p>A timing aid only: it never makes something a good or bad business. The CFTC's weekly Commitments of Traders filing shows the actual futures positions of asset managers (slow, long-term money) and leveraged funds (hedge funds). Watch the week-over-week change, not the level: hedge funds are structurally short index futures as a hedge. Extremes are contrarian: record shorts often precede rallies, record longs precede tops.</p>
         <span class="rule">published Fridays, data as of Tuesday</span></div>
       <div class="lg"><h4><span class="k">Yield curve &amp; VIX</span> The two macro tells</h4>
         <p>The 10Y-2Y yield curve inverts (goes negative) when the bond market expects trouble: it has preceded most recessions by 6-18 months. The VIX prices expected turbulence: under 15 is calm, over 25 is fear. Long-term buyers do their best buying when the VIX is high, not when it is comfortable.</p>
