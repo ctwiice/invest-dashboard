@@ -802,15 +802,15 @@ a:focus-visible {{ outline: 2px solid var(--copper); outline-offset: 2px; }}
 .t-good .chip-value {{ color: var(--up); }}
 
 /* index/etf quick strip */
-.indices {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+.indices {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
   gap: 10px; margin: 10px 0 0; }}
 .idx {{ background: var(--panel); border: 1px solid var(--line); border-radius: 4px;
-  padding: 10px 12px; display: flex; align-items: center; gap: 12px; }}
-.idx .meta {{ min-width: 0; }}
-.idx .nm {{ font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
-  color: var(--mut); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
+  padding: 10px 12px; display: flex; flex-direction: column; align-items: flex-start; gap: 3px; }}
+.idx .meta {{ min-width: 0; width: 100%; }}
+.idx .nm {{ font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--mut); white-space: normal; line-height: 1.35; }}
 .idx .px {{ font-family: var(--mono); font-size: 16px; font-variant-numeric: tabular-nums; }}
-.idx canvas {{ margin-left: auto; flex: none; }}
+.idx canvas {{ margin-top: 4px; flex: none; }}
 
 /* section headers */
 .section-title {{ font-family: var(--disp); text-transform: uppercase; letter-spacing: .14em;
