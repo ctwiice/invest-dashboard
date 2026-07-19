@@ -1092,6 +1092,8 @@ th[data-tip], td[data-tip] {{ cursor: help; }}
     {sector_sections(2)}
   </section>
 
+  {etf_shelf()}
+
   {fold("Timing tool: Liquidation Watch (is big money selling right now?)", liquidation_watch())}
 
   {fold("Timing tool: CFTC institutional positioning (who is long, who is short)", cot_section())}
@@ -1099,8 +1101,6 @@ th[data-tip], td[data-tip] {{ cursor: help; }}
   {fold("Timing tool: Smart Money &amp; Political Signals (Congress, 13Fs, prime-brokerage headlines)", smart_money_section())}
 
   {fold("Quant Lab: backtests, trade levels &amp; Monte Carlo on the Top 3", quant_lab_section())}
-
-  {fold("ETF Shelf: every fund we track, with fees and what they hold", etf_shelf())}
 
   {fold("Primer: how AI infrastructure makes money, layer by layer", primer_section())}
 
