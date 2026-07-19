@@ -14,9 +14,10 @@ UA_STR = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chr
 # with no usable US data feed; MU/SNDK/WDC plus SOXX carry the memory theme.
 WATCHLIST = {
     # ---- Sheet 1: established ----
-    "Semiconductors & Fab": ["NVDA", "AMD", "AVGO", "TSM", "ASML", "INTC"],
+    "Semiconductors & Fab": ["NVDA", "AMD", "AVGO", "TSM", "INTC"],
+    "Chip Equipment & EUV": ["ASML", "AMAT", "LRCX", "KLAC"],
     "Memory & Storage": ["MU", "SNDK", "WDC"],
-    "Servers, Cooling & Networking": ["SMCI", "DELL", "VRT", "ANET"],
+    "Servers, Cooling & Networking": ["SMCI", "DELL", "VRT", "ANET", "ALAB"],
     "Fiber Optics & Photonics": ["COHR", "LITE", "CIEN", "GLW"],
     "Electrical, Conduit & Steel": ["ETN", "PWR", "ATKR", "WCC", "HUBB", "NUE"],
     "Nuclear & Power Majors": ["CEG", "VST", "CCJ", "BWXT", "GEV"],
