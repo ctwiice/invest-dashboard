@@ -6,8 +6,12 @@ D-Days, and a six-check Bull Score per name (hover a score for the check
 detail). Macro leads the page (all chips auto from FRED), institutional
 positioning comes from the CFTC COT report plus Goldman prime-brokerage flow
 headlines found via daily news search (GS PB data itself is proprietary).
-Deep-dive sections (Quant Lab, ETF shelf, Primer, Smart Money) are collapsed
-folds. Do not re-add removed columns (P/B, Beta, RSI, EPS, day%, 30D range bar,
+Deep-dive sections (Quant Lab, ETF shelf, Primer) are collapsed folds, and per
+Julie (Jul 20, 2026) the flow/positioning sections (Liquidation Watch, CFTC
+COT, Smart Money) are ALSO collapsed, labeled 'Timing tool': they help time
+buys, never choose them. The page leads with macro regime, Top Picks, briefing
+and the Bull Score sheets. Keep it that way: long-term buy signals prominent,
+no get-rich-quick framing anywhere. Do not re-add removed columns (P/B, Beta, RSI, EPS, day%, 30D range bar,
 vs 50D, mkt cap) to the board without the user asking.
 
 Daily-refreshed market monitor built for a long-term, buy-and-hold investor. The
