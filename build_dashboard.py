@@ -33,6 +33,7 @@ NAMES = {
     "PLTR": "Palantir", "RKLB": "Rocket Lab", "LUNR": "Intuitive Machines",
     "ASTS": "AST SpaceMobile", "MP": "MP Materials", "LAC": "Lithium Americas",
     "TSSI": "TSS Inc", "NNE": "Nano Nuclear",
+    "NBIS": "Nebius Group", "CRWV": "CoreWeave",
 }
 
 # US-government connection badges: direct equity stakes the government has
@@ -76,6 +77,8 @@ SECTOR_META = [
      "Launch, lunar landers and satellite-direct-to-phone. Rocket Lab is the operating business of the group; the others are still proving the model.", 2),
     ("Gov-Backed Materials & Small AI Infra", "S4", "STRATEGIC ASSETS",
      "Names where the US government is an owner or anchor customer (rare earths, lithium) plus small-cap AI data-center infrastructure. Policy is the moat and the risk.", 2),
+    ("AI Neoclouds", "S5", "GPU LANDLORDS",
+     "The rent-a-GPU layer: they borrow billions, buy Nvidia chips, and lease the compute to AI labs and hyperscalers. Real revenue growing triple digits, but debt-heavy, unprofitable, and hostage to GPU prices: that is why they live on this sheet despite large market caps.", 2),
 ]
 
 # What each ETF actually holds, its role in a portfolio, and its expense ratio

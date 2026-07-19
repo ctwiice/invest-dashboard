@@ -27,6 +27,7 @@ WATCHLIST = {
     "Quantum Pure-Plays": ["IONQ", "RGTI", "QBTS", "QUBT"],
     "Space & Defense": ["RKLB", "LUNR", "ASTS"],
     "Gov-Backed Materials & Small AI Infra": ["MP", "LAC", "TSSI"],
+    "AI Neoclouds": ["NBIS", "CRWV"],
 }
 # ETFs get the quote + sparkline + positioning treatment (no per-share fundamentals;
 # stockanalysis serves ETF stats under a different path). Broad + sector + thematic
