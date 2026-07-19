@@ -1,0 +1,406 @@
+{
+  "date": "Sunday, July 19, 2026",
+  "asof": "Market data as of the Fri Jul 17, 2026 close. Macro series update automatically from FRED; COT positioning is the CFTC's Jul 14 report.",
+  "close_date": "Jul 17, 2026",
+  "macro": {
+    "nextCpi": {
+      "label": "Next CPI print",
+      "value": "~Aug 12",
+      "delta": "July data, 8:30am ET",
+      "tone": "info"
+    },
+    "nextFomc": {
+      "label": "Next FOMC",
+      "value": "Jul 28-29",
+      "delta": "hike odds collapsed to ~17% after cool CPI",
+      "tone": "info"
+    }
+  },
+  "top_picks": [
+    {
+      "rank": 1,
+      "ticker": "VOO",
+      "name": "Vanguard S&P 500 ETF",
+      "type": "ETF / Core",
+      "thesis": "You like ETFs because you own the whole field without betting the farm on one company, and this week made the case louder than ever. VOO holds the 500 largest US companies for a rock-bottom 0.03% fee. When the AI-hardware trade finally cracked hard and dragged the whole tape down on Friday, the diversified index fell far less than the epicenter: VOO is down less than 1% over 30 days and sits mid-range (about 55% of its 30-day band, off the highs) while the Nasdaq-100 (QQQ), the chip ETF (SMH) and the speculative frontier sit pinned at 0% of their ranges, some down 10% to 38% on the month. Healthcare and a few profitable mega-caps inside the index cushioned the blow. That is diversification quietly doing its job for free.",
+      "why_now": "The narrow, top-heavy melt-up broke this week. Last week the S&P was pinned at 99% of its range on a handful of mega-caps; Friday it fell 1.15% and the index has backed off to the middle of its range, a healthier and slightly cheaper entry than the froth. Inflation is still cooling (June CPI 3.5%, core 2.6%, June PPI fell 0.3%), but oil spiking about 10% on the week on the Iran war is a fresh wildcard. The playbook does not change: keep the fixed dollar-cost-average going, buying the same amount every couple of weeks, and let a pullback like this quietly lower your average cost rather than trying to call the bottom.",
+      "risk": "Because the top handful of mega-cap tech names are roughly a third of the S&P, the AI-overcapacity and China-competition scare (see the chip card) is exactly the kind of shock that can drag the whole index, and Friday showed it starting to. It can also pull back further if the oil spike pushes the 10-year and the next CPI back up, or if the Jul 29 Fed leans hawkish. The fix is time and steady contributions, not timing the top. VTI (total US market, same 0.03% fee) is a near-identical alternative that adds mid and small caps.",
+      "sources": [
+        [
+          "June CPI cooled to 3.5%",
+          "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html"
+        ],
+        [
+          "Stocks post weekly losses as semiconductors get smoked",
+          "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html"
+        ]
+      ],
+      "grade": {
+        "letter": "A",
+        "note": "The highest risk-adjusted core: best Sharpe of the three at plain market risk, lowest drawdown, and it proved its worth this week by falling far less than the AI complex. It is the anchor you size largest and add to on schedule, especially in a week when single themes and whole frontier sectors are blowing up."
+      },
+      "bear_case": "The whole index falls 20% to 35% in a genuine bear market (it did about -32% across 2020 and 2022). The specific risk today: because a third of the S&P is mega-cap tech, an AI-capex disappointment can drag the index with it, and this week the market began pricing that in (semis shed roughly $3.3T since June and are near bear-market territory, Oracle is down about 33% on the month). If the fear jumps from the chip suppliers to the hyperscalers' earnings, the index has real downside. The Monte Carlo 5th-percentile one-year outcome is about -16%, and a 2022-style year is closer to -25% to -32%. The saving grace: it has always recovered given time, which is exactly why you dollar-cost-average rather than lump in.",
+      "competitors": [
+        {
+          "name": "VTI",
+          "note": "Near-identical rival: total US market at the same 0.03% fee, adds mid and small caps for a touch more diversification. A coin-flip alternative."
+        },
+        {
+          "name": "SPY / IVV / SPLG",
+          "note": "Same S&P 500 index. SPY is the most liquid (best for options) but costs 0.09%; IVV and SPLG match VOO on cost."
+        },
+        {
+          "name": "SCHD",
+          "note": "The defensive alternative: a dividend-value basket that actually rose about 1% this month while growth fell, and sits near the top of its range. Less AI concentration, more income, lower expected long-run return. A fine complement to VOO rather than a replacement."
+        }
+      ],
+      "factors": "Political: broad exposure to every policy at once, so it is the least policy-fragile holding, though a recession, an oil-driven inflation scare or a tariff shock hits it like everything else. Environmental / structural: about a third of the index is mega-cap tech tied to the AI and data-center buildout, so it rides that electrification tailwind but also carries its concentration risk, which is exactly what pressured it this week.",
+      "trade_reasoning": "Enter at market and accumulate on any dip toward the 50-day average; the index just gave you a modest one. The stop sits below the 200-day as a trend-review level, not a day-trade stop: for your core you reassess, you do not panic-sell. The target is the simulation's 75th-percentile one-year outcome. With one-year loss odds near 24% and the lowest drawdown of the three, this is the largest, steadiest position, bought on a fixed schedule and never chased at the top of the range."
+    },
+    {
+      "rank": 2,
+      "ticker": "LLY",
+      "name": "Eli Lilly",
+      "type": "Stock / Healthcare",
+      "thesis": "You asked me to flag a good pharma buy when one shows up, and healthcare was the standout leadership group of the whole week while the AI trade got crushed: the healthcare basket (XLV) rose about 5% over 30 days and every big drug name on the board is green. Lilly is the highest-quality business in the group. It owns roughly 60% of the booming obesity/GLP-1 market, just got a major Medicare demand unlock (a new $50-copay bridge program live since July 1), and grew Q1 revenue about 56%. Last week I had AbbVie here for its cheaper multiple and fat dividend, but ABBV has since run to about 85% of its range and gotten stretched, while Lilly sits at a cleaner 59% of its range after a more modest 5% move. When the premier franchise is at a more reasonable entry than the value name, you buy the premier franchise.",
+      "why_now": "The rotation into healthcare accelerated exactly as AI hardware broke: XLV sits about 5% above its 50-day, the steadiest leadership on the board, and it barely flinched in Friday's selloff. Lilly specifically is up about 5% on the month and, crucially, sits mid-range (59%) rather than stretched, so this is a cleaner entry than the frothier names around it. And its beta is a remarkably low 0.51, meaning it moved about half as much as the market, a real cushion in a week like this. Scale in over several weeks and add faster on any pullback toward the 50-day. The July 1 Medicare GLP-1 program (roughly 14 million potentially eligible seniors) is a multi-year demand story just getting started.",
+      "risk": "Drug pricing is the policy overhang: Medicare negotiation round two (average 44% cuts, effective 2027) and a branded-pharma tariff, waived for firms that sign the administration's pricing deal (Lilly has been cutting deals for lower list prices in exchange for volume). Valuation is the other catch: at roughly 32x forward earnings and a PEG near 1.5, you are paying up for the growth, so a GLP-1 stumble or a faster-than-expected pill competitor bites. The offset is quality: about 60% market share, 107% return on equity, and that 0.51 beta. For hands-off exposure, XLV owns Lilly, AbbVie, UNH, JNJ and Merck in one 0.09% fund and is the lower-single-name-risk way to own the same tailwind.",
+      "sources": [
+        [
+          "Eli Lilly jumps 7% as Medicare opens GLP-1 access",
+          "https://www.tikr.com/blog/eli-lilly-stock-jumps-7-as-medicare-opens-glp-1-access-what-a-2100-target-means-for-investors"
+        ],
+        [
+          "Medicare GLP-1 Bridge: ~14M seniors eligible",
+          "https://finance.yahoo.com/healthcare/articles/medicare-opens-glp-1-floodgates-191853648.html"
+        ]
+      ],
+      "grade": {
+        "letter": "A-",
+        "note": "The best growth-plus-defense on the board this week: a dominant franchise with a fresh demand unlock, a very low 0.51 beta that cushioned it while AI hardware cratered, and the best risk-reward of the three picks (about 3.3:1). Marked below a straight A only for a rich valuation (PEG ~1.5, ~32x) and genuine drug-pricing policy risk."
+      },
+      "bear_case": "Two real threats. Policy: Medicare negotiation round two (average 44% cuts, effective 2027) and the branded-pharma tariff could squeeze margins across the industry. Competition and valuation: at ~32x you are priced for continued dominance, so any share loss to Novo's pill, a safety signal, or a manufacturing hiccup in the GLP-1 ramp hits a premium multiple hard. The simulation's 5th-percentile one-year outcome is about -21%, worse than VOO's, because a single stock carries single-name risk the ETF diversifies away. The cushions: about 60% GLP-1 share, a 30%+ long-run growth rate, a 107% ROE, and a 0.51 beta that softens broad selloffs, as this week proved.",
+      "competitors": [
+        {
+          "name": "ABBV (AbbVie)",
+          "note": "Last week's pick and the value-plus-income alternative: cheaper (PEG ~1.35), a 2.7% dividend raised for 50-plus straight years, and an even lower 0.28 beta. It is the better income play, but it has run about 14% this month to ~85% of its range and is now stretched, which is why Lilly (at 59%) is the cleaner entry today."
+        },
+        {
+          "name": "NVO (Novo Nordisk)",
+          "note": "The cheaper GLP-1 number two (roughly 16x versus Lilly's 32x, about 40% share), up about 16% this month to the top of its range on the same Medicare news. Better value, but it has been losing share to Lilly and carries single-franchise concentration."
+        },
+        {
+          "name": "XLV / MRK / JNJ",
+          "note": "XLV is the hands-off basket (owns all of them at 0.09%). Merck is cheap (~15x, 3% yield) but faces the 2028 Keytruda patent cliff; JNJ is the diversified sleep-well AAA name with less upside."
+        }
+      ],
+      "factors": "Political: drug-pricing policy (Medicare negotiation round two, the pharma tariff, most-favored-nation pricing) is the key risk, partly offset by the new Medicare GLP-1 coverage that expands the addressable market and the deals Lilly is signing to trade list price for volume. Environmental / structural: an aging, higher-weight population is a decade-long demand tailwind for obesity and diabetes drugs that runs independent of the economic and AI-capex cycle, the single biggest reason to own healthcare at all right now.",
+      "trade_reasoning": "It sits mid-range with a low beta, so a partial position now with adds on a pullback toward the 50-day is reasonable. The stop below the 200-day guards against a policy-driven breakdown. Risk-reward is the best of the three at about 3.3:1, and one-year loss odds are about 19%, below VOO's, helped by that low beta. This is a buy-and-accumulate quality compounder, not a tactical trade: you are buying the franchise and the demographic tailwind, and letting the Medicare ramp play out over years."
+    },
+    {
+      "rank": 3,
+      "ticker": "SMH",
+      "name": "VanEck Semiconductor ETF",
+      "type": "ETF / AI Infrastructure",
+      "thesis": "You like ETFs because you own the whole field without betting the farm on one company, and semiconductors are the beating heart of your AI-infrastructure thesis. SMH holds the 25 biggest chip names (Nvidia, TSMC, Broadcom, AMD, ASML, Micron and the rest) in one 0.35% fund, so you own the layer without guessing which chip wins the next socket. It just took a much deeper hit than last week: the fund is down about 10% over 30 days and sits at the very bottom of its range (0%), with 8 distribution days and a heavy-liquidation flush, as the chip complex slid toward bear-market territory. For a long-term buyer this is a better entry price than last week, but the thesis is now being tested on three fronts at once, so the discipline is to scale in slowly, not to call the bottom.",
+      "why_now": "The demand side is still enormous (hyperscalers guided roughly $725B of 2026 capex), but the market is now attacking the AI-chip trade from three angles: Meta admitting it has excess compute to resell, a wave of custom in-house silicon that challenges Nvidia's near-monopoly, and China's Moonshot releasing Kimi K3, a giant open-source model benchmarking near the best US systems, which questions whether ever-more US chips are the only path. Semis have shed about $3.3T since June. Yet the market is discriminating: Nvidia held up best (down only about 2% on the month, still 51% of its range, PEG 0.46, 114% ROE, near-zero debt), while memory and foundry took the brunt (Micron -17%, TSMC -6% with a heavy-liquidation event). Over 10 years SMH is still the best risk-adjusted name on this board (about 33% annualized, the highest Sharpe of the three). Because the thesis is being stress-tested live, buy in thirds over several weeks.",
+      "risk": "It is volatile (beta about 1.4) and has fallen roughly 45% peak-to-trough in past cycles. The risks are now concrete, not hypothetical: overcapacity (Meta's excess compute), competition (custom silicon eroding Nvidia's moat, a credible Chinese open model), and margin pressure (TSMC's capex guide). If hyperscalers actually slow orders, semis fall furthest because they ran furthest. It is also concentrated (NVDA, TSM, AVGO are a large slice). The disciplined-exit backtest (a 40-week trend filter) cut the historical drawdown from about -45% to -28%, which is why you respect the stop. For a calmer version, VGT or QQQM own semis inside a broader tech basket.",
+      "sources": [
+        [
+          "Tech leads global selloff as investors lose faith in the AI chip trade",
+          "https://fortune.com/2026/07/17/tech-stocks-global-selloff-as-investors-ai-semiconductor-chips/"
+        ],
+        [
+          "China's Moonshot releases Kimi K3, largest open-source model, rivaling top US systems",
+          "https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems"
+        ]
+      ],
+      "grade": {
+        "letter": "B-",
+        "note": "Still the best long-run risk-adjusted profile on the board (highest CAGR and Sharpe, lowest one-year loss odds), and the deeper pullback to 0% of its range is a better price than last week. Marked down to B- because the bear case now has three concrete legs (overcapacity, custom silicon, a credible Chinese open model), so this is a scale-in-slowly buy for a believer, not a back-up-the-truck moment."
+      },
+      "bear_case": "The AI-capex cycle could be over-building just as competition erodes pricing power. Meta's excess compute, a wave of custom silicon challenging Nvidia's monopoly, and a Chinese open model benchmarking near the frontier all landed in the same few weeks, and semis are now near a bear market ($3.3T off since June). It is concentrated and high-beta (~1.4), so a market-wide risk-off takes it down harder than the index, and past cycles saw about -45% peak-to-trough. The simulation's 5th-percentile one-year outcome is about -19% and the worst path is far uglier. The offset: demand ($725B of committed capex) is intact for now, Nvidia held the line through the selloff, and a trend-exit discipline historically sidestepped the worst of past crashes.",
+      "competitors": [
+        {
+          "name": "SOXX",
+          "note": "The near-identical rival (30 chip names, 0.35% fee). SMH is more concentrated in NVDA and TSM; SOXX spreads a touch wider. A coin-flip alternative."
+        },
+        {
+          "name": "VGT / QQQM",
+          "note": "Own semis inside a broader tech basket: lower single-sector risk and less volatility, but diluted exposure to the chip theme. The calmer way in while the overcapacity-and-competition question is unresolved, and appealing this week."
+        },
+        {
+          "name": "NVDA",
+          "note": "The single-name way to concentrate: NVDA held up best in the selloff (down only ~2% on the month, PEG 0.46, ROE 114%, near-zero debt), but you take on socket-loss and custom-silicon risk the ETF diversifies away."
+        }
+      ],
+      "factors": "Political: export controls on advanced chips to China cut both ways, and a credible Chinese open model (Kimi K3) shows the demand for frontier compute is going global whether or not it runs on US chips. Environmental / structural: semiconductors are the top of the AI build-out, but this month's triple blow (overcapacity, custom silicon, open-model competition) is the clearest crack yet in the always-more-demand story, so the multi-year capex cycle now has real near-term question marks.",
+      "trade_reasoning": "The long-term trend is still up but price has fallen to the very bottom of its 30-day range on heavy volume, so this is a buy-the-dip-in-a-long-uptrend, scaled in over several weeks with extra caution given three live risks. The wide stop below recent structure reflects high volatility: for a long-term ETF holding it is a trend-review level, not a day-trade stop. Risk-reward is about 2.6:1 with the lowest one-year loss odds of the three (about 17%), and the 3-year Monte Carlo shows only a small chance of a loss. Start with a third and add only as the complex stabilizes and hyperscaler order data holds."
+    }
+  ],
+  "top_picks_note": "Not a buy list, a research shortlist: one diversified core (VOO), one quality healthcare compounder outside the AI theme (LLY, promoted over AbbVie this week because Lilly sits at a cleaner entry while ABBV has run stretched), and one diversified way to own the AI build-out on a deeper pullback (SMH). Two of the three are ETFs by design, to keep single-name risk low. This week's lesson: the narrow mega-cap melt-up finally broke, the AI-hardware trade got hit on three fronts at once, and oil spiked on the Iran war, so scale in, do not lump in, lean on the diversified core and the healthcare leadership, and treat the chip pullback as a slow accumulation, not a bottom call.",
+  "insights": [
+    {
+      "tag": "LIQUIDATION",
+      "layer": "all",
+      "title": "The tell of the week: good news stopped working on the AI complex",
+      "body": "This week delivered the two things bulls asked for: June CPI fell 0.4% on the month (the first monthly decline in six years, 3.5% YoY versus 4.2% prior) and TSMC beat earnings and RAISED its 2026 outlook. The AI complex sold off anyway: TSM dropped about 8% on its beat, semis entered correction (SMH now 8 distribution days with Friday volume running 1.9x average), the Nasdaq-100 sits at 0% of its 30-day range, and the S&P lost the 7,500 level. When a market falls on good news, the selling is about positioning and valuation, not fundamentals: Goldman's prime-brokerage desk confirms hedge funds sold tech at a record pace, taking Magnificent-7 exposure to its lowest of the year.",
+      "matters": "Two honest readings. Bearish tape: distribution is still heavy and you do not step in front of it with lump sums. Bullish setup: forced and fast-money selling with fundamentals intact is historically where long-term entries get made, and the fact that the sellers are hedge funds de-grossing (not asset managers dumping, per the COT table above) supports the setup view. Keep dollar-cost-averaging the core, keep buying quality on the Bull Score screen in thirds, and let the FOMC (Jul 28-29) and hyperscaler earnings decide the next leg.",
+      "sources": [
+        [
+          "CNBC Jul 17 session",
+          "https://www.cnbc.com/2026/07/16/stock-market-today-live-updates.html"
+        ],
+        [
+          "Premarket: CPI cools to 3.5%",
+          "https://www.metatradingclub.com/premarket-analysis-july-14-2026-cpi-cools-bank-earnings-beat-ibm-drops/"
+        ]
+      ]
+    },
+    {
+      "tag": "THE CHIP DERATING",
+      "layer": "silicon",
+      "title": "Three blows at once: overcapacity, custom silicon, and a Chinese open model pushed semis toward a bear market",
+      "body": "The AI-chip trade is being attacked from three sides. First, Meta admitted it has excess AI compute and plans to resell it, breaking the assumption that every GPU gets used. Second, a wave of custom in-house silicon began shipping from the hyperscalers, making Nvidia's near-monopoly look contested for the first time in years. Third, and new this week, China's Moonshot AI released Kimi K3, a 2.8-trillion-parameter open-source model that benchmarks neck-and-neck with the best systems from OpenAI and Anthropic, raising the question of whether ever-more US chips are the only path to frontier AI. The result: global semiconductors have shed about $3.3T since June and are nearing bear-market territory, with the Philadelphia Semiconductor Index off roughly 10%. Friday alone saw AMD -5%, Intel -4%, Nvidia -3% (before recovering). Under the surface the market discriminated: Nvidia held best (down only about 2% on the month, still mid-range, PEG 0.46, 114% ROE), while memory and foundry took the brunt (Micron -17%, TSMC -6% with a heavy-liquidation event, ASML weak).",
+      "matters": "For a long-term buyer, the chip layer is where the AI dollars land first, and this month shows it is also where overcapacity, competition and cost-deflation fears bite first and hardest. The leaders are still not expensive on growth-adjusted valuation, but the safer way to own the layer through this uncertainty is the diversified chip ETF SMH (this month's pick #3, now on a deeper pullback), which spreads you across NVDA, AVGO, TSM and the rest. Keep any single speculative chip name small next to the ETF, own the demand side too (the hyperscalers via VOO), and let hyperscaler order data confirm the thesis before pressing.",
+      "sources": [
+        [
+          "Tech leads global selloff as investors lose faith in the AI chip trade",
+          "https://fortune.com/2026/07/17/tech-stocks-global-selloff-as-investors-ai-semiconductor-chips/"
+        ],
+        [
+          "AMD -5%, Intel -4%, Nvidia -3% as rotation hits semis",
+          "https://247wallst.com/investing/2026/07/17/amd-falls-5-intel-drops-4-nvidia-slides-3-before-recovering-as-rotation-hits-semiconductor-stocks/"
+        ]
+      ]
+    },
+    {
+      "tag": "OIL & GEOPOLITICS",
+      "layer": "all",
+      "title": "The Iran truce collapsed and oil spiked about 10% on the week, a fresh inflation risk",
+      "body": "The one macro variable moving the wrong way is energy. The fragile US-Iran truce collapsed, the US reinstated a naval blockade near Iranian ports, and after Kuwait said Iran struck a desalination plant, oil jumped on Friday: WTI crude rose about 4.5% to settle near $82.49 and Brent about 4.6% to around $88.10, capping a week in which oil climbed more than 10%. The Strait of Hormuz normally carries about 20% of the world's seaborne oil, so any disruption there is a direct threat to global supply. President Trump has threatened Iran's infrastructure absent a diplomatic breakthrough, and Iran has threatened to crush 'everything still intact,' so the risk premium is real and headline-driven. Energy was one of the few sectors to rise on Friday.",
+      "matters": "This is the most likely way the disinflation story re-heats. Cooling CPI and a falling PPI have been the tailwind under this whole market; a sustained oil spike feeds straight into the next CPI (around Aug 12) and gives a hawkish Fed (Warsh says prices are 'too high') a reason to keep a July hike on the table. For a long-term investor it argues for keeping some inflation protection and pricing power in the mix (broad exposure via VOO, market-priced power operators like CEG and VST, healthcare that passes costs through), and for not assuming rates only fall from here. Watch whether the Hormuz disruption persists into the Aug 12 print.",
+      "sources": [
+        [
+          "Oil rises as US-Iran hostilities threaten Strait of Hormuz supplies",
+          "https://www.cnbc.com/2026/07/17/oil-price-today-brent-wti.html"
+        ],
+        [
+          "Energy stocks rise as oil prices spike; global tech sell-off deepens",
+          "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-17-2026"
+        ]
+      ]
+    },
+    {
+      "tag": "MACRO & RATES",
+      "layer": "all",
+      "title": "Inflation broke lower, but the bond market did not celebrate",
+      "body": "June CPI printed 3.5% YoY (core 2.6%), down hard from May's 4.2%, and July hike odds collapsed from 42% to about 17%. The strange part: the 10-year Treasury yield ROSE to 4.57% anyway, its highest in months, with oil near $79 on the US-Iran conflict and heavy deficit-driven bond supply. A cool CPI that cannot pull long yields down means the discount rate squeezing growth-stock valuations has not let up, even as the Fed pressure eases.",
+      "matters": "Watch the 10-year, not just the Fed. If it breaks back below ~4.4% the valuation headwind on the whole AI complex flips to a tailwind; if it keeps grinding toward 5% on oil and deficits, expensive growth stays capped regardless of what the Fed says on Jul 28-29. The yield-curve and VIX chips above update automatically every refresh so you can track this without waiting for my commentary.",
+      "sources": [
+        [
+          "Capitaxer: markets after weak inflation",
+          "https://www.capitaxer.com/markets-are-trying-to-define-direction-after-weak-inflation/"
+        ],
+        [
+          "FRED 10Y yield",
+          "https://fred.stlouisfed.org/series/DGS10"
+        ]
+      ]
+    },
+    {
+      "tag": "HEALTHCARE",
+      "layer": "all",
+      "title": "Healthcare was the safe harbor: the clear leadership as the AI trade broke",
+      "body": "While AI hardware cratered, healthcare was the standout winner and the steadiest group on the board: the healthcare basket XLV rose about 5% over 30 days to about 5% above its 50-day, and every large drug name is green. Novo Nordisk (NVO) is up about 16% on the month to the top of its range, AbbVie (ABBV) about 14%, Merck about 11%, JNJ about 8%, Eli Lilly (LLY) about 5% and UNH about 5%. The structural catalyst is the Medicare GLP-1 Bridge Program, live since July 1, which gives Medicare Part D members obesity coverage at a flat $50 monthly copay through 2027 (roughly 14 million potentially eligible), a demand unlock for Lilly and Novo that dominate the market at about 60% and 40% share. Lilly's Q1 revenue was up about 56%.",
+      "matters": "Leadership rotates, and owning more than one engine is how you keep compounding when the hot theme cools, which is precisely what happened this week. Healthcare (via the XLV basket, or names like LLY and ABBV) is a demographic tailwind that runs for a decade and does not depend on the AI-capex cycle, the exact diversification you want while AI hardware is derating. This week's pick change reflects it: Lilly (LLY) is now the #2 pick over AbbVie because it sits at a cleaner mid-range entry with the stronger franchise. The catch is drug-pricing policy (Medicare negotiation round two, the pharma tariff), which is the reason to prefer diversified names or the XLV basket over any single blockbuster.",
+      "sources": [
+        [
+          "Eli Lilly jumps 7% as Medicare opens GLP-1 access",
+          "https://www.tikr.com/blog/eli-lilly-stock-jumps-7-as-medicare-opens-glp-1-access-what-a-2100-target-means-for-investors"
+        ],
+        [
+          "Medicare opens GLP-1 floodgates for Lilly and Novo",
+          "https://finance.yahoo.com/healthcare/articles/medicare-opens-glp-1-floodgates-191853648.html"
+        ]
+      ]
+    },
+    {
+      "tag": "POWER & NUCLEAR",
+      "layer": "power",
+      "title": "Power is still the bottleneck, but the nuclear trade got flushed; own the operators, not the developers",
+      "body": "AI cannot run without electricity, and US data-center demand keeps climbing (from roughly 31 GW toward 66 GW by 2027), so power remains the structural constraint. But the nuclear trade was flushed hard alongside the AI-hardware selloff: uranium (URA) fell about 19% over 30 days to 0% of its range, Cameco (CCJ) dropped about 21% with two heavy-liquidation events on 1.5x average volume (7 distribution days), and the small-reactor developers cratered (Oklo -28%, NuScale -22%, both near 0% of their ranges). The operators and grid builders held up far better: GE Vernova (GEV) actually rose about 8% over 30 days, Vistra (VST) was down only about 2%, and Constellation (CEG) fell about 6%. Cameco still holds 230 million pounds under long-term contracts, and Meta recently signed a 20-year nuclear deal with Constellation, so the multi-year demand story is intact even as the stocks were repriced.",
+      "matters": "The picks-and-shovels of power (operating utilities like CEG and VST, and grid builders like GEV and ETN) are a lower-binary way to own AI than the chips: whatever model or chip wins, the data center still needs megawatts. GEV rising while the chip complex fell is that thesis in action. But the developers just reminded everyone why they are venture bets: OKLO and SMR are down 22% to 28% in a month with no earnings to catch them, and commercial-scale SMRs are a 2030s story. Keep power a satellite, favor the operators over the developers, and treat OKLO and SMR as truly willing-to-lose-it money.",
+      "sources": [
+        [
+          "6 best nuclear power stocks and ETFs, July 2026",
+          "https://www.forbes.com/sites/investor-hub/article/6-best-nuclear-power-stocks-etfs-buy-now/"
+        ],
+        [
+          "US data-center power to double by 2027",
+          "https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027"
+        ]
+      ]
+    },
+    {
+      "tag": "QUANTUM",
+      "layer": "frontier",
+      "title": "Quantum was the worst group on the board: the pure-plays had the air let out again",
+      "body": "The Quantum Computing row is flashing the loudest warning on the board: it is the worst-performing group, down about 29% on average over 30 days. The pure-plays sit at the very bottom of their ranges (IonQ -38%, Rigetti -32%, D-Wave -30%, Quantum Computing Inc -23%, all at 0% to 5% of their 30-day bands). Even the blue-chip anchor cracked: IBM fell about 21% and logged two heavy-liquidation events, and the QTUM ETF is down about 13%. They trade at speculative valuations and got caught in the broad AI-and-frontier derating. Yet the science keeps advancing: IBM has committed more than $10B and targets a fault-tolerant machine by 2029, and Google has shown verifiable speedups.",
+      "matters": "Treat this like the SMR developers or pre-revenue biotech: the theme could be transformative, but real fault-tolerant machines are a 2029-2030 story, so the stocks can be right in the long run and still fall 30% to 40% in a month, which they just did again. The disciplined way in is a barbell: get most exposure through profitable owners (IBM, GOOGL, MSFT, NVDA) or the QTUM ETF (0.40%, about 88 diversified names), and keep any pure-play slice tiny and truly willing-to-lose-it-all. Position sizing, not stock picking, is the whole game here, and this week is why.",
+      "sources": [
+        [
+          "IBM commits $10B+ to quantum",
+          "https://newsroom.ibm.com/2026-06-02-ibm-commits-more-than-10-billion-to-quantum-computing,-funding-its-roadmap-from-todays-leading-systems-to-the-worlds-first-fault-tolerant-quantum-computers"
+        ],
+        [
+          "Quantum's cash crisis",
+          "https://247wallst.com/investing/2026/07/01/quantum-computings-cash-crisis-which-players-can-actually-survive-the-long-game/"
+        ]
+      ]
+    }
+  ],
+  "smart_money": {
+    "intro": "What the best-resourced players (Congress, famous funds, and the mega-caps themselves) are doing with their money. Treat it as a prompt to research, never as a reason to buy blind: disclosures lag the actual trade by up to 45 days and these players are often wrong.",
+    "items": [
+      {
+        "tag": "PRIME BROKERAGE",
+        "title": "Goldman's own desk: hedge funds sold tech at a record pace and started July defensive",
+        "body": "Goldman Sachs' prime-brokerage data (the paid version of the free CFTC table on this page) shows hedge funds entered July with net exposure cut, longs trimmed in cyclicals, shorts added against technology and growth, and Magnificent-7 exposure at its lowest point of the year after record-pace tech selling around the Russell rebalance. Their quant funds also logged one of the worst drawdowns in years, which forces mechanical de-grossing regardless of view. Meanwhile the banks themselves are minting records from all this repositioning: GS equity-financing revenue jumped 91%.",
+        "matters": "This corroborates the CFTC table independently: the sellers of the AI correction are largely fast money de-risking, not long-term owners abandoning the thesis. Extreme hedge-fund underweights in quality names have historically been contrarian-bullish for patient buyers, but the flows can stay one-directional for weeks, so it argues for scaling in, never lump-summing.",
+        "sources": [
+          [
+            "GS PB deep dive: defensive July",
+            "https://www.fxstreet.com/education/goldman-sachs-prime-brokerage-deep-dive-hedge-funds-start-july-on-the-defensive-202607060616"
+          ],
+          [
+            "TheStreet: GS on hedge-fund chip bets",
+            "https://www.thestreet.com/investing/goldman-sachs-sees-major-shift-on-hedge-fund-chip-bets"
+          ],
+          [
+            "Record PB revenues",
+            "https://wtvbam.com/2026/07/15/wall-street-banks-enjoy-record-windfalls-from-prime-brokerage-business/"
+          ]
+        ]
+      },
+      {
+        "tag": "CONGRESS",
+        "title": "Congressional buying still clusters in AI, semiconductors, and the power to run it",
+        "body": "2026 disclosure trackers (Capitol Trades, Quiver, Unusual Whales) show congressional activity concentrated in AI infrastructure, the chip supply chain, and energy. Nancy Pelosi's disclosed book (via her spouse) leans repeatedly into Nvidia shares and calls plus Alphabet, Amazon and Broadcom, and on the power side she exercised Vistra (VST) calls into 5,000 shares, the clearest 'AI plus the electricity to run it' portfolio in Congress. The trades are reported up to 45 days late, so a filing from earlier this year tells you nothing about how anyone traded this month's chip and nuclear selloff.",
+        "matters": "The revealed preference of people close to policy keeps pointing at the same themes on your board: AI infrastructure and the power to feed it. It is a lagging, imperfect signal, so use it to confirm a thesis you already researched, not to front-run, and remember it will not have caught this month's derating until the next filing.",
+        "sources": [
+          [
+            "Quiver congressional trading",
+            "https://www.quiverquant.com/congresstrading/"
+          ],
+          [
+            "Pelosi VST calls exercised into 5,000 shares",
+            "https://money.usnews.com/investing/articles/top-nancy-pelosi-stocks-to-buy"
+          ]
+        ]
+      },
+      {
+        "tag": "13F FILINGS",
+        "title": "The last read showed big funds treating the AI dip as a valuation reset; the mid-August filing is the one that matters",
+        "body": "In the most recent 13F cycle, Berkshire (under new CEO Greg Abel) added a large Alphabet stake while trimming elsewhere, and managers including Bridgewater added AI-memory and custom-silicon suppliers (Micron, Broadcom, Amazon). Several respected shops independently leaned into mega-cap AI and semiconductors. But those snapshots predate this month's triple blow to the chip trade (overcapacity, custom silicon, the Kimi K3 open model). The next quarterly 13F (Q2 2026 positions) is due by mid-August, and it is the first one that will show whether the pros kept buying chips into the rotation or started trimming the supply chain.",
+        "matters": "When the most-followed value shops add mega-cap AI names, it says the smart money read earlier AI pullbacks as resets, not tops. But they were also trimming healthcare just before it rallied, a reminder that even the pros mistime rotations, and this one is deeper than the last. That mistiming risk, plus the fact that every filing is stale, is the case for a diversified ETF core over chasing any one manager's book, especially now that the AI-hardware thesis has three live question marks.",
+        "sources": [
+          [
+            "Berkshire Q1 2026 overhaul",
+            "https://www.cnbc.com/2026/05/16/berkshires-new-ceo-overhauls-portfolio-dumping-a-slate-of-stocks.html"
+          ],
+          [
+            "Q1 2026 13F breakdown",
+            "https://www.indmoney.com/blog/us-stocks/berkshire-hathaway-q1-2026-13f-stocks-bought-sold-greg-abel"
+          ]
+        ]
+      },
+      {
+        "tag": "POLICY TAILWINDS",
+        "title": "Washington opened Medicare to GLP-1s, keeps backing nuclear, and is squeezing branded drug prices",
+        "body": "Three policy currents matter for this board. Healthcare (a tailwind): the Medicare GLP-1 Bridge Program went live July 1 with a $50 copay for roughly 14 million potentially eligible seniors, a structural demand unlock for Lilly and Novo, paired with administration deals trading lower list prices for higher volume. Nuclear: executive orders targeting 400 GW by 2050 plus DOE funding back the CEG, VST, OKLO, SMR and GEV names, even after this month's selloff. Pharma (a headwind): Medicare price-negotiation round two averages 44% cuts (effective 2027) and a branded-pharma tariff is on the table, waived for firms that sign the pricing deal, which favors firms locking in favorable pricing (Lilly, Novo) and diversified names (AbbVie).",
+        "matters": "Policy is a durable, multi-year force here: a fresh demand tailwind for GLP-1 makers, continued support for power and grid infrastructure, and a genuine margin risk for branded pharma. It reinforces owning the healthcare leadership through quality franchises that are cutting favorable pricing deals (LLY) or the XLV basket, and holding power and grid operators (CEG, VST, GEV) as a satellite through the volatility.",
+        "sources": [
+          [
+            "Medicare GLP-1 Bridge Program explained",
+            "https://www.statnews.com/2026/06/30/medicare-medicaid-glp1-costs-explained-balance-out-bridge-in/"
+          ],
+          [
+            "One year after the nuclear EOs (DOE)",
+            "https://www.energy.gov/ne/articles/one-year-after-executive-orders-us-nuclear-energy-renaissance-full-swing"
+          ]
+        ]
+      }
+    ]
+  },
+  "primer": {
+    "intro": "A large AI data center is a machine built in physical layers, and money flows into it from the top (the customers who order it) down through every supplier who makes a piece. Here is where the dollars land, and why the least glamorous layers can be the safest way to invest.",
+    "sections": [
+      {
+        "h": "Start at the top: the customers",
+        "p": "The hyperscalers (Microsoft, Alphabet, Amazon, Meta, Oracle) announce the giant spending budgets, roughly $725B in 2026, that everyone else competes to capture. Owning them is the most diversified way to own the theme, because their core businesses (ads, cloud, software) fund the AI bet and keep earning even if AI spending pauses. Two cautions surfaced this month: Oracle funded its buildout with debt and negative cash flow and got punished (down about 33%), and Meta revealed it has excess compute to resell, a reminder that even well-funded buyers can build ahead of demand."
+      },
+      {
+        "h": "Layer 1: Silicon, the brains",
+        "p": "Nvidia (NVDA) designs the GPUs that do the AI math; AMD (AMD) is the challenger; Broadcom (AVGO) builds the custom chips hyperscalers increasingly design in-house, a trend now challenging Nvidia's near-monopoly. None own factories: TSMC (TSM) prints the chips using machines only ASML (ASML) makes, and every GPU needs memory from Micron (MU). Highest growth, highest risk, and the layer that falls first on any overcapacity or competition scare, as this month proved when a cheaper Chinese open model and custom silicon hit the trade."
+      },
+      {
+        "h": "Layer 2: The box and the room",
+        "p": "The chips get assembled into servers by Super Micro (SMCI) and Dell (DELL). A rack of AI chips runs blazing hot, so it needs advanced cooling and power distribution from Vertiv (VRT), and fast switches from Arista (ANET) to connect racks together. This is the guts of the room."
+      },
+      {
+        "h": "Layer 3: Moving the data",
+        "p": "AI splits one job across thousands of chips, so they must talk at the speed of light over fiber. Transceivers and lasers come from Coherent (COHR) and Lumentum (LITE), long-haul interconnect from Ciena (CIEN), and the actual glass fiber from Corning (GLW). Optics content rises with every hardware generation, though it sells off hard with the chips when the whole AI-hardware trade derates, as it did this month."
+      },
+      {
+        "h": "Layer 4: The electrical bones",
+        "p": "The least glamorous and often most attractive layer: switchgear from Eaton (ETN) and Hubbell (HUBB), the steel and PVC conduit that carries every wire from Atkore (ATKR), jobsite supply from WESCO (WCC), transmission and substation build from Quanta (PWR), and the raw steel from Nucor (NUE). Physical, hard-to-substitute, multi-year backlogs."
+      },
+      {
+        "h": "Layer 5: The power",
+        "p": "A data center is useless without electricity, and AI has made power the true bottleneck. Existing-reactor operators signing long deals are Constellation (CEG) and Vistra (VST); fuel comes from Cameco (CCJ); reactor and SMR technology from BWX (BWXT), Oklo (OKLO) and NuScale (SMR); and near-term gas-turbine and grid power from GE Vernova (GEV). The operators held up far better than the developers in this month's selloff."
+      },
+      {
+        "h": "Chips versus picks-and-shovels",
+        "p": "Follow a dollar of capex: it lands most heavily on the chip layer, which captures the most dollars but carries the most risk (a rival can win a socket, custom silicon can erode the moat, and an overcapacity or competition scare hits it first, as this month proved three times over). The power, conduit, cooling and fiber layers are lower-binary: whatever chip and model win, the building still needs steel, copper, transformers and megawatts. That is the trade-off, highest upside in silicon, more durable margins of safety in the infrastructure beneath it."
+      }
+    ]
+  },
+  "macro_strategy": {
+    "regime_label": "Late cycle, disinflation vs an oil shock, AI trade derating",
+    "regime_detail": "The macro data is still cooling (June CPI 3.5%, core 2.6%, June PPI -0.3%) and the Fed is on hold at 3.50-3.75%, but two things turned this week. First, the narrow mega-cap melt-up broke: the S&P fell off its highs (Friday -1.15%) and the AI-hardware complex derated hard on three fronts (overcapacity, custom silicon, a credible Chinese open model), pushing semis toward a bear market. Second, oil spiked about 10% on the Iran war, a fresh inflation risk that complicates the disinflation story. So the backdrop is easing prices fighting an energy shock, with a live question over whether AI capex is being over-built. That rewards quality, cash flow, healthcare leadership and diversification over speculation.",
+    "drivers": [
+      {
+        "driver": "Interest rates",
+        "reading": "High and no longer clearly falling. Fed at 3.50-3.75%, ~78% odds of a July hold but ~22% of a hike; the oil spike and a hawkish Warsh ('prices too high') cap how far the 10-year can ease.",
+        "playbook": "A friendlier-but-uncertain rate path helps long-duration growth (the chips in SMH) and rate-sensitive dividends (SCHD, ABBV) and utilities (CEG, VST), but do not assume rates only fall. Favor strong balance sheets (low debt-to-equity, like NVDA at 0.07). Keep some cash: you still get paid to be patient into the Jul 29 Fed."
+      },
+      {
+        "driver": "Inflation",
+        "reading": "Cooling on the data, threatened by oil. June CPI 3.5% (from 4.2%), core 2.6%, June PPI -0.3%, but WTI spiked to ~$82 on the Iran war, up ~10% on the week.",
+        "playbook": "The disinflation trend is intact but the oil spike is a real upside risk to the Aug 12 print. Keep some real assets and pricing power (market-priced power via CEG and VST, healthcare that passes costs through, broad exposure via VOO), and do not fully bet on the all-clear."
+      },
+      {
+        "driver": "Economic growth",
+        "reading": "Leadership finally cracked. The S&P came off its highs (about 55% of its 30-day range) as AI hardware went under heavy distribution (SMH at 0% of range, 8 down-volume days, a heavy-liquidation flush), while healthcare led (XLV +5% on the month).",
+        "playbook": "Keep beta moderate and lean on the diversified core (VOO, VTI) and the defensive leadership (healthcare via XLV or LLY). Size high-beta AI exposure (chips, via SMH) so you can hold it through a 30% drop, scale into the pullback rather than lump in, and let hyperscaler order data confirm the capex is being absorbed before pressing."
+      }
+    ],
+    "scenarios": [
+      {
+        "trigger": "If disinflation holds (next CPI ~Aug 12 stays soft despite oil) and hyperscaler orders hold",
+        "response": "Risk-on, and the AI derating fades. The 10-year likely eases, a tailwind for long-duration growth, so add to the chip pullback (SMH, NVDA) in tranches and let the ETF core and healthcare ride."
+      },
+      {
+        "trigger": "If the oil spike sticks and re-heats the Aug 12 CPI, or the Fed hikes Jul 29",
+        "response": "Risk-off at the margin. Lean into value, dividends and short-duration cash flows (SCHD, ABBV), keep the healthcare leadership, and hold dry powder in case the broader tape follows the AI complex lower."
+      },
+      {
+        "trigger": "If the AI-competition signal spreads (more custom silicon wins, more cheap open models, hyperscalers trim orders)",
+        "response": "Risk-off in AI hardware specifically. Lean harder on the diversified core (VOO), healthcare (XLV, LLY) and the power operators (CEG, VST, GEV) over the chip and developer names; slow or pause the SMH scale-in until demand data stabilizes."
+      }
+    ],
+    "positioning": "Net: overweight a diversified core (VOO or VTI) plus the healthcare leadership (LLY as the quality compounder, or XLV for hands-off, with ABBV the income alternative), with a satellite in power and grid operators (the durable, policy-backed way to own AI, and the part of the nuclear trade that held up). Own the AI build-out through the diversified chip ETF (SMH) on this deeper pullback, scaled in slowly because the thesis now faces three live risks. Keep speculative AI, nuclear developers and quantum pure-plays small. The cooler inflation data is friendly, but with the melt-up broken, oil spiking on the Iran war, and the AI trade derating, keep dollar-cost-averaging rather than lump-summing, and let the July FOMC, the Aug 12 CPI and hyperscaler order trends tell you when to press."
+  },
+  "watchlist_notes": "Refreshed on the Jul 17 close. The week that mattered: CPI broke lower (3.5%), TSMC beat and raised, and the AI complex fell anyway; semis are in correction (SMH 8 D-Days on heavy volume, QQQ at 0% of its 30-day range) while the 10-year climbed to 4.57%. Next tape-changers: FOMC Jul 28-29, the pharma-tariff deadline Jul 31, and hyperscaler earnings starting late July (their capex guidance is the whole ballgame). On the board: whether SMH's distribution count finally falls, whether the 10-year breaks back under ~4.4%, hedge-fund positioning in next Friday's COT update, and healthcare (still the strongest trend) versus its Jul 31 policy risk."
+}
