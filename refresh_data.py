@@ -18,9 +18,11 @@ WATCHLIST = {
     "Chip Equipment & EUV": ["ASML", "AMAT", "LRCX", "KLAC"],
     "Memory & Storage": ["MU", "SNDK", "WDC"],
     "Servers, Cooling & Networking": ["SMCI", "DELL", "VRT", "ANET", "ALAB"],
-    "Fiber Optics & Photonics": ["COHR", "LITE", "CIEN", "GLW"],
+    "Fiber Optics & Cabling": ["CIEN", "GLW"],
+    "Photonics & Optical Interconnect": ["COHR", "LITE", "FN", "AAOI", "CRDO"],
     "Electrical, Conduit & Steel": ["ETN", "PWR", "ATKR", "WCC", "HUBB", "NUE"],
-    "Nuclear & Power Majors": ["CEG", "VST", "CCJ", "BWXT", "GEV"],
+    "Nuclear Infrastructure & Power Majors": ["CEG", "VST", "CCJ", "BWXT", "GEV",
+                                              "TLN", "D", "SO", "PEG", "ETR"],
     "Big Tech & Hyperscalers": ["AAPL", "MSFT", "GOOGL", "AMZN", "META", "ORCL", "IBM", "PLTR"],
     "Healthcare & Pharma": ["LLY", "NVO", "UNH", "JNJ", "ABBV", "MRK"],
     # ---- Sheet 2: smaller-dollar / speculative ----
