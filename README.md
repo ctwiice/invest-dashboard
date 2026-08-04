@@ -98,10 +98,21 @@ Run from this directory, in order:
 ## Watchlist
 
 Two boards, same columns (as of Jul 19, 2026, at the user's request):
-- Sheet 1 (established, large-dollar): Semis & Fab (incl. INTC), Memory &
-  Storage (MU, SNDK, WDC; SK Hynix is Seoul-only so noted in the sector blurb),
-  Servers/Cooling, Fiber, Electrical/Conduit/Steel, Nuclear & Power Majors
-  (CEG VST CCJ BWXT GEV), Big Tech (incl. IBM, PLTR), Healthcare.
+- Sheet 1 (established, large-dollar): Semis & Fab (incl. INTC), Chip Equipment
+  & EUV, Memory & Storage (MU, SNDK, WDC; SK Hynix is Seoul-only so noted in the
+  sector blurb), Servers/Cooling, Fiber Optics & Cabling (CIEN GLW), Photonics &
+  Optical Interconnect (COHR LITE FN AAOI CRDO), Electrical/Conduit/Steel,
+  Nuclear Infrastructure & Power Majors (CEG VST CCJ BWXT GEV TLN D SO PEG ETR),
+  Big Tech (incl. IBM, PLTR), Healthcare.
+  - Photonics was split out of the old combined "Fiber Optics & Photonics"
+    section on Aug 4, 2026 at the user's request. The slow glass/long-haul names
+    (Corning, Ciena) stayed in Fiber; the transceiver, laser and interconnect
+    names moved to Photonics. Silicon-photonics micro-caps (POET and similar)
+    were deliberately left off: too small and pre-revenue for a long-term sheet.
+  - Nuclear went from 5 names to 10 on Aug 4, 2026, also at the user's request
+    ("the top nuclear companies that have the infrastructure"). It now holds both
+    the merchant operators selling power straight to data centers (CEG VST TLN)
+    and the regulated fleet owners (D SO PEG ETR) alongside CCJ, BWXT and GEV.
 - Sheet 2 (smaller-dollar / speculative): Nuclear Developers & Fuel (OKLO SMR
   LEU NNE), Quantum Pure-Plays, Space & Defense (RKLB LUNR ASTS), Gov-Backed
   Materials & Small AI Infra (MP LAC TSSI).
