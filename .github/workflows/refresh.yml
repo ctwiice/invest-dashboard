@@ -26,6 +26,14 @@ jobs:
           python-version: "3.12"
       - name: Refresh market data (quotes, fundamentals, FRED macro, CFTC COT)
         run: python refresh_data.py
+      - name: Install Anthropic SDK
+        run: pip install --quiet anthropic
+      - name: Write today's briefing with Claude (keeps yesterday's on any failure)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python write_briefing.py || echo "::warning::briefing step failed; publishing with previous briefing"
+      - name: Sync quant picks to the briefing's Top 3
+        run: python sync_picks.py
       - name: Run quant workup on the Top 3 picks
         run: python quant.py
       - name: Build dashboard.html
@@ -41,8 +49,8 @@ jobs:
         run: |
           git config user.name "dashboard-refresh-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add market_data.json quant_data.json dashboard.html
-          git commit -m "Daily data refresh" || echo "nothing to commit"
+          git add market_data.json quant_data.json dashboard.html insights.json quant.py
+          git commit -m "Daily refresh: data + briefing" || echo "nothing to commit"
           git push
 
   deploy:

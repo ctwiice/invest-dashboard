@@ -27,6 +27,19 @@ every KPI (the user is not an economist).
 
 ## Daily refresh pipeline
 
+FULLY AUTOMATED IN THE CLOUD (as of Aug 17, 2026). The GitHub Actions workflow
+(.github/workflows/refresh.yml) runs every weekday ~7:15 AM Denver and does
+EVERYTHING: refresh_data.py -> write_briefing.py (Claude Opus 5 + web search
+rewrites insights.json; needs the ANTHROPIC_API_KEY repo secret) ->
+sync_picks.py -> quant.py -> build_dashboard.py -> deploy to GitHub Pages ->
+commit back. If the briefing step fails for any reason, yesterday's briefing is
+kept and the numbers still publish. No laptop or Claude app involvement. The
+local scheduled task "daily-invest-dashboard-refresh" is PAUSED and exists only
+as a manual fallback. The claude.ai artifact is no longer auto-updated; the
+public page https://ctwiice.github.io/invest-dashboard/ is the live product.
+
+The manual steps below still work for one-off local runs.
+
 Run from this directory, in order:
 
 1. `python3 refresh_data.py` - pulls quotes, fundamentals, 1Y weekly

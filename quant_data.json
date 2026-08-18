@@ -83,7 +83,11 @@
   },
   "LLY": {
    "name": "Eli Lilly",
-   "price": 1180.16,
+<<<<<<< Updated upstream
+   "price": 1209,
+=======
+   "price": 1220.28,
+>>>>>>> Stashed changes
    "stats": {
     "cagr": 31.2,
     "vol": 30.4,
@@ -97,26 +101,46 @@
    "regime": {
     "label": "Uptrend, normal volatility",
     "trend": "up",
-    "vs_sma50": 0.9,
-    "vs_sma200": 13.1,
-    "mom3": 17.4,
-    "vol_ann": 35.9,
-    "vol_median": 31.6,
-    "sma50": 1169.5,
-    "sma200": 1043.2
+<<<<<<< Updated upstream
+    "vs_sma50": 3.6,
+    "vs_sma200": 16.1,
+    "mom3": 20.1,
+    "vol_ann": 34.8,
+    "vol_median": 31.5,
+    "sma50": 1167.5,
+    "sma200": 1041.5
    },
    "backtest": {
     "buyhold": {
-     "cagr": 31.17503987608736,
-     "sharpe": 0.9467049439792189,
+     "cagr": 31.49212560274519,
+     "sharpe": 0.9546630132552132,
+=======
+    "vs_sma50": 4.8,
+    "vs_sma200": 17.4,
+    "mom3": 20.1,
+    "vol_ann": 34.7,
+    "vol_median": 31.5,
+    "sma50": 1164.6,
+    "sma200": 1039.5
+   },
+   "backtest": {
+    "buyhold": {
+     "cagr": 31.614296021654532,
+     "sharpe": 0.957609415894495,
+>>>>>>> Stashed changes
      "maxdd": -34.82948271911002,
      "winrate": 57.69230769230769,
      "time_in_mkt": 100.0,
      "trades": null
     },
     "trend": {
-     "cagr": 20.917799850016184,
-     "sharpe": 0.7314445352887681,
+<<<<<<< Updated upstream
+     "cagr": 21.210091039464473,
+     "sharpe": 0.7410675754282297,
+=======
+     "cagr": 21.3227083352185,
+     "sharpe": 0.7446397694575672,
+>>>>>>> Stashed changes
      "maxdd": -34.69389273418467,
      "winrate": 44.44444444444444,
      "time_in_mkt": 72.88461538461539,
@@ -124,48 +148,79 @@
     }
    },
    "trade": {
-    "entry": 1180.16,
-    "stop": 1001.49,
-    "take_profit": 1909.53,
-    "risk_pct": 15.1,
-    "reward_pct": 61.8,
-    "rr": 4.08,
-    "atr": 43.74,
-    "sma50": 1169.54,
-    "sma200": 1043.22
+<<<<<<< Updated upstream
+    "entry": 1209,
+    "stop": 999.8,
+    "take_profit": 1963.48,
+    "risk_pct": 17.3,
+    "reward_pct": 62.4,
+    "rr": 3.61,
+    "atr": 42.58,
+    "sma50": 1167.51,
+    "sma200": 1041.46
+=======
+    "entry": 1220.28,
+    "stop": 997.96,
+    "take_profit": 1983.22,
+    "risk_pct": 18.2,
+    "reward_pct": 62.5,
+    "rr": 3.43,
+    "atr": 41.65,
+    "sma50": 1164.62,
+    "sma200": 1039.54
+>>>>>>> Stashed changes
    },
    "mc": {
     "h1": {
-     "prob_loss": 18.9,
-     "mean": 37.7,
-     "median": 31.5,
-     "p5": -20.6,
-     "p25": 7.0,
-     "p75": 61.8,
-     "p95": 117.0,
+     "prob_loss": 18.5,
+     "mean": 38.2,
+     "median": 31.8,
+     "p5": -20.5,
+     "p25": 7.4,
+     "p75": 62.4,
+     "p95": 117.8,
      "worst": -62.5,
      "best": 328.9
     },
     "h3": {
-     "prob_loss": 6.0,
-     "mean": 157.7,
-     "median": 124.0,
-     "p5": -4.6,
-     "p25": 58.3,
-     "p75": 222.1,
-     "p95": 426.9,
-     "worst": -74.9,
+<<<<<<< Updated upstream
+     "prob_loss": 5.9,
+     "mean": 159.5,
+     "median": 125.7,
+     "p5": -3.8,
+     "p25": 59.7,
+     "p75": 224.1,
+     "p95": 430.1,
+     "worst": -74.3,
+=======
+     "prob_loss": 5.8,
+     "mean": 160.2,
+     "median": 125.9,
+     "p5": -3.5,
+     "p25": 59.9,
+     "p75": 224.4,
+     "p95": 431.6,
+     "worst": -74.1,
+>>>>>>> Stashed changes
      "best": 1577.0
     }
    }
   },
   "SMH": {
    "name": "VanEck Semiconductor ETF",
-   "price": 587.82,
+<<<<<<< Updated upstream
+   "price": 589.12,
    "stats": {
     "cagr": 33.4,
     "vol": 29.9,
+    "sharpe": 1.02,
+=======
+   "price": 584.83,
+   "stats": {
+    "cagr": 33.3,
+    "vol": 29.9,
     "sharpe": 1.01,
+>>>>>>> Stashed changes
     "sortino": 1.58,
     "maxdd": -44.5,
     "winrate": 68.0,
@@ -175,6 +230,7 @@
    "regime": {
     "label": "Uptrend, elevated volatility",
     "trend": "up",
+<<<<<<< Updated upstream
     "vs_sma50": -0.6,
     "vs_sma200": 27.2,
     "mom3": 5.7,
@@ -185,16 +241,35 @@
    },
    "backtest": {
     "buyhold": {
-     "cagr": 33.356399130144545,
-     "sharpe": 1.014720952222787,
+     "cagr": 33.385862406064334,
+     "sharpe": 1.0154584487519085,
+=======
+    "vs_sma50": -1.4,
+    "vs_sma200": 27.2,
+    "mom3": 2.2,
+    "vol_ann": 48.3,
+    "vol_median": 34.0,
+    "sma50": 593.4,
+    "sma200": 459.7
+   },
+   "backtest": {
+    "buyhold": {
+     "cagr": 33.288410413047046,
+     "sharpe": 1.0130032880747137,
+>>>>>>> Stashed changes
      "maxdd": -44.538757206918625,
      "winrate": 59.61538461538461,
      "time_in_mkt": 100.0,
      "trades": null
     },
     "trend": {
-     "cagr": 24.31032747193147,
-     "sharpe": 0.8779734475286328,
+<<<<<<< Updated upstream
+     "cagr": 24.337792141807668,
+     "sharpe": 0.8788940354603432,
+=======
+     "cagr": 24.246950688050738,
+     "sharpe": 0.875826695286863,
+>>>>>>> Stashed changes
      "maxdd": -27.886346200830502,
      "winrate": 47.05882352941177,
      "time_in_mkt": 74.61538461538461,
@@ -202,10 +277,11 @@
     }
    },
    "trade": {
-    "entry": 587.82,
-    "stop": 443.55,
-    "take_profit": 954.99,
-    "risk_pct": 24.5,
+<<<<<<< Updated upstream
+    "entry": 589.12,
+    "stop": 442.46,
+    "take_profit": 957.24,
+    "risk_pct": 24.9,
     "reward_pct": 62.5,
     "rr": 2.54,
     "atr": 21.44,
@@ -221,19 +297,52 @@
      "p25": 8.5,
      "p75": 62.5,
      "p95": 117.2,
+=======
+    "entry": 584.83,
+    "stop": 441.31,
+    "take_profit": 949.71,
+    "risk_pct": 24.5,
+    "reward_pct": 62.4,
+    "rr": 2.54,
+    "atr": 23.9,
+    "sma50": 593.35,
+    "sma200": 459.7
+   },
+   "mc": {
+    "h1": {
+     "prob_loss": 17.5,
+     "mean": 38.8,
+     "median": 32.5,
+     "p5": -19.8,
+     "p25": 8.4,
+     "p75": 62.4,
+     "p95": 117.0,
+>>>>>>> Stashed changes
      "worst": -60.0,
      "best": 300.0
     },
     "h3": {
+<<<<<<< Updated upstream
      "prob_loss": 4.9,
-     "mean": 172.1,
-     "median": 140.1,
-     "p5": 0.6,
-     "p25": 69.4,
-     "p75": 238.2,
-     "p95": 450.6,
-     "worst": -67.9,
-     "best": 1892.6
+     "mean": 172.3,
+     "median": 140.3,
+     "p5": 0.7,
+     "p25": 69.6,
+     "p75": 238.4,
+     "p95": 451.2,
+     "worst": -67.8,
+     "best": 1901.4
+=======
+     "prob_loss": 5.0,
+     "mean": 171.7,
+     "median": 139.6,
+     "p5": 0.3,
+     "p25": 69.3,
+     "p75": 237.6,
+     "p95": 449.8,
+     "worst": -68.0,
+     "best": 1872.4
+>>>>>>> Stashed changes
     }
    }
   }
@@ -241,8 +350,13 @@
  "benchmark": {
   "ticker": "SPY",
   "name": "S&P 500 ETF",
-  "cagr": 13.579832095589484,
-  "sharpe": 0.6538897579004402,
+<<<<<<< Updated upstream
+  "cagr": 13.602342464917783,
+  "sharpe": 0.6550383810581075,
+=======
+  "cagr": 13.523379860749207,
+  "sharpe": 0.6509798963891733,
+>>>>>>> Stashed changes
   "maxdd": -32.227488151658775,
   "winrate": 58.07692307692308,
   "years": 10.0
@@ -250,30 +364,55 @@
  "market_regime": {
   "label": "Uptrend, normal volatility",
   "trend": "up",
-  "vs_sma50": 3.660386387767889,
-  "vs_sma200": 10.048078170225683,
-  "mom3": 5.028613174235974,
-  "vol_ann": 13.021923322441218,
-  "vol_median": 12.38332701483871,
-  "sma50": 748.9264,
-  "sma200": 705.4553
+<<<<<<< Updated upstream
+  "vs_sma50": 3.92734972165083,
+  "vs_sma200": 10.337619953934741,
+  "mom3": 3.971022628546983,
+  "vol_ann": 13.617473516109113,
+  "vol_median": 12.383300701206421,
+  "sma50": 748.4844,
+  "sma200": 704.9997999999999
  },
  "portfolio": {
   "equal_weight": {
-   "cagr": 28.580740993369425,
-   "sharpe": 1.1955336620088992,
+   "cagr": 28.703408381325545,
+   "sharpe": 1.1994921385106359,
+=======
+  "vs_sma50": 3.2577472383374495,
+  "vs_sma200": 9.651337589752917,
+  "mom3": 4.065686842424343,
+  "vol_ann": 13.700485793568292,
+  "vol_median": 12.380965690441577,
+  "sma50": 748.1182000000001,
+  "sma200": 704.4966499999999
+ },
+ "portfolio": {
+  "equal_weight": {
+   "cagr": 28.671744660287235,
+   "sharpe": 1.1984945578031299,
+>>>>>>> Stashed changes
    "maxdd": -19.41245704657668,
    "winrate": 70.08547008547009
   },
   "momentum": {
-   "cagr": 23.289741770002692,
-   "sharpe": 0.8138723130249661,
+<<<<<<< Updated upstream
+   "cagr": 23.595417715173618,
+   "sharpe": 0.8230393945486258,
+=======
+   "cagr": 23.71319708942441,
+   "sharpe": 0.8264150824866472,
+>>>>>>> Stashed changes
    "maxdd": -35.23710878581343,
    "winrate": 62.39316239316239
   },
   "benchmark_spy": {
-   "cagr": 13.823501874592182,
-   "sharpe": 0.6915010237545259,
+<<<<<<< Updated upstream
+   "cagr": 13.846639022817374,
+   "sharpe": 0.6926317802204088,
+=======
+   "cagr": 13.765478300510047,
+   "sharpe": 0.6886240961526581,
+>>>>>>> Stashed changes
    "maxdd": -24.797877716018213,
    "winrate": 66.66666666666667
   },

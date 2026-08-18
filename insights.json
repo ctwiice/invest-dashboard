@@ -1,440 +1,411 @@
 {
- "date": "Thursday, August 6, 2026",
- "asof": "IMPORTANT TIMING NOTE FOR TODAY. This refresh ran at 1:49pm ET on Aug 6, while the market was still open, so the prices and percentage moves on both sheets are mid-session quotes rather than closing prints. They will move before the bell. Two blocks on this page are older still: the positioning columns (30-day range position, vs 50-day, distribution days, heavy liquidation events, volume ratio) and every number in the Quant Lab are computed from completed daily bars, so they describe the Aug 5 close and have not yet absorbed today's trading. Read the price column as 'where things stand this afternoon' and the positioning columns as 'where things stood at last night's close'. What today looks like so far: a two-sided tape with 37 of 70 names lower and 31 higher, the Dow giving back part of yesterday's record, and violent single-name moves in memory (Western Digital down about 11%) and the AI neoclouds (Nebius down about 10%) against a strong bid in photonics and the space names. Macro chips update automatically from FRED, which publishes with a lag: the oil chip reads $81.96 from Aug 3 and the 10-year chip 4.63% from Aug 4, while crude traded back up near $81 Brent and the 10-year near 4.67% today. CPI and core CPI are June data. COT positioning is still the CFTC's Jul 28 report; the next release lands tomorrow, Aug 7.",
- "close_date": "Aug 6",
- "macro": {
-  "nextCpi": {
-   "label": "Next CPI print",
-   "value": "Aug 12",
-   "delta": "July data, 8:30am ET. The energy tailwind that looked so promising yesterday partly reversed today: Brent gained about 2.2% back toward $81 and WTI about 1.9% toward $76.60 after Iran published a restrictive draft plan for the Strait of Hormuz and reports emerged of attacks on Saudi tankers in the Red Sea and Gulf of Aden. Crude is still well below the roughly $86 peak of late July, so the print should still benefit, but less than a day ago. This remains the number that decides September.",
-   "tone": "warn"
-  },
-  "nextFomc": {
-   "label": "Next FOMC",
-   "value": "Sep 15-16",
-   "delta": "This meeting also publishes the Summary of Economic Projections and the dot plot, so it carries more information than a normal decision. Today's labour data gave the Fed room rather than urgency: jobless claims rose just 1,000 to 199,000 for the week ended Aug 1, and Challenger reported July layoffs fell 27% to 33,429, the lowest monthly total since July 2024 and down 46% from a year ago. The Fed held at 3.50-3.75% on Jul 29 in a 9-to-3 vote, its most divided since 2016, with Hammack, Kashkari and Logan dissenting for a hike.",
-   "tone": "warn"
-  }
- },
- "top_picks": [
-  {
-   "rank": 1,
-   "ticker": "VOO",
-   "name": "Vanguard S&P 500 ETF",
-   "type": "ETF / Core",
-   "thesis": "You like ETFs because you own the whole field without betting the farm on one company, and this week keeps making the argument for you. VOO holds the 500 largest US companies for a rock-bottom 0.03% fee. It is trading near 706 this afternoon, down about 0.18% from last night's 707.60 close, on a day when the tape underneath it was again violent in both directions: Western Digital is down about 11%, Nebius about 10% and D-Wave about 7%, while Intuitive Machines is up about 5.7%, Astera Labs about 4.9% and Fabrinet about 4.2%. Owning all 500 turned that spread into a rounding error again. As of last night's close VOO sat at 96% of its 30-day range and about 3.1% above its 50-day average, and it carried just one distribution day in the trailing window against three for SPY, six for QQQ and nine for the semiconductor fund, which says the broad index is not the part of this market institutions have been selling.",
-   "why_now": "Because the rotation that started yesterday is still running, and rotating markets are exactly what a broad index is for. Yesterday healthcare and industrials paid for a bad day in chips; today chips and photonics are paying for a bad day in memory and the neoclouds. You do not have to identify which group leads next if you own all of them. The honest caveat is unchanged: at 96% of its 30-day range this is a fine scheduled purchase and a poor opportunistic one, because nothing here is on sale.",
-   "risk": "A near-record high with a live September rate hike is the risk, and the concentration underneath it is the other. VOO is about a third mega-cap technology, so the AI complex is a much larger share of your outcome than 'the whole market' suggests. Today added a specific new worry to watch: the cost of insuring AI-infrastructure debt jumped again, and the credit market rather than the equity market is now the place the buildout gets tested. If the Aug 12 CPI print runs hot, or the Hormuz talks keep sliding backwards as they did today, the index gives back quickly.",
-   "sources": [
-    [
-     "Stock market today: Dow, S&P 500, Nasdaq slip as Treasury yields rise, earnings roll on",
-     "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-6-dow-sp-nasdaq-091620000.html"
-    ],
-    [
-     "US weekly jobless claims edge up; planned layoffs decline in July",
-     "https://finance.yahoo.com/news/us-weekly-jobless-claims-edge-125055810.html"
-    ]
-   ],
-   "grade": {
-    "letter": "A",
-    "note": "Unchanged at the top, and the reasoning is the same two days running because it keeps being demonstrated. The index absorbed an 11% collapse in Western Digital and a 10% drop in Nebius and is barely moving, which is diversification doing precisely the job you bought it for. One distribution day at last night's close is the cleanest reading on the board. Best Sharpe of the three at plain market risk (0.65), the lowest historical drawdown (-32.1%), a 13.4% ten-year CAGR, and roughly 23% odds of a down year. The standing caveat: 96% of its 30-day range is a worse entry than a flush, so this stays a keep-buying-on-schedule holding rather than an all-at-once one."
-   },
-   "bear_case": "The whole index falls 20% to 35% in a genuine bear market (it did about -32% across 2020 and 2022). The specific live risk sharpened today: because roughly a third of the S&P is mega-cap tech, and that buildout is increasingly financed with debt, the widening in AI-related credit spreads is a transmission channel the index cannot diversify away. Debt as a share of hyperscaler capex has risen from 9% in fiscal 2024 to about 32% in the year to June 2026, taking aggregate debt near $700 billion, and bond coverage ratios on hyperscaler issues slipped from nearly five times in February to below two times by July. Add a September Fed hike on top and you have a double hit. The Monte Carlo 5th-percentile one-year outcome is about -15%, and a 2022-style year is closer to -25% to -32%. The saving grace: it has always recovered given time, which is exactly why you dollar-cost-average rather than lump in.",
-   "competitors": [
-    {
-     "name": "VTI",
-     "note": "Near-identical rival: total US market at the same 0.03% fee, adds mid and small caps for a touch more diversification. It is down about 0.15% this afternoon against VOO's 0.18%. A coin-flip alternative."
+  "date": "Sunday, August 9, 2026",
+  "asof": "This is a weekend edition, and that makes it cleaner than the last two. Every price and percentage on both sheets is a genuine closing print from Friday, Aug 7, and every positioning column (30-day range position, vs 50-day, distribution days, heavy liquidation events, volume ratio) and every number in the Quant Lab is computed from that same completed session. For once the price column and the flow columns describe the same moment, so you can read them together without adjusting for a timing gap. Friday was a record close: the S&P 500 rose 0.62% to 7,757.64, the Nasdaq Composite gained 1.30% to 26,690.62 and the Dow added 0.28% to 54,036.93, capping the strongest week since April (S&P up 3.58%, Nasdaq up 5.19%). The board was broad, with 57 of 70 names higher and 13 lower, and 20 names finishing at or within 2% of a 30-day high. The trigger was the July jobs report: employers unexpectedly cut 23,000 jobs and May and June were revised down by a combined 103,000, which pushed the odds of a September rate hike down to about 42% from 58%. Two blocks are still older than Friday by design. The macro chips come from FRED, which publishes with a lag, so the 10-year chip reads 4.69% from Aug 6 while the actual 10-year fell about 7 basis points on Friday to roughly 4.60% to 4.65%, and the oil chip reads $81.96 from Aug 3. CPI and core CPI are June data. The COT positioning section has finally refreshed: it is now the Aug 4 report released Friday afternoon, replacing the stale Jul 28 one, and it describes how institutions were positioned going into the jobs number rather than after it.",
+  "close_date": "Aug 7",
+  "macro": {
+    "nextCpi": {
+      "label": "Next CPI print",
+      "value": "Aug 12",
+      "delta": "July data, 8:30am ET, and it is now the single most important number on the calendar. Friday's weak payrolls took the September hike from likely to a coin flip, but Fed Chair Warsh has been explicit that a hot inflation reading would put a hike back on the table. The energy setup helps: crude peaked near $86 Brent in late July and has been drifting lower since, and the FRED chip still reads $81.96 from Aug 3. June already showed real improvement, with headline CPI at 3.5% year over year (down from 4.2%) and core at 2.6% (down from 2.8%). A third consecutive cooling print would effectively end the hike debate. A hot one would reopen it two days after a record close.",
+      "tone": "warn"
     },
-    {
-     "name": "SPY / IVV / SPLG",
-     "note": "Same S&P 500 index. SPY is the most liquid (best for options) but costs 0.09%; IVV and SPLG match VOO on cost. Note SPY carried three distribution days to VOO's one at last night's close, a quirk of how the share classes trade rather than a difference in what you own."
-    },
-    {
-     "name": "SCHD",
-     "note": "The defensive alternative: a dividend-value basket sitting at 85% of its 30-day range, with less AI concentration, more income and a lower expected long-run return. It is the flattest thing on the shelf today at down 0.09%. A complement to VOO rather than a replacement."
+    "nextFomc": {
+      "label": "Next FOMC",
+      "value": "Sep 15-16",
+      "delta": "This meeting also publishes the Summary of Economic Projections and the dot plot, so it carries more information than a normal decision. Friday changed the balance of risk around it: payrolls fell 23,000 in July, May and June were revised down a combined 103,000, and the unemployment rate ticked down to 4.1% from 4.2% (a smaller labour force, not a stronger one). Market-implied odds of a September hike dropped to roughly 42% from 58% the day before. Remember the starting point: the Fed held at 3.50-3.75% on Jul 29 in a 9-to-3 vote, its most divided since 2016, with Hammack, Kashkari and Logan all dissenting in favour of a hike. This is still a committee arguing about tightening, not easing.",
+      "tone": "warn"
     }
-   ],
-   "factors": "Political: broad exposure to every policy at once, so it is the least policy-fragile holding on the board. Environmental and structural: about a third of the index is mega-cap tech tied to the AI and data-center buildout, so it rides that electrification tailwind while carrying its concentration risk. The past two sessions have shown the gentler edge of that trade-off, where a collapse in one corner of technology gets paid for by a rally in another and the index barely notices.",
-   "trade_reasoning": "The quant levels are built from volatility, not opinion, and are computed from last night's close. Entry at the 707.60 close sits about 3.1% above the 50-day, which is what an uptrend is supposed to look like. The stop near 620 is roughly 12% down, wide on purpose so ordinary noise does not knock you out of a core holding, and the take-profit near 904 gives about 2.2 to 1. For a buy-and-hold core the honest use of these numbers is not the stop, it is the reminder that a 12% drawdown here is normal and not a reason to sell. Monte Carlo puts roughly 23% odds of a down year with a median gain near 14%."
   },
-  {
-   "rank": 2,
-   "ticker": "LLY",
-   "name": "Eli Lilly",
-   "type": "Stock / Healthcare",
-   "thesis": "You asked me to flag a good pharma buy when one shows up, and yesterday's earnings report did the work: second-quarter revenue up about 48% to nearly $23 billion, adjusted earnings above $8 a share, and full-year sales guidance raised to $85 billion to $87 billion. Mounjaro revenue rose 91% to $9.94 billion and Zepbound rose 123% to $4.26 billion. The stock rose 4.86% on 2.66 times average volume yesterday, the heaviest genuine accumulation on the entire board, and it is adding another 0.62% this afternoon near 1,177 while the rest of healthcare gives a little back. The competitive picture improved at the same time: Novo Nordisk's CagriSema failed to control blood sugar as well as Lilly's tirzepatide in a head-to-head trial and its Wegovy pill came in short, leaving Lilly with 60.9% of the US obesity and diabetes market against Novo's 38.8%.",
-   "why_now": "Because the business got better and the stock is still not extended. Even after yesterday's jump and today's follow-through, Lilly sat at only 52% of its 30-day range and 1.47% above its 50-day average at last night's close, so you are not buying a vertical chart. The other reason is what today is demonstrating: while memory fell 5.5% as a group and the neoclouds fell 6.7%, Lilly is green. That independence from the AI capex cycle is the entire reason healthcare is on this board.",
-   "risk": "Valuation is still the main one: a rich multiple leaves little room for a trial disappointment or a competitor surprise. Policy is the second: the third Medicare negotiation cycle is live through 2026 and reaches Part B drugs for the first time, covering 15 drugs that account for about $27 billion of Medicare spending, with Lilly's Trulicity on the selected list and negotiated prices effective January 2028. Third, buying immediately after a 4.86% earnings pop means you are paying up relative to anyone who bought last week. Note also that Novo, the direct competitor, bounced 2.54% today from just 3% of its 30-day range and still carries two heavy liquidation events, a reminder of how fast sentiment turns on a single readout in this category.",
-   "sources": [
-    [
-     "Eli Lilly (LLY) earnings Q2 2026",
-     "https://www.cnbc.com/2026/08/05/eli-lilly-lly-earnings-q2-2026.html"
-    ],
-    [
-     "Lilly climbs, Novo falls as obesity drug battle intensifies",
-     "https://www.biopharmadive.com/news/lilly-novo-earnings-2q-2026-wegovy-pill-foundayo-obesity/827027/"
-    ],
-    [
-     "CMS Announces Manufacturer Participation in Third Cycle of Medicare Drug Price Negotiation",
-     "https://www.cms.gov/newsroom/fact-sheets/cms-announces-manufacturer-participation-third-cycle-medicare-drug-price-negotiation"
-    ]
-   ],
-   "grade": {
-    "letter": "A",
-    "note": "Held at A after yesterday's upgrade from A-, and today is quiet confirmation rather than new evidence. The two doubts that held it back were growth and competition, and the quarter addressed both: revenue up 48%, the full-year guide raised to $85 billion to $87 billion, the two GLP-1 franchises up 91% and 123%, and US share widening to 60.9% against Novo's 38.8% after CagriSema lost a head-to-head trial. The stock backed it with the best volume confirmation on the board at 2.66 times average. What still keeps this from being the top pick is price: a premium multiple, a 30.9% ten-year CAGR that is already well understood, and the Medicare negotiation cycle running through 2026 with Trulicity selected."
-   },
-   "bear_case": "Two real threats. Policy: Medicare negotiation now reaches Part B drugs for the first time, Trulicity is on the third-cycle list, and the first round produced negotiated prices 38% to 79% below prior prices, so the eventual margin effect is not trivial even though it lands in 2028. Competition and valuation: you are paying a premium multiple for continued dominance, so any share loss to a Novo comeback, a safety signal, or a manufacturing stumble in the GLP-1 ramp hits hard, and Novo's 2.5% bounce today off a 30-day low is a reminder that the cheap competitor is not dead. The simulation's 5th-percentile one-year outcome is about -21%, worse than VOO's, because a single stock carries single-name risk the ETF diversifies away. The cushions: 60.9% US share, a raised full-year guide, a very high return on equity, and a low beta that softens broad selloffs.",
-   "competitors": [
+  "top_picks": [
     {
-     "name": "NVO (Novo Nordisk)",
-     "note": "The cheaper GLP-1 number two. It is up about 2.5% today on nearly twice average volume, bouncing from just 3% of its 30-day range with two heavy liquidation events behind it. That is a washed-out name finding a bid, not a thesis being repaired: CagriSema still underperformed tirzepatide head to head and the Wegovy pill still missed. A value case that needs a catalyst."
+      "rank": 1,
+      "ticker": "VOO",
+      "name": "Vanguard S&P 500 ETF",
+      "type": "ETF / Core",
+      "thesis": "You like ETFs because you own the whole field without betting the farm on one company, and Friday is the cleanest illustration this monitor has produced. VOO holds the 500 largest US companies for a rock-bottom 0.03% fee. It closed at 710.71, up 0.61%, at a fresh 30-day high and about 3.5% above its 50-day average. The number that matters most is buried in the flow columns: VOO carried just one distribution day in the trailing window. Compare that with three for SPY, six for QQQ, seven for both semiconductor funds and eight for the technology fund. Distribution days count sessions of institutional selling on rising volume, so a reading of one against six or eight says the broad index is simply not the part of this market that institutions have been unloading. Underneath it, the week was violent in both directions again: Oklo rose 14.8%, Coherent 13.4% and Palantir 10.3% while Western Digital fell 3.8% to a 30-day low and SanDisk 3.7%. Owning all 500 turned that spread into a 0.61% gain.",
+      "why_now": "Because the market just repriced the single biggest risk to a long-term holding, and it repriced it in your favour. The September hike went from likely to a coin flip on Friday's jobs data, and the 10-year fell about 7 basis points in response. For an index that is roughly a third mega-cap technology, the rate path is the dominant input. The honest caveat has not changed and is worth repeating precisely because the news was good: at 100% of its 30-day range, this is a fine scheduled purchase and a poor opportunistic one. Nothing here is on sale. The quant work supports holding rather than timing: a 13.5% ten-year compound return, the best risk-adjusted return of the three at plain market risk (Sharpe 0.65), the shallowest historical drawdown at -32.1%, and roughly 23% odds of a down year.",
+      "risk": "A record high with a live September hike is the risk, and concentration is the other. VOO is about a third mega-cap technology, so the AI complex is a far larger share of your outcome than 'the whole market' implies. Friday's record came on thin volume (VOO traded at 0.85 times its average, the S&P fund at 0.88x and the semiconductor funds near half their normal volume), and rallies that thin are easier to give back than ones bought with conviction. The specific trigger to watch is the Aug 12 CPI print: a hot number puts the September hike back on and this index gives ground quickly. The other watch item is credit rather than equity, where the cost of insuring AI-infrastructure debt has been rising all summer.",
+      "sources": [
+        [
+          "Stock market today: Dow, S&P 500, Nasdaq rise after July jobs report surprises to the downside",
+          "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-7-nasdaq-dow-sp-500-july-jobs-report-surprises-100009572.html"
+        ],
+        [
+          "Treasury yields drop after surprise jobs loss in July",
+          "https://www.cnbc.com/2026/08/07/treasury-yields-steady-ahead-of-key-nonfarm-payrolls-jobless-data.html"
+        ]
+      ],
+      "grade": {
+        "letter": "A",
+        "note": "Held at A, and Friday strengthened rather than merely maintained the case. One distribution day is the cleanest flow reading anywhere on this board, and it was earned during a week when the semiconductor funds accumulated seven each. The index absorbed a 3.8% drop in Western Digital to a 30-day low and turned in a record close. Best Sharpe of the three picks at plain market risk (0.65), lowest historical drawdown (-32.1%), a 13.5% ten-year compound return, and roughly 23% odds of a down year. The standing caveat keeps it from being anything other than a schedule holding: 100% of its 30-day range is the worst entry point in a month, so keep buying on a calendar rather than in one lump."
+      },
+      "bear_case": "The bear case is that you are buying the AI capital-spending cycle at its peak without realising it, because the index label hides the concentration. Roughly $725 billion of hyperscaler capital spending in 2026 is holding up a large share of index earnings, that figure is up about 77% year over year, and a growing portion of it is debt financed rather than funded from cash flow. If capital spending plans are trimmed even modestly, the earnings estimates underneath a third of this index move with them. Add a hot CPI print forcing a September hike and you have both the numerator and the denominator working against you at a record high.",
+      "competitors": [
+        {
+          "name": "VTI",
+          "note": "The near-identical sibling: total US market at the same 0.03% fee, adding mid and small caps for a little more diversification. It rose 0.71% on Friday to a 30-day high and carries two distribution days to VOO's one. A coin-flip alternative."
+        },
+        {
+          "name": "SPY / IVV / SPLG",
+          "note": "The same S&P 500 index. SPY is the most liquid (best if you ever use options) but costs 0.09%, while IVV and SPLG match VOO on cost. SPY carried three distribution days to VOO's one on Friday, which is a quirk of how the share classes trade rather than a difference in what you own."
+        },
+        {
+          "name": "SCHD",
+          "note": "The defensive alternative: a dividend-value basket with far less technology concentration, more income and a lower expected long-run return. It was the best 30-day performer among the core funds at up 5.08% and closed at a 30-day high. A complement to VOO rather than a replacement."
+        }
+      ],
+      "factors": "Quality and breadth. This is the only holding on the shortlist where you are not making a sector bet, and the flow data says institutions agree: one distribution day, zero heavy liquidation events, and no heavy liquidation events across any of the 21 funds on the ETF shelf. The 30-day range position of 100% is the one factor arguing for patience.",
+      "trade_reasoning": "Treat the levels below as a discipline for sizing, not a trading plan. The reference entry is Friday's 710.71 close, which is a poor opportunistic price and a perfectly ordinary scheduled one. The volatility-based stop near 620.56 is roughly 12.7% lower, which is useful mainly as a reminder of how much ordinary noise this fund produces in a normal year rather than as an instruction to sell. Monte Carlo puts one-year odds of a loss at about 23% with a median gain near 14%, which is the honest shape of buying a broad index at a high: usually fine, occasionally uncomfortable, rarely permanent."
     },
     {
-     "name": "ABBV (AbbVie)",
-     "note": "The value-plus-income alternative: cheaper, a dividend raised for 50-plus straight years, and a lower beta. It is down about 1.4% today and sits at just 12% of its 30-day range, so unlike Lilly it has not participated in the healthcare bid at all. The better pure-income play."
+      "rank": 2,
+      "ticker": "LLY",
+      "name": "Eli Lilly",
+      "type": "Stock / Healthcare",
+      "thesis": "The reason this sits at number two is that it is the one holding on the shortlist whose fortunes have almost nothing to do with AI capital spending. Lilly closed at 1,185.71 on Friday, down 0.52% on a day when 57 of 70 names rose, which tells you exactly what it is: the ballast. The business case rests on the two GLP-1 franchises, which grew 91% and 123% in the most recent quarter and drove revenue up 48%, with full-year guidance raised to $85 billion to $87 billion. US market share widened to 60.9% against Novo Nordisk's 38.8% after Novo's CagriSema lost a head-to-head trial. The quant history is the strongest of the three: a 31.1% ten-year compound return, a Sharpe of 0.94, and the best reward-to-risk setup on the shortlist at 3.71.",
+      "why_now": "Because it is the least crowded thing you can own right now, and because sitting out a speculative Friday is a feature rather than a fault. While quantum names rose 12%, space names 10% and Palantir 10%, Lilly finished slightly lower at 67% of its 30-day range and only 2.4% above its 50-day average. That is a considerably better entry than the broad index at 100% of its range. The near-term calendar is the reason to pay attention now: public comments on the CMS Medicare drug price negotiation rule close on Aug 17, and the rule is expected to be finalised in the autumn. Policy headlines around that date are the most likely source of a better price.",
+      "risk": "Price and policy, in that order. This is a premium multiple on a franchise everybody has already identified, so the 31.1% historical compound return is thoroughly understood and unlikely to repeat from here. The policy risk is concrete rather than theoretical: Medicare negotiation is in its third cycle, negotiated prices for the first ten Part D drugs took effect on Jan 1, 2026 at discounts of 38% to 79%, another 15 drugs have been selected with prices effective in 2028, and Lilly's Trulicity was among those selected. The CMS proposed rule specifically targets high-expenditure biologics and fixed-combination products. Competition is the third risk, though it eased this quarter.",
+      "sources": [
+        [
+          "CMS Issues First Proposed Rule for IRA Medicare Drug Price Negotiation",
+          "https://www.hklaw.com/en/insights/publications/2026/06/cms-issues-first-proposed-rule-for-ira-medicare-drug-price-negotiation"
+        ],
+        [
+          "Key Facts About Medicare Drug Price Negotiation",
+          "https://www.kff.org/medicare/faqs-about-the-inflation-reduction-acts-medicare-drug-price-negotiation-program/"
+        ]
+      ],
+      "grade": {
+        "letter": "A",
+        "note": "Held at A. Friday added no new information, which for this holding is the point: it closed down 0.52% while the speculative end of the board rose 8% to 15%, and that non-participation is precisely the diversification you are paying for. The flow reading is unremarkable in a good way, at 67% of its 30-day range, 2.4% above its 50-day and four distribution days. What keeps it from displacing VOO at the top is not the business, which is excellent, but the combination of a premium multiple and a live regulatory process with a firm date on it. Comments close Aug 17."
+      },
+      "bear_case": "The bear case is that the GLP-1 franchise is priced as though it compounds at this rate indefinitely, and two things could break that. First, price rather than volume: Medicare negotiation, expanding international reimbursement scrutiny and eventual biosimilar entry all push realised price per patient down even as prescriptions rise. Second, the competitive respite may be temporary; Novo losing one head-to-head trial does not remove a well-capitalised competitor, and an oral GLP-1 from any credible entrant would reset expectations quickly. At this multiple, merely good growth is not enough.",
+      "competitors": [
+        {
+          "name": "Novo Nordisk (NVO)",
+          "note": "The direct competitor and the contrarian option. It rose 2.81% on Friday but sits at just 41% of its 30-day range with a heavy liquidation flag in the trailing window, so it is genuinely washed out in a way Lilly is not. You would be buying the loser of the CagriSema head-to-head trial at a discount."
+        },
+        {
+          "name": "AbbVie (ABBV) / Merck (MRK)",
+          "note": "The lower-multiple, higher-yield alternatives if the GLP-1 valuation is the sticking point. AbbVie closed at just 11% of its 30-day range, among the cheapest readings on the whole board, though it sits 2.03% above its 50-day so the trend is intact."
+        },
+        {
+          "name": "XLV",
+          "note": "The diversified way to own the sector without adjudicating which drug wins. It closed at 82% of its 30-day range, 4.96% above its 50-day with four distribution days, and it materially reduces the single-name policy risk that the Aug 17 CMS comment deadline creates."
+        }
+      ],
+      "factors": "Quality and growth at a full price. The strongest fundamentals on the shortlist and the best reward-to-risk ratio in the quant work (3.71), offset by the fullest valuation. The flow factors are neutral, which is exactly what you want in the position meant to behave differently from everything else you own.",
+      "trade_reasoning": "The reference entry is Friday's 1,185.71 close. The volatility-based stop near 992.03 is about 16.3% lower, which is a fair description of how much this stock moves on a single trial result or policy headline, and the take-profit near 1,903.91 produces the best reward-to-risk on the shortlist at 3.71. Monte Carlo puts one-year odds of a loss at about 18.8%, the lowest of the three, with a median gain near 31.2%. The practical approach is to scale in rather than buy at once, and to treat the Aug 17 comment deadline as a likely source of a cheaper print rather than a reason to avoid the name."
     },
     {
-     "name": "XLV / MRK / JNJ",
-     "note": "XLV is the hands-off basket (owns all of them at 0.09%) and is down about 0.44% today after rising 1.27% on heavy volume yesterday. Merck is cheap but faces the 2028 Keytruda patent cliff; JNJ is the diversified sleep-well name with less upside. UnitedHealth is the weak spot at down about 2% and only 18% of its 30-day range."
+      "rank": 3,
+      "ticker": "SMH",
+      "name": "VanEck Semiconductor ETF",
+      "type": "ETF / AI hardware",
+      "thesis": "This is the diversified way to own the AI hardware layer without picking which chip company wins. It closed at 582.70 on Friday, up 1.96%, and the case for owning the basket rather than the parts has now been demonstrated three sessions running from three different directions: it lost only 1.04% while AMD fell 7%, gained about 1% while Western Digital fell 11%, and on Friday rose 1.96% while Western Digital fell another 3.8% to a 30-day low. The fund is doing exactly what a basket is supposed to do. The underlying demand is not in question: roughly $725 billion of hyperscaler capital spending in 2026, up about 77% year over year, with Microsoft disclosing an $80 billion Azure order backlog it cannot fill because of power constraints.",
+      "why_now": "Because the technical damage is repairing rather than deepening, which is the change since the last briefing. Two readings moved in the right direction: distribution days fell from nine to seven, and the gap to the 50-day average narrowed from 4.4% below to 2.06% below. The fund now sits at 73% of its 30-day range, so it is neither washed out nor extended. That combination, a group that is still below trend while the index sets records, is where a scheduled buyer gets a better price than the headline suggests. The quant history is the strongest of the three on raw return: a 33.3% ten-year compound return and the best Sharpe at 1.01.",
+      "risk": "The group is still priced for very good news, and three consecutive earnings reactions have proved it. AMD beat and fell 7%, then SanDisk and Western Digital both beat and were sold hard, with SanDisk's guidance midpoint landing below consensus. When good results get sold, the bar is the problem, not the business. SMH remains below its 50-day average, which means the trend is improving but not repaired, and Friday's advance came on 0.52 times average volume, roughly half normal participation. The peer fund SOXX is worse still at 0.48x and 4.1% below its 50-day. Light-volume rallies in a group that has been distributed for weeks deserve scepticism.",
+      "sources": [
+        [
+          "Big Tech AI spending plans reach $725 billion",
+          "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion"
+        ],
+        [
+          "Western Digital Sinks 16%, SanDisk Falls 11%, Micron Drops 6% as Memory Selloff Hits Storage Stocks",
+          "https://247wallst.com/investing/2026/08/06/western-digital-sinks-16-sandisk-falls-11-micron-drops-6-as-memory-selloff-hits-storage-stocks/"
+        ]
+      ],
+      "grade": {
+        "letter": "B",
+        "note": "Upgraded from B- to B, on measured improvement rather than on Friday's price. Two of the three things holding the grade down have moved: distribution days fell from nine to seven, and the distance below the 50-day average narrowed from 4.4% to 2.06%. The fund also absorbed a third consecutive single-name blow-up without breaking, which is the basket earning its fee. What still caps it at B rather than B+ is that it remains below its 50-day, seven distribution days is still the joint-highest cluster on the board alongside SOXX, and Friday's gain came on roughly half of normal volume. Keep scaling in on weakness rather than chasing strength."
+      },
+      "bear_case": "The bear case is a memory-led inventory correction that spreads. SanDisk was up 469% and Western Digital 202% year to date before their reports, and both were sold on guidance despite beating, which is the classic signature of a cycle where the good news is already in the price. If NAND and DRAM pricing rolls over, the earnings that justify the whole group's multiple roll with it. The second leg of the bear case is financing: about a third of the $725 billion of hyperscaler capital spending is now debt funded, and the credit market has started charging more for it. Demand does not have to fall for the trade to unwind, only the cost of funding it has to rise.",
+      "competitors": [
+        {
+          "name": "SOXX",
+          "note": "The direct iShares alternative and currently the weaker of the two: 67% of its 30-day range against SMH's 73%, 4.1% below its 50-day against 2.06%, and thinner volume at 0.48 times average. Same idea, slightly worse readings on every flow measure."
+        },
+        {
+          "name": "VGT",
+          "note": "The broader technology fund, which dilutes the memory cycle risk that is currently doing the damage. It closed at a 30-day high, up 1.55%, but carries eight distribution days, the highest count on the entire ETF shelf, so institutions have been selling it steadily."
+        },
+        {
+          "name": "ARTY / SEMI",
+          "note": "The AI-thematic alternatives, both with cleaner flow readings at three distribution days each. ARTY closed at 96% of its 30-day range and SEMI at 94%. Useful if you want the theme with less concentration in the pure semiconductor cycle."
+        }
+      ],
+      "factors": "Momentum and cyclical growth, currently in a repair phase. The fundamental driver is hyperscaler capital spending, which is still rising sharply. The flow factors are the constraint: seven distribution days, still below the 50-day average, and half-normal volume on the up days. Improving, not yet healthy.",
+      "trade_reasoning": "The reference entry is Friday's 582.70 close, which sits in the middle of the 30-day range and below the 50-day average, so it is a more reasonable opportunistic price than the broad index. The volatility-based stop near 437.96 is about 24.8% lower, which is an honest reflection of how much this fund can fall in a cycle turn (its worst historical drawdown was -44.5%). Take-profit near 950.33 gives a 2.54 reward-to-risk. Monte Carlo puts one-year odds of a loss at 17.1%, the lowest of the three, with a median gain near 33.8%, but note the fifth-percentile outcome of -18.3% is the fat tail you are accepting. Scale in on weakness."
     }
-   ],
-   "factors": "Political: drug-pricing policy is the standing risk, with the third Medicare negotiation cycle live and Trulicity selected, though negotiated prices do not bite until 2028. Environmental and structural: an aging, higher-weight population is a decade-long demand tailwind for obesity and diabetes drugs that runs independent of the economic cycle, the AI-capex cycle and the oil price. That independence is the entire reason healthcare is on this board, and it is paying again today while memory and the neoclouds are being liquidated.",
-   "trade_reasoning": "Entry at last night's 1,169.86 close sits just 1.47% above the 50-day and at the middle of the 30-day range, which is a reasonable place to add even straight after an earnings pop. The stop near 988 and the take-profit near 1,876 produce the best risk-reward on the board at about 3.9 to 1. The Monte Carlo puts roughly 19% odds of a loss over one year and a median gain near 31%, with a worst modelled case near a 21% drawdown at the 5th percentile, so size it expecting a bad year to look like that, not like a wipeout."
-  },
-  {
-   "rank": 3,
-   "ticker": "SMH",
-   "name": "VanEck Semiconductor ETF",
-   "type": "ETF / AI Infrastructure",
-   "thesis": "You like ETFs because you own the whole field without betting the farm on one company, and semiconductors are the beating heart of your AI-infrastructure thesis. SMH holds the 25 biggest chip names (Nvidia, TSMC, Broadcom, AMD, ASML, Micron and the rest) in one 0.35% fund, so you own the layer without guessing which chip wins the next socket. Today is the mirror image of yesterday and makes the same point: memory is being destroyed (Western Digital down about 11%, SanDisk down about 5%) yet the fund is up about 1.0%, because AMD is rebounding 2.0%, TSMC is up 1.4%, Broadcom 1.3% and ASML 2.1%. At last night's close it sat at 61% of its 30-day range and about 4.4% below its 50-day average. The demand side is unchanged: the four largest hyperscalers have guided 2026 capital spending to roughly $725 billion between them, up about 77% from last year.",
-   "why_now": "Because the price is still below trend while the order book keeps growing, and because the group is showing the first sign of internal repair: the names that were crushed yesterday (AMD down 7.04%, Astera Labs down 11.96%) are the ones bidding today, up 2.0% and 4.9%. The honest caveat is that this remains the most damaged corner of the board on a distribution-day basis, with nine on the fund and eleven on SanDisk as of last night, so 'below trend' here reflects real institutional selling earlier in the cycle, not just a quiet drift.",
-   "risk": "Memory is the live wound and it reopened today. SanDisk and Western Digital both beat on the quarter and both were sold hard on guidance: SanDisk guided first-quarter fiscal 2027 revenue to about $10.55 billion at the midpoint against roughly $10.8 billion expected, and Western Digital fell about 11% despite revenue up 44% and GAAP net income up more than twelvefold. That is the same lesson AMD delivered yesterday, now applied to the strongest part of the chip thesis: when a group is priced for excellence, in-line is a disappointment. SanDisk still sits 20.66% below its 50-day with eleven distribution days, and Micron carries seven.",
-   "sources": [
-    [
-     "Western Digital Sinks 16%, SanDisk Falls 11%, Micron Drops 6% as Memory Selloff Hits Storage Stocks",
-     "https://247wallst.com/investing/2026/08/06/western-digital-sinks-16-sandisk-falls-11-micron-drops-6-as-memory-selloff-hits-storage-stocks/"
-    ],
-    [
-     "Google, Microsoft, Meta, and Amazon capex spending to hit $725 billion in 2026, up 77%",
-     "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion"
-    ]
-   ],
-   "grade": {
-    "letter": "B-",
-    "note": "Held at B-. The fund's behaviour across two opposite sessions is genuinely reassuring: yesterday it lost only 1.04% while AMD fell 7% and Astera Labs fell 12%, and today it is up about 1% while Western Digital falls 11%. That is the basket earning its fee. But three things keep the grade where it is. Distribution days were still nine at last night's close, the highest cluster on the board alongside SOXX at eight. It is 4.4% below its 50-day, so the trend is not repaired. And two consecutive sessions of good results being sold (AMD, then SanDisk and Western Digital) say the whole group is priced for very good news, which raises the cost of any disappointment. The best prices remain behind us. Keep scaling in on weakness rather than chasing."
-   },
-   "bear_case": "The AI-capex cycle could be over-building just as efficiency gains reduce how much hardware each workload needs, and the financing channel is the newer threat. Credit-default-swap costs on AI-infrastructure borrowers have surged, hyperscaler debt has reached roughly $700 billion with debt funding about 32% of capex, and bond coverage ratios have collapsed from nearly five times in February to below two by July. If the buildout gets harder to finance, orders slow regardless of demand. Add the efficiency thread (compression research that shrinks the memory footprint of large models), custom silicon challenging Nvidia, China building its own supply chain, and a Fed flirting with a hike. It is concentrated and high-beta, so a market-wide risk-off takes it down harder than the index, and past cycles saw about -45% peak-to-trough. The simulation's 5th-percentile one-year outcome is about -18%. The offset: committed capex is still rising toward $725 billion, and nobody has cut.",
-   "competitors": [
-    {
-     "name": "SOXX",
-     "note": "The near-identical rival (30 chip names, 0.35% fee). It is up about 1.1% today against SMH's 1.0%, having fallen harder yesterday, and sits 6.5% below its 50-day with eight distribution days. SMH is more concentrated in NVDA and TSM. A coin-flip alternative with a slightly wider spread."
-    },
-    {
-     "name": "VGT / QQQM",
-     "note": "Own semis inside a broader tech basket for lower single-sector risk and less volatility, at the cost of diluted exposure to the chip theme. Both are roughly flat to slightly lower today while SMH is up, which is the trade-off in miniature. Both also carry heavy distribution counts of their own (VGT eight, QQQM seven)."
-    },
-    {
-     "name": "NVDA",
-     "note": "The single-name way to concentrate. It is down about 0.2% today from the very top of its 30-day range and 6.5% above its 50-day, so it is giving nothing back while the fund rallies on other names. That is the case for the basket in one line: you would have needed to own AMD today and Nvidia yesterday, in that order, to beat it."
-    }
-   ],
-   "factors": "Political: export controls on advanced chips to China cut both ways, and the draft rule barring Chinese optical transceiver modules from US data centers shows Washington is actively reshaping this supply chain. Environmental and structural: semiconductors sit at the top of the AI buildout and customer capex guides are still rising, which is why the demand case survives a soft tape. The near-term swing factor is the rate path, because this is the longest-duration equity exposure on the board, and today's move back up in oil and the 10-year is the unhelpful version of that.",
-   "trade_reasoning": "Entry at last night's 569.70 close is 4.4% below the 50-day, so you are still buying below trend. The stop near 436 is a wide 23%, which tells you the truth about this holding: it is a high-volatility position with a 44.5% maximum historical drawdown, and it needs to be sized so a 20%-plus move against you is survivable. Take-profit near 927 gives about 2.7 to 1. The Monte Carlo still shows the lowest one-year loss odds of the three at about 17% with a median gain near 33%, which is the statistical case for owning the volatility rather than avoiding it."
-  }
- ],
- "top_picks_note": "Not a buy list, a research shortlist. The three names are unchanged and so are the grades: one diversified core (VOO), one quality healthcare compounder outside the AI theme (LLY), and one diversified way to own the AI hardware layer (SMH). Two sessions in a row have now made the same argument for owning baskets rather than single names, from opposite directions: yesterday chips collapsed and healthcare paid for it, today memory and the neoclouds collapsed and chips and photonics paid for it. In both cases the diversified holdings barely moved. Established nuclear infrastructure remains the strongest candidate for a future slot and is showing the first tentative signs of a bid, with Talen up 3.1% from just 16% of its 30-day range and Vistra up slightly, though Dominion, PSEG and Entergy are still pinned at the very bottom of their ranges. It is not being added yet because the downtrend is still active and one green afternoon is not a turn. Nothing here is a recommendation to buy today, and note that today's prices are mid-session rather than closing prints.",
- "insights": [
-  {
-   "tag": "LIQUIDATION",
-   "layer": "Flow",
-   "title": "Two names are being genuinely liquidated today, and the rest of the board is barely participating",
-   "body": "Read this section with the timing caveat in mind: the volume ratios, distribution-day counts and heavy-liquidation flags below are computed from completed daily bars, so they describe last night's close, not this afternoon. What today's price action shows is that the selling is extremely concentrated. Western Digital is down about 11% and Nebius about 10%, and those two plus SanDisk (down about 4.9%), D-Wave (down about 7.3%), Centrus (down about 4.7%) and Dell (down about 4%) account for almost all the damage. Everything else is close to flat: 37 of 70 names lower and 31 higher, with the Dow giving back part of yesterday's record while the Nasdaq is nearly unchanged. As of last night's close the flow picture was the most constructive it has been in weeks: zero heavy liquidation events across all 21 ETFs on the shelf, and only seven of 70 individual names carrying one at all (Novo Nordisk with two, plus AMD, Astera Labs, Vistra, Southern, Apple and Meta). Volume was thin on the way down, with SMH at 0.47 times average, QQQ at 0.77x and SPY at 0.90x. What has not healed is accumulated distribution, which measures weeks of institutional selling rather than one session: SanDisk 11 days, TSMC 9, Cameco 9, Intel 8, Vistra 8, Oracle 8, and at fund level SMH 9, SOXX 8 and VGT 8 against just one for VOO.",
-   "matters": "The useful distinction for a long-term investor is between a market being sold and two stocks being sold, and today is firmly the second. Concentrated, news-driven liquidation in specific names (a guidance miss at Western Digital, a credit scare at Nebius) is a very different signal from broad institutional distribution, and it is the kind of selling that creates opportunity in the names that get dragged down alongside the culprits without sharing their problem. Micron is the example worth watching: it is down only 0.4% while its storage peers collapse. The practical takeaway is unchanged from yesterday: this is a fine day to make a scheduled purchase and a poor day to make a large opportunistic one in the broad index, because the index is not on sale. If you want to be opportunistic, the discount today is in memory and it comes with eleven distribution days attached, which means patience rather than a single lump.",
-   "sources": [
-    [
-     "US Storage Stocks Fall as SanDisk, Western Digital Guidance Disappoints",
-     "https://www.tradingkey.com/analysis/stocks/us-stocks/262082159-us-stock-sndk-wdc-skhy-mu-ai-tradingkey"
-    ],
-    [
-     "Nebius Drops 10%, CoreWeave Sinks 9% as Rising Credit-Swap Costs Hit the AI Cloud Trade",
-     "https://finance.yahoo.com/markets/stocks/articles/nebius-drops-10-coreweave-sinks-164301885.html"
-    ]
-   ]
-  },
-  {
-   "tag": "MEMORY",
-   "layer": "Fundamentals",
-   "title": "SanDisk and Western Digital both beat and both got sold, which is the AMD lesson repeated on the strongest link in the chain",
-   "body": "SanDisk reported fiscal fourth-quarter revenue up 372% year over year to $8.96 billion with adjusted earnings of $39.25 a share, beating on both. Western Digital reported revenue of $3.75 billion, up 44%, with GAAP net income of $3.20 billion against $243 million a year earlier and adjusted net income up 130%. Both stocks are being hammered anyway: Western Digital down about 11% and SanDisk down about 4.9% this afternoon, having been down as much as 16% and 11% earlier. The problem is guidance, not results. SanDisk guided first-quarter fiscal 2027 revenue to $10.3 billion to $10.8 billion, a midpoint near $10.55 billion against roughly $10.8 billion expected, with EPS around $45 also short of estimates. The selling spread to Asia, where SK Hynix fell more than 8% and Samsung nearly 6%. Micron is the notable holdout, down only 0.39%. The memory and storage group is down 5.46% on the day, the second-worst on either sheet behind the neoclouds. Underneath, the fundamental case is intact: DRAM contract prices are set to rise 50% to 55% this quarter, HBM is effectively sold out for 2026 with Micron's capacity committed through 2027, and Samsung, SK Hynix and Micron control over 95% of global DRAM.",
-   "matters": "This is the same lesson AMD taught yesterday, and it is now the defining feature of this market: a great quarter and a great stock outcome are different things when expectations have already run. Revenue up 372% was not enough, because the guide was not enough. For a long-term investor the important question is whether the reaction changes the thesis, and it does not: nothing in either report says AI memory demand is weakening, only that the market had priced a steeper ramp than the companies would promise. The practical response is the one that has worked all week: own this layer inside a broad chip basket like SMH or SOXX, which hold Micron, SanDisk and Western Digital alongside Nvidia and Broadcom, so a single guidance miss costs you 1% rather than 11%. SK Hynix, the HBM leader, trades only in Seoul, so a basket is the only route most US investors have to it anyway.",
-   "sources": [
-    [
-     "SanDisk, Western Digital Guidance Miss Triggers Rout Across Asia-Pacific Memory Stocks",
-     "https://finance.biggo.com/news/e3d4368c-71ee-4c85-ad71-703be189fc7e"
-    ],
-    [
-     "Western Digital Sinks 16%, SanDisk Falls 11%, Micron Drops 6% as Memory Selloff Hits Storage Stocks",
-     "https://247wallst.com/investing/2026/08/06/western-digital-sinks-16-sandisk-falls-11-micron-drops-6-as-memory-selloff-hits-storage-stocks/"
-    ]
-   ]
-  },
-  {
-   "tag": "AI CREDIT",
-   "layer": "Macro",
-   "title": "The AI buildout is now being tested in the credit market, and the neoclouds are where it shows first",
-   "body": "Nebius is down about 9.8% and CoreWeave about 3.6% today, the worst group on the board at -6.72%, and the trigger is not earnings. The cost of insuring AI-infrastructure borrowers against default has surged: CoreWeave's five-year credit-default swap topped roughly 855 basis points this week, which on a standard pricing model implies something near a 50% five-year default probability. The company is junk-rated, has had negative free cash flow since 2022, and reported interest expense doubling to $536 million with free cash flow of negative $4.71 billion in the first quarter. This is the sharp end of a broader shift. Hyperscaler debt as a share of capital spending rose from 9% in fiscal 2024 to about 32% in the year to June 2026, taking aggregate debt to roughly $700 billion, with global AI-related debt issuance projected near $570 billion for 2026. Demand is thinning: coverage ratios on hyperscaler bond deals fell from nearly five times in February to below two times by July, Oracle's five-year CDS is at a multi-year high, and an estimated $800 billion of data-center financing now sits in private credit and off-balance-sheet structures. Oracle, notably, is 10.96% below its 50-day with eight distribution days despite sitting near the top of its 30-day range.",
-   "matters": "This is the most important structural development on the page and it deserves more attention than the daily price moves. For two years the AI buildout was funded out of hyperscaler cash flow, which made it close to unstoppable. It is now increasingly funded with borrowed money, which makes it sensitive to interest rates and credit appetite in a way it simply was not before. That has two consequences for a long-term investor. First, it links your AI-infrastructure holdings to the Fed far more tightly than the equity story suggests, which is part of why a September hike matters more this year than last. Second, it creates a genuine hierarchy of safety within the theme: the hyperscalers with real cash flow and the picks-and-shovels suppliers with backlogs are on much firmer ground than the leveraged pure-plays whose entire model is borrowing to buy chips. The neoclouds are the canary here, and today the canary is coughing. Size them accordingly, and treat widening credit spreads as the early-warning indicator to watch rather than the stock prices themselves.",
-   "sources": [
-    [
-     "Nebius Drops 10%, CoreWeave Sinks 9% as Rising Credit-Swap Costs Hit the AI Cloud Trade",
-     "https://finance.yahoo.com/markets/stocks/articles/nebius-drops-10-coreweave-sinks-164301885.html"
-    ],
-    [
-     "Hyperscalers Tap External Financing as AI Capex Outruns Cash Flow",
-     "https://insight.factset.com/hyperscalers-tap-external-financing-as-ai-capex-outruns-cash-flow"
-    ],
-    [
-     "Bond market anxiety is growing over AI capex budgets",
-     "https://www.cnbc.com/2026/07/24/bond-market-anxiety-ai-capex-spending.html"
-    ]
-   ]
-  },
-  {
-   "tag": "FED & RATES",
-   "layer": "Macro",
-   "title": "Oil turned back up and took yields with it, but the labour data quietly gave the Fed room",
-   "body": "Yesterday's energy relief partly reversed. Brent gained about 2.2% to $81.22 and WTI about 1.9% to $76.63 after Iran published a restrictive draft plan for the Strait of Hormuz and reports circulated of attacks on Saudi tankers in the Red Sea and Gulf of Aden. Iran and Oman have reportedly agreed coordinates for a shipping route, but Iranian officials describe it as active for two to four months and conditional on 'certain third parties' not interfering, which is well short of a reopening. Yields followed crude higher, with the 10-year near 4.67% and the 30-year at 5.21%. The labour data cut the other way and was genuinely benign: initial jobless claims rose just 1,000 to 199,000 for the week ended Aug 1, and Challenger reported July layoff announcements fell 27% to 33,429, the lowest monthly total since July 2024 and down 46% year over year. The Fed held at 3.50-3.75% on Jul 29 in a 9-to-3 vote, its most divided since 2016. On the macro strip, FRED's lag means the oil chip reads $81.96 from Aug 3, the 10-year 4.63% from Aug 4 and the 2-year 4.20%, leaving the 10Y-2Y curve positively sloped by about 0.43. The VIX reads 15.81, a calm number. June CPI was 3.5% year over year (down from 4.2%) and core 2.6% (down from 2.8%), with unemployment 4.2%.",
-   "matters": "Rates are the single biggest input to what your holdings are worth, because the 10-year is the yardstick every other asset is priced against, and today is a reminder that the Hormuz story is a negotiation rather than a resolution. Two sessions of oil relief just gave a chunk back on a draft document and a tanker report, and the same thing can happen again in either direction before Aug 12. The labour data is the underappreciated piece: a stable jobs market with layoffs at a two-year low means the Fed can concentrate on inflation without worrying it is breaking something, which is a mildly hawkish setup even though the numbers themselves are good news. The practical response is unchanged: add on a schedule rather than making one large bet before the CPI print, and take comfort that a 10-year near 4.67% still pays you to be patient with cash you have not deployed.",
-   "sources": [
-    [
-     "Oil prices jump after Iran publishes restrictive draft plan for Strait of Hormuz",
-     "https://www.cnbc.com/2026/08/06/oil-price-iran-war-strait-hormuz-oman-deal.html"
-    ],
-    [
-     "US weekly jobless claims edge up; planned layoffs decline in July",
-     "https://finance.yahoo.com/news/us-weekly-jobless-claims-edge-125055810.html"
-    ],
-    [
-     "Iran says new Strait of Hormuz shipping route agreed with Oman",
-     "https://gulfnews.com/world/mena/iran-oman-report-positive-progress-on-strait-of-hormuz-shipping-framework-as-us-tehran-talks-advance-1.500630949"
-    ]
-   ]
-  },
-  {
-   "tag": "PHOTONICS",
-   "layer": "Sector",
-   "title": "Photonics is the best group on the board again, and the policy trade keeps round-tripping",
-   "body": "Photonics and optical interconnect is up 3.06%, the strongest of the fifteen groups on either sheet, with Fabrinet up 4.22%, Lumentum 3.90%, Credo 3.63% and Coherent 3.09%. Coherent is at 100% of its 30-day range and Fabrinet at 92%. This is the third distinct move in this group inside a week: the names surged 6% to 21% on Aug 4 when reports emerged that the administration plans to bar next-generation Chinese optical transceiver modules from US data centers, gave part of it back yesterday when the group fell 2.18%, and are surging again today. Nothing in the underlying rule has changed across any of those sessions, and the FCC-led drafting is still in progress with officials aiming to finalise within the year. The structural case underneath the policy noise is more durable: AI splits one job across thousands of chips that must talk at the speed of light, so optics content rises with every hardware generation as 800G gives way to 1.6T. Applied Optoelectronics is up 216% year to date and Lumentum 112%. The fiber and cabling names are quieter, with Corning up 0.69% but 13.14% below its 50-day and Ciena down 0.28%.",
-   "matters": "A 20% move up, a 2% move down and a 3% move up inside four sessions, with no change in the underlying rule, is about as clean a demonstration as you will get that policy-driven moves reprice probability rather than business value. Nothing has been enacted, and trade rules of this kind are frequently softened or delayed. The discipline for a long-term investor is to let policy adjust your sizing but never form your thesis. Prefer businesses that would work without the rule and get helped by it (Coherent, Fabrinet, Corning all sell into the AI buildout regardless of what happens to Chinese modules) over ones whose case depends on it. And treat a 20% policy jump as a prompt to review a position rather than to establish one, because you are buying the headline at its most expensive moment. Corning is the interesting name here precisely because it has not participated: it sits 13% below its 50-day while the transceiver names rip.",
-   "sources": [
-    [
-     "Applied Optoelectronics Rockets 17%, Coherent Climbs 11%, Lumentum Gains 6% on Reported U.S. Ban of Chinese Optics",
-     "https://247wallst.com/investing/2026/08/04/applied-optoelectronics-rockets-17-coherent-climbs-11-lumentum-gains-6-on-reported-u-s-ban-of-chinese-optics/"
-    ],
-    [
-     "Optical Communication Stocks Rally as Trump Administration Plans to Ban Chinese Modules",
-     "https://www.tradingkey.com/analysis/stocks/us-stocks/262073542-us-stock-aaoi-cohr-coherent-lumentum-lite-glw-trump-tradingkey"
-    ]
-   ]
-  },
-  {
-   "tag": "SPACE",
-   "layer": "Sector",
-   "title": "The SpaceX lockup everyone feared arrived today and nothing happened, which is worth remembering",
-   "body": "Space and defense is the second-best group on the board at +2.74%, with Intuitive Machines up 5.65%, Rocket Lab 2.11% and AST SpaceMobile 0.47%. The reason is what did not happen. SpaceX's post-IPO lockup expired today, freeing 911.5 million insider shares, about 43% more than the 638.9 million floated in the June IPO, and lifting the freely tradable portion of the company from 4.9% to 11.8% of shares outstanding. That supply increase was the identifiable mechanical cause of weeks of weakness across the whole sector, and yesterday's briefing flagged it as the reason the space names were falling. In the event, SpaceX traded higher on the day rather than lower. The structure helps explain why: rather than a single 180-day cliff, SpaceX staggered the release across nine tranches, with a second block of 319 million shares due Aug 12 and more through year-end. The company also reported revenue of $7.81 billion, beating estimates by about 14.6%, with AI segment revenue up 247% to $2.56 billion and Starlink subscribers doubling to 12 million. The trend damage is still there: Intuitive Machines remains 35.72% below its 50-day, Rocket Lab 19.76% below and the UFO basket 7.2% below.",
-   "matters": "There is a specific and repeatable lesson here for a long-term investor. A scheduled, well-telegraphed supply event is usually priced in before it arrives, because everyone who intended to sell ahead of it has already sold. The fear of the lockup did far more damage to these stocks over the past several weeks than the lockup itself did today. That is not an argument to buy anticipation, it is an argument not to sell into a date everyone already has on their calendar. The caution that has not changed is position sizing: these are venture-style holdings where a single scheduled event moves the whole group more than any operational result, and Intuitive Machines being 36% below its 50-day is what that looks like in practice. Note also that the next tranche lands Aug 12, the same day as CPI, so the reprieve may not be the end of it. If you want the theme without single-name risk, UFO is the basket.",
-   "sources": [
-    [
-     "SpaceX Climbs 3% as Lockup Expiration Fails to Trigger a Selloff; AST SpaceMobile and Rocket Lab Rise 5%",
-     "https://247wallst.com/investing/2026/08/06/spacex-climbs-3-as-lockup-expiration-fails-to-trigger-a-selloff-ast-spacemobile-and-rocket-lab-rise-5/"
-    ],
-    [
-     "SpaceX insider lockup expires, freeing $101 billion in stock",
-     "https://qz.com/spacex-insider-lockup-expiration-stock-shares-080626"
-    ]
-   ]
-  },
-  {
-   "tag": "POWER & NUCLEAR",
-   "layer": "Sector",
-   "title": "The first tentative bid in the beaten-down power names, though the regulated utilities are still pinned at their lows",
-   "body": "Nuclear infrastructure and power majors is down just 0.15% on the day, and the internal split is finally showing a crack of light. Talen is up 3.13% from just 16% of its 30-day range and 12.01% below its 50-day, and Vistra is up 0.55% despite sitting at 0% of its range with eight distribution days. Constellation and BWX Technologies are marginally higher. The regulated names are still where the damage is: Dominion is down 2.59%, Entergy 1.00%, Southern 0.90% and PSEG 0.25%, and Dominion, PSEG and Entergy all remain at the very bottom of their 30-day ranges with Southern at 4%. With yields backing up again today toward 4.67% on the 10-year and 5.21% on the 30-year, that is not surprising: these are bond proxies and they trade against the long end. Uranium is mixed after yesterday's strength, with the URA basket at 99% of its 30-day range and Cameco flat, while Centrus is down 4.74% from 96% of its range. The contracted demand underneath the equities is unchanged: Microsoft, Google, Amazon and Meta have signed nuclear agreements totalling close to 10 gigawatts during 2026, Constellation's 20-year Meta deal supplies 1.1 gigawatts from Clinton starting 2027, and Talen expanded its Amazon agreement to as much as 1.9 gigawatts through at least 2042.",
-   "matters": "The distinction that matters here is between a business whose stock falls because of the discount rate and one whose customers are leaving, and this is firmly the first. These companies hold twenty-year contracts with the best-capitalised buyers on earth, and the reason they keep falling is that the 10-year has climbed from roughly 4.49% a month ago to the mid-4s, which mechanically pressures anything owned for its dividend. That makes this the group with the most room to recover if September comes off the table, and it is currently the cheapest part of Sheet 1 on a distance-from-trend basis. Today's bid in the merchant operators (Talen, Vistra) while the regulated names keep falling is consistent with that reading, since the merchants sell power at market prices and are less purely rate-driven. For a long-term investor this remains an accumulate-patiently situation rather than a buy-in-one-lump one: the downtrend is weeks old and one green afternoon in two names is not a turn. NLR is the utility-heavy nuclear basket, URA the purer uranium-miner version.",
-   "sources": [
-    [
-     "Constellation, Vistra and PSEG could be next to ink nuclear-data center supply deals",
-     "https://www.utilitydive.com/news/constellation-vistra-pseg-nuclear-data-center/719206/"
-    ],
-    [
-     "Investing in Energy Stocks for Data Center & Nuclear Power Demand | 2026 Outlook",
-     "https://www.indexbox.io/blog/energy-stocks-for-data-center-nuclear-demand-vistra-and-constellation-in-focus/"
-    ]
-   ]
-  }
- ],
- "smart_money": {
-  "intro": "Where the large, well-informed pools of money are actually positioned, read from the three sources a private investor can legitimately see: weekly CFTC futures positioning, published reports of Goldman Sachs prime-brokerage flow (the desk data itself is proprietary, so this is press reporting rather than a primary feed), and disclosed policy and corporate spending. It is a timing signal, not a guarantee, and institutions are wrong regularly. Treat it as context for when to add to a position you already believe in, never as the reason to own it.",
-  "items": [
-   {
-    "tag": "PRIME BROKERAGE",
-    "title": "Positioning is back near records, and about 16% of the prime book is tied to AI memory, the exact thing being sold today",
-    "body": "Reported Goldman Sachs prime-brokerage data describes a full round trip completed over roughly eight weeks. Through mid-July, hedge funds sold US technology at a record pace, acting as net sellers in six of eight weeks, with mega-cap tech exposure falling to its lowest point of the year and semiconductors leading the outflows. Since then the money has come back: net long exposure to global information technology posted its biggest increase in more than five years, hedge fund portfolios now hold their largest technology positions relative to the MSCI World index in over five years, and positioning sits near the highest levels since the bank began tracking these trades in 2016. One disclosure is especially relevant today: as of June 30, roughly 16% of Goldman's prime-brokerage exposure was directly tied to AI memory-related names, the precise group being liquidated this afternoon after the SanDisk and Western Digital guides. The leverage picture is the other half. Gross leverage across the prime book rose for a third consecutive year to a record at the end of 2025, and net leverage now sits near three-year highs, with US long-short net leverage reported at 55.3%, in the top 11% of readings over the past year. Magnificent 7 names account for roughly 19% of total US net exposure, up from about 11% in early April. A Goldman survey of more than 810 allocators and managers found AI exposure had become central to portfolio construction rather than a one-off trade.",
-    "matters": "Positioning explains a great deal of what this board does. An emptied book is why a chip rally could run on half the usual volume two weeks ago; a rebuilt book is why a single guidance miss can take 11% off Western Digital and drag SK Hynix and Samsung down with it overnight. The 16% AI-memory concentration figure is the one to hold onto, because it tells you that today's memory selloff is not just a reaction to a guide, it is a crowded position being trimmed. When leverage is near records and the crowd is concentrated in the same names, the market becomes more sensitive to any shock, because leveraged holders sell because they must rather than because they choose to. That is not a forecast of a decline, and crowded positioning can stay crowded for a long time. It argues for two habits: buy in tranches so a fast drawdown is an opportunity rather than a problem, and resist adding to whatever the crowd is most concentrated in.",
-    "sources": [
-     [
-      "2026 Hedge Fund Industry Outlook: Generation Alpha",
-      "https://marquee.gs.com/welcome/news/views-from-the-trading-floor/2026-hedge-fund-industry-outlook-generation-alpha"
-     ],
-     [
-      "Hedge funds boost tech bets to record highs on AI optimism: Goldman Sachs",
-      "https://ca.finance.yahoo.com/news/hedge-funds-boost-tech-bets-090610762.html"
-     ],
-     [
-      "How Hedge Funds Are Trading Semiconductor Stocks",
-      "https://www.goldmansachs.com/insights/articles/how-hedge-funds-are-trading-semiconductor-stocks"
-     ]
-    ]
-   },
-   {
-    "tag": "CFTC COT",
-    "title": "The last stale reading before tomorrow's refresh: still the Jul 28 report, with the new data due Aug 7",
-    "body": "The CFTC publishes Traders in Financial Futures weekly on a Friday, so today's figures are identical to the past several sessions and still describe the week ended Jul 28. The refresh lands tomorrow, Aug 7, and will be the first read that includes this week's rally, yesterday's rotation and today's memory selloff. As of Jul 28: in S&P 500 e-mini futures, asset managers were heavily net long at 944,770 contracts (47.6% of open interest), adding 15,611 on the week, while leveraged funds stayed net short 297,476 but bought back 25,389 contracts of that short. In the Nasdaq-100, leveraged funds cut their net short by 16,392 contracts to 58,298 while asset managers added 4,134. The 10-year Treasury note remains the most polarised contract on the list: asset managers net long 2,611,964 contracts (49.2% of open interest) and leveraged funds net short 2,155,739 (-40.6%), with the leveraged side adding a further 90,934 contracts to that short during the week, a direct bet that yields go higher. In VIX futures, leveraged funds increased their net short by 15,387 contracts, a bet that volatility stays low.",
-    "matters": "Two things follow. The first is a caution about staleness: this data was collected ten days ago, before the Hormuz headlines, before the Aug 4 rally, before yesterday's rotation and before today's memory rout, so treat it as where the fast money was rather than where it is. The second is the standing read, which has not changed: cover the equity shorts, stay short bonds, sell volatility. That combination has been profitable so far, with the VIX near 15.8 and yields elevated, and today's back-up in the 10-year toward 4.67% vindicated the bond leg again. It is also crowded and fragile, because all three legs lose money at once if the Aug 12 CPI print moves rates sharply. Watch tomorrow's release specifically for whether the leveraged 10-year short got any smaller, because a cover there would be the clearest sign the hike trade is being unwound.",
-    "sources": [
-     [
-      "CFTC Commitments of Traders, Traders in Financial Futures",
-      "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm"
-     ]
-    ]
-   },
-   {
-    "tag": "CONGRESS & POLICY",
-    "title": "The optical-module ban keeps repricing the same stocks in both directions, and Medicare comments close Aug 17",
-    "body": "The proposed US restriction on Chinese-made optical transceiver modules is in drafting, with the FCC leading preparation of rules that would bar new Chinese optical modules from US data centers on national-security grounds, citing risks of data theft, malware and service disruption, and officials aiming to finalise and enforce within the year. Reporting has emphasised that the exposure runs both ways: the US depends on Chinese optical manufacturing capacity that cannot be replaced quickly, and contract manufacturers such as Fabrinet, Sanmina and Jabil would need heavy capacity investment plus confidence the rules will not reverse. The equity reaction has been a three-act round trip with no change in the rule itself: the optics names rose 6% to 21% on Aug 4, fell 2.18% as a group yesterday, and are up 3.06% today as the best group on the board. On healthcare, the third Medicare drug price negotiation cycle is live, covering 15 drugs payable under Part B and/or Part D (the first cycle ever to reach Part B) that account for about $27 billion, or 6%, of combined Part B and Part D spending. All 15 manufacturers confirmed participation in March, comments close Aug 17, and any negotiated prices take effect January 1, 2028. The standing government positions are unchanged: Washington holds equity in Intel, MP Materials and Lithium Americas and is the anchor customer for Centrus, BWX Technologies, Rocket Lab and Palantir.",
-    "matters": "The optics round trip is the cleanest evidence available that policy-driven moves are repricings of probability rather than of business value, and it has now repeated three times in four sessions. Nothing has been enacted. The discipline is to let policy adjust your sizing but never form your thesis: prefer businesses that would work without the rule and get helped by it (Coherent, Fabrinet, Corning) over ones whose case depends on it, and treat a policy jump as a prompt to review a position rather than to buy one at a 20% premium. On the Medicare side, the useful framing for a long-term holder is that the timeline is long and public: prices agreed in 2026 do not bite until 2028, which is plenty of time for a company like Lilly to grow past the affected products. Policy risk you can read on a calendar is far easier to own than policy risk that arrives by surprise.",
-    "sources": [
-     [
-      "US Drafts Ban on Chinese Optical Modules, Exposing Mutual Supply Chain Risks",
-      "https://www.caixinglobal.com/2026-08-05/us-drafts-ban-on-chinese-optical-modules-exposing-mutual-supply-chain-risks-102471268.html"
-     ],
-     [
-      "CMS Announces 15 Drugs for Third Cycle of Medicare Drug Price Negotiation Program",
-      "https://www.pharmacytimes.com/view/cms-announces-15-drugs-for-third-cycle-of-medicare-drug-price-negotiation-program"
-     ],
-     [
-      "Key Facts About Medicare Drug Price Negotiation",
-      "https://www.kff.org/medicare/key-facts-about-medicare-drug-price-negotiation/"
-     ]
-    ]
-   },
-   {
-    "tag": "HYPERSCALER CAPEX",
-    "title": "About $725 billion of committed spending is still the floor, but a third of it is now borrowed",
-    "body": "The four largest buyers of AI infrastructure have guided 2026 capital spending to roughly $725 billion between them, up about 77% from last year's record $410 billion, with roughly three-quarters of the total, near $450 billion, aimed specifically at AI infrastructure. On the same tally, Amazon is near $200 billion, Alphabet $175 billion to $185 billion, Meta $125 billion to $145 billion and Microsoft $110 billion to $120 billion. Meta raised its range most recently, and the stated reason is worth reading closely: higher component pricing and additional data-center costs, not additional capacity, which is the memory shortage appearing in a customer's cost line. The newer development is how it is being paid for. Aggregate hyperscaler capex has risen from $95 billion in fiscal 2020 to roughly $490 billion in the year to May 2026, and debt as a share of that capex has risen from 9% in fiscal 2024 to about 32%, taking aggregate debt near $700 billion. Amazon placed a $25 billion bond that was 2.5 times oversubscribed, Oracle plans to raise about $20 billion in fiscal 2027, and an estimated $800 billion of data-center financing sits in private credit and off-balance-sheet structures. Investor patience is visibly thinner than the spending: Alphabet fell 4.03% yesterday and is down another 1.20% today on 1.49 times average volume.",
-    "matters": "For a long-term holder this remains the most concrete number on the page, because it is committed spending rather than a forecast, and it converts directly into revenue for the chip, memory, server, optics, electrical and power names on Sheet 1. Nobody has cut, and Meta just raised. But the financing mix changes how you should read it. When capex was funded from operating cash flow, the only thing that could stop it was a decision to stop. Now that roughly a third is borrowed, the bond market gets a vote, and coverage ratios falling from five times to below two since February suggests that vote is getting less enthusiastic. The theme still does not break when a supplier misses a quarter, and it did not break when AMD fell 7% on a record quarter or when Western Digital fell 11% today. It breaks when a buyer cuts the budget, and the most likely trigger for that is now credit rather than demand. Watch hyperscaler bond issuance and CDS levels alongside the capex guides.",
-    "sources": [
-     [
-      "Google, Microsoft, Meta, and Amazon capex spending to hit $725 billion in 2026, up 77%",
-      "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion"
-     ],
-     [
-      "Hyperscalers Tap External Financing as AI Capex Outruns Cash Flow",
-      "https://insight.factset.com/hyperscalers-tap-external-financing-as-ai-capex-outruns-cash-flow"
-     ],
-     [
-      "Financing the AI infrastructure boom: on- and off-balance sheet borrowing",
-      "https://www.bis.org/publ/qtrpdf/r_qt2603u.htm"
-     ]
-    ]
-   }
-  ]
- },
- "primer": {
-  "intro": "A large AI data center is a machine built in physical layers, and money flows into it from the top (the customers who order it) down through every supplier who makes a piece. Here is where the dollars land, and why the least glamorous layers can be the safest way to invest.",
-  "sections": [
-   {
-    "h": "Start at the top: the customers",
-    "p": "The hyperscalers (Microsoft, Alphabet, Amazon, Meta, Oracle) announce the giant spending budgets, now roughly $725B in 2026, that everyone else competes to capture. Owning them is the most diversified way to own the theme, because their core businesses (ads, cloud, software) fund the AI bet and keep earning even if AI spending pauses. Two cautions: the market now scrutinizes the return on that capex, and roughly a third of it is now funded with debt rather than cash flow, which hands the bond market a vote it did not previously have. Meta's latest raise was attributed to higher component prices rather than more capacity, which is a cost increase dressed as an investment increase."
-   },
-   {
-    "h": "Layer 1: Silicon, the brains",
-    "p": "Nvidia (NVDA) designs the GPUs that do the AI math; AMD (AMD) is the challenger; Broadcom (AVGO) builds the custom chips hyperscalers increasingly design in-house, a trend now challenging Nvidia's near-monopoly. None own factories: TSMC (TSM) prints the chips using machines only ASML (ASML) makes, and every GPU needs memory from Micron (MU). Highest growth, highest risk, and the layer that falls first on any overcapacity or competition scare. It is also now the layer priced for perfection: AMD grew data-center revenue 107% and the stock still fell 7%."
-   },
-   {
-    "h": "Layer 1b: Memory, the new bottleneck",
-    "p": "Memory deserves its own line. Samsung, SK Hynix and Micron control over 95% of global DRAM and have shifted a large majority of combined output to high-bandwidth memory for AI accelerators. That has sent AI memory pricing sharply higher and left consumer-grade memory scarce, which is a margin tailwind for MU, SNDK and WDC and a cost shock for every device maker. It makes this the most cyclical layer of the buildout, and the most crowded: about 16% of Goldman's prime-brokerage exposure was tied to AI memory names as of June 30, which is why guidance misses here move the whole group violently. The live fundamental question is efficiency: compression techniques that shrink the memory footprint of AI models could either soften the shortage or, by making inference cheaper, spread AI workloads widely enough to increase memory demand overall. SK Hynix is Seoul-listed, so US investors reach it mainly through the baskets."
-   },
-   {
-    "h": "Layer 2: The box and the room",
-    "p": "The chips get assembled into servers by Super Micro (SMCI) and Dell (DELL). A rack of AI chips runs blazing hot, so it needs advanced cooling and power distribution from Vertiv (VRT), and fast switches from Arista (ANET) to connect racks together. This is the guts of the room, and these are project businesses whose revenue lands unevenly quarter to quarter, which is why single-day moves of 5% or more are routine here in both directions."
-   },
-   {
-    "h": "Layer 3: Moving the data",
-    "p": "AI splits one job across thousands of chips, so they must talk at the speed of light over fiber. Transceivers and lasers come from Coherent (COHR) and Lumentum (LITE), contract manufacturing from Fabrinet (FN), long-haul interconnect from Ciena (CIEN), and the actual glass fiber from Corning (GLW). Optics content rises with every hardware generation as 800G gives way to 1.6T. This layer is now also a policy battleground, with a draft US rule targeting Chinese-made optical modules that has sent the group up 21%, down 2% and up 3% in four sessions without the rule itself changing at all."
-   },
-   {
-    "h": "Layer 4: The electrical bones",
-    "p": "The least glamorous and often most attractive layer: switchgear from Eaton (ETN) and Hubbell (HUBB), the steel and PVC conduit that carries every wire from Atkore (ATKR), jobsite supply from WESCO (WCC), transmission and substation build from Quanta (PWR), and the raw steel from Nucor (NUE). Physical, hard-to-substitute, multi-year backlogs. Four of these six names are sitting at or near the very top of their 30-day ranges, which is what sustained accumulation looks like."
-   },
-   {
-    "h": "Layer 5: The power",
-    "p": "A data center is useless without electricity, and AI has made power the true bottleneck. Existing-reactor operators signing long deals are Constellation (CEG), Vistra (VST) and Talen (TLN); the regulated fleet owners are Dominion (D), Southern (SO), PSEG (PEG) and Entergy (ETR); fuel comes from Cameco (CCJ) and Centrus (LEU); reactor and SMR technology from BWX (BWXT), Oklo (OKLO) and NuScale (SMR); and near-term gas-turbine and grid power from GE Vernova (GEV). Because the regulated names are effectively bond proxies, this layer trades against the 10-year yield as much as against the AI story, which is why it has been the weakest part of Sheet 1 while yields climbed."
-   },
-   {
-    "h": "Chips versus picks-and-shovels",
-    "p": "Follow a dollar of capex: it lands most heavily on the chip layer, which captures the most dollars but carries the most risk (a rival can win a socket, custom silicon can erode the moat, and an overcapacity or return-on-investment scare hits it first). The power, conduit, cooling and fiber layers are lower-binary: whatever chip and model win, the building still needs steel, copper, transformers and megawatts. A newer distinction sits alongside that one: how the buyer is financed. Suppliers paid by hyperscalers with real cash flow are on firmer ground than pure-plays that borrow to buy chips, which is why the neoclouds trade on credit spreads rather than on demand."
-   }
-  ]
- },
- "macro_strategy": {
-  "regime_label": "A rotating market where the selling keeps moving groups, and the AI trade is starting to be judged on credit rather than demand",
-  "regime_detail": "The quant model reads the market as an uptrend at normal volatility, and the index level supports that: 37 of 70 names are lower and 31 higher, with the broad ETFs moving less than 0.2% while individual names swing 10%. What has changed this week is that the damage keeps relocating. Yesterday chips and photonics were sold and healthcare and industrials bought; today memory and the neoclouds are being sold and photonics, space and chips bought. Three forces define the regime. First, energy relief partly reversed: Brent gained about 2.2% back toward $81 and WTI 1.9% toward $76.60 after Iran published a restrictive draft Hormuz plan and tankers were reportedly attacked in the Red Sea and Gulf of Aden, taking the 10-year back to about 4.67% and the 30-year to 5.21%. Second, the labour market is quietly cooperative, with claims at 199,000 and July layoff announcements at 33,429, the lowest since July 2024, which gives the Fed room to focus on inflation. Third, and most important structurally, the AI buildout is now being tested in the credit market rather than the demand market: CoreWeave's five-year CDS topped roughly 855 basis points, hyperscaler debt has reached about $700 billion at roughly 32% of capex, and bond coverage ratios have fallen from nearly five times in February to below two by July. Underlying inflation continues to improve (June CPI 3.5% from 4.2%, core 2.6% from 2.8%, unemployment 4.2%, VIX 15.8), so this remains a positioning-and-financing market layered on genuine disinflation, not a growth scare.",
-  "drivers": [
-   {
-    "driver": "Interest rates",
-    "reading": "Hawkish hold, with the relief rally in yields partly given back. Fed funds 3.50-3.75%, held on a 9-to-3 vote with Hammack, Kashkari and Logan dissenting for a hike. The 10-year backed up to about 4.67% today and the 30-year to 5.21% as oil rose, undoing part of yesterday's move toward 4.6%. The macro chip reads 4.63% from Aug 4 and the 2-year 4.20%, leaving the 10Y-2Y curve positively sloped by about 0.43. CFTC data through Jul 28 shows leveraged funds added 90,934 contracts to an already enormous 10-year short, and today's move went their way.",
-    "playbook": "Do not assume the next move is a cut, because three Fed presidents just voted against that assumption. A flat-to-higher path keeps pressure on anything valued on distant profits, which is why quantum, space, the neoclouds and pre-revenue nuclear stay sized as venture bets. The rate trade is expressed most directly on this board by the regulated utilities in section 08, which are bond proxies pinned at 30-day lows: the group that benefits most if the hike comes off the table, and the one that keeps bleeding if it does not. A 10-year near 4.67% also means cash still pays you to be patient, so there is no penalty for adding in tranches rather than lumps."
-   },
-   {
-    "driver": "Inflation and energy",
-    "reading": "Improving on the data, wobbling on the input. June CPI 3.5% year over year (down from 4.2%) and core 2.6% (down from 2.8%). But crude reversed higher today, with Brent up about 2.2% to $81.22 and WTI up 1.9% to $76.63, after Iran published a restrictive draft plan for the Strait of Hormuz and reports emerged of attacks on Saudi tankers in the Red Sea and Gulf of Aden. Iran and Oman have reportedly agreed route coordinates, but the arrangement would run only two to four months and is conditional on third parties not interfering, which is far short of a reopening. Aug 12 is the print that decides September.",
-    "playbook": "Do not press risk into the Aug 12 print in either direction. This week has now delivered two sessions of oil relief and one of oil reversal on nothing but shifting headlines about the same unsigned arrangement, which is a good reason to distrust any single day's read. Own some pricing power and real assets as the hedge: market-priced power operators (CEG, VST, TLN), healthcare that passes costs through (LLY, XLV), and broad exposure via VOO or VTI. Keep some cash available for the print itself rather than deploying everything before it."
-   },
-   {
-    "driver": "Growth and demand",
-    "reading": "Still strong where it counts, with the caveat that beating is no longer sufficient. SanDisk grew revenue 372% year over year and Western Digital 44% with GAAP net income up more than twelvefold, and both stocks were sold hard on guidance that came in short of aggressive forecasts. AMD's data-center revenue rose 107% yesterday to $6.7 billion and the stock fell 7%. Hyperscaler capital spending is guided to roughly $725 billion for 2026, up 77%, with about $450 billion AI-specific. Memory contract prices are set to rise 50% to 55% this quarter and HBM is sold out for 2026. Unemployment 4.2%, claims 199,000, July layoffs at a two-year low.",
-    "playbook": "This is the leg of the thesis that is working, so let it work rather than trading around it, but internalise the specific lesson this week has taught three times: demand growth of 100% to 370% was not enough to lift stocks that had already run. The response is not to abandon the theme but to own it through baskets where valuation and guidance risk are spread (SMH is up 1% today while Western Digital falls 11%, and it lost only 1% yesterday while AMD fell 7%), and to size the AI hardware sleeve so a 30% to 45% drawdown is survivable, because that is what its history says it does."
-   },
-   {
-    "driver": "Positioning and financing",
-    "reading": "The dominant driver, and the financing half is newly important. Hedge funds cut US tech at a record pace into mid-July and have since posted their biggest increase in net technology exposure in more than five years, with positioning near the highest since 2016 and the largest tech overweight versus MSCI World in over five years. Gross leverage is at a record and net leverage near three-year highs, with US long-short net leverage at 55.3%, in the top 11% of the past year. Roughly 16% of Goldman's prime-brokerage exposure was tied to AI memory names as of June 30, which is exactly the group being liquidated today. On the corporate side, hyperscaler debt is near $700 billion at about 32% of capex, CoreWeave's CDS topped roughly 855 basis points, and bond coverage ratios fell from nearly five times in February to below two in July.",
-    "playbook": "Use flow as a timing input only, but treat credit as a genuine early-warning system rather than noise. A rebuilt, highly leveraged book concentrated in the same names means the market is more sensitive to any shock, because leveraged holders sell because they must. Practically: slow purchases in whatever the crowd is most concentrated in (mega-cap AI and now AI memory), keep position sizes where a fast 10% move does not force you to act, and prefer suppliers paid by cash-rich buyers over pure-plays that borrow to buy chips. The Aug 7 COT release is the next checkpoint, specifically whether the record leveraged short in the 10-year got any smaller."
-   },
-   {
-    "driver": "Policy",
-    "reading": "Still a first-order driver, and increasingly a source of noise rather than information. The draft FCC-led ban on Chinese optical transceiver modules is in rule drafting, and the optics names have now moved up 21%, down 2.18% and up 3.06% across four sessions without a single change to the rule. Medicare drug price negotiation is in its third cycle, covering 15 drugs worth about $27 billion or 6% of Part B and Part D spending, reaching Part B for the first time, with comments closing Aug 17 and prices effective January 2028. Government equity stakes and anchor-customer relationships continue to underwrite Intel, MP Materials, Lithium Americas, Centrus, BWX Technologies, Rocket Lab and Palantir.",
-    "playbook": "Let policy adjust your sizing, never form your thesis. Three opposite moves in the same group in four sessions, with no change in the underlying rule, is as clean a demonstration as exists that these are probability repricings rather than value changes. Prefer businesses that would work without the rule and get helped by it (Coherent, Fabrinet, Corning) over ones that only work because of it. Note that Corning is the one optics name that has not participated, sitting 13% below its 50-day, which is where policy-driven enthusiasm has left something behind. Keep the GOV-badged names a slice rather than a concentration, since the same administration that created the floor can remove it."
-   }
   ],
-  "positioning": "The stance is unchanged, and the consistency is deliberate: a week in which the Dow set a record on Wednesday and gave part of it back on Thursday is noise against a ten-year plan. Keep the diversified core (VOO or VTI) as the largest position and keep adding on schedule. Two consecutive sessions have made that case from opposite directions, absorbing a 7% drop in AMD one day and an 11% drop in Western Digital the next while barely moving. The one genuinely new item to carry forward is the credit channel: the AI buildout is now roughly a third debt-financed, CDS costs on AI borrowers are climbing, and the neoclouds are trading on financing risk rather than demand. That does not change the thesis, but it does change the hierarchy within it, favouring cash-rich hyperscalers and backlog-rich picks-and-shovels suppliers over leveraged pure-plays. The most interesting value on the board remains established nuclear infrastructure, where Dominion, PSEG and Entergy are still pinned at the very bottom of their 30-day ranges while twenty-year hyperscaler contracts sit underneath them, and where the weakness is best explained by the 10-year yield rather than by anything operational. Today's bid in Talen and Vistra is the first crack of light, not a turn: accumulate patiently rather than in one lump. Keep the healthcare sleeve (LLY, XLV) as the part of the portfolio least connected to hyperscaler spending, the oil price and the September decision. Keep Sheet 2 sized as venture bets, and note the useful lesson from today's SpaceX lockup, which arrived, freed 911.5 million shares, and did not produce the selloff everyone had spent weeks fearing. Hold some cash for the Aug 12 CPI print rather than deploying it all before.",
-  "scenarios": [
-   {
-    "trigger": "If the Hormuz arrangement firms up and the Aug 12 CPI print lands soft",
-    "response": "The September hike gets priced out, the 10-year eases from the mid-4s, and the rotation reverses in favour of exactly what has been sold. The groups with the most room are the ones furthest below their 50-day averages: the regulated utilities and merchant power names in section 08, memory (SanDisk is 20.66% below its 50-day), chip equipment (KLA is 12.97% below, Lam 9.13%) and the space names. The mistake to avoid is waiting for the confirmation and buying only after the move."
-   },
-   {
-    "trigger": "If the Hormuz talks collapse and oil goes back toward $90",
-    "response": "Hike odds jump, the 10-year pushes toward 4.75% or higher, and this time the market meets that shock with a rebuilt, highly leveraged book rather than the empty one it had two weeks ago. Expect the sharpest damage in the mega-cap AI complex where positioning is most crowded, in AI memory where the prime book is 16% concentrated, and in the rate-sensitive utilities already at their lows. Healthcare, dividend value (SCHD) and the diversified core are what hold up. This is the scenario that rewards having added on a schedule rather than in one lump."
-   },
-   {
-    "trigger": "If AI credit spreads keep widening",
-    "response": "This is the newly live scenario and the one to watch most closely. The leveraged pure-plays go first: the neoclouds (NBIS, CRWV) are already trading on CDS levels rather than earnings, and Oracle, the most debt-funded of the big buyers, is 10.96% below its 50-day with eight distribution days despite sitting near its 30-day high. If financing costs keep rising, capex plans get trimmed not because demand fell but because the money got expensive, and that reaches the suppliers with a lag. The defence is the hierarchy: cash-generative hyperscalers, then backlog-heavy electrical and power names, then chips, then leveraged pure-plays last. Watch hyperscaler bond coverage ratios and Oracle's CDS as the tell."
-   },
-   {
-    "trigger": "If a hyperscaler cuts its capital-spending guidance",
-    "response": "This is still the one that actually matters, and it has not happened. Roughly $725 billion of committed 2026 spending is the floor under every supplier on Sheet 1, and Meta raised its range most recently. The theme does not break when a supplier misses, and it did not break when AMD fell 7% on a record quarter or when Western Digital fell 11% today on a 44% revenue increase. It breaks when a buyer cuts the budget. The likeliest trigger is now credit rather than demand, so watch bond issuance and margin commentary together. If it comes, reduce single-name AI hardware exposure first and let the diversified core and healthcare carry the portfolio."
-   }
-  ]
- },
- "watchlist_notes": "Two sheets, same columns. Sheet 1 is the established, large-dollar side across ten sections: semis and fab, chip equipment, memory and storage, servers and cooling, fiber optics and cabling, photonics and optical interconnect, electrical and steel, nuclear infrastructure and power majors, big tech, and healthcare. Sheet 2 is the smaller-dollar speculative side (nuclear developers and fuel, quantum, space and defense, government-backed materials and small AI infra, neoclouds). Read the Bull Score first: it is six checks on whether the long-term case holds, and hovering it shows which checks passed. Timing caveat for today: prices are mid-session quotes from about 1:49pm ET on Aug 6, not closing prints, and every positioning column (30-day range, vs 50-day, distribution days, heavy events, volume ratio) is computed from completed daily bars and therefore describes the Aug 5 close. What the board looks like this afternoon: 37 of 70 names lower and 31 higher, with six of fifteen groups higher. Photonics leads at +3.06% (Fabrinet +4.22%, Lumentum +3.90%, Credo +3.63%, Coherent +3.09%), followed by space and defense at +2.74% on Intuitive Machines +5.65% as the SpaceX lockup passed without incident, then semis and fab at +0.74% and chip equipment at +0.66%. The laggards are the AI neoclouds at -6.72% (Nebius -9.81% on credit-swap fears), memory and storage at -5.46% (Western Digital -11.05%, SanDisk -4.94% on soft guidance, though Micron is nearly flat at -0.39%), quantum at -2.15% and nuclear developers at -1.45% (Centrus -4.74%). From last night's close, thirteen names sat at 95% or more of their 30-day range: Nvidia, Broadcom, Arista, Coherent, Eaton, Atkore, Hubbell, Nucor, WESCO, Oracle, Centrus, Dell and Microsoft. Only six sat at 10% or less, and five of those are power companies (Vistra, Dominion, PSEG and Entergy all at 0%, Southern at 4%), with Novo Nordisk the sixth at 3%, though Novo is bouncing 2.54% today. Accumulated distribution has not healed: SanDisk 11 days, TSMC 9, Cameco 9, Intel 8, Vistra 8, Oracle 8, and at fund level SMH 9, SOXX 8 and VGT 8 against just one for VOO. The CFTC COT data refreshes tomorrow, Aug 7, for the first time since Jul 28."
+  "top_picks_note": "Not a buy list, a research shortlist. The three names are unchanged: one diversified core (VOO), one quality healthcare compounder outside the AI theme (LLY), and one diversified way to own the AI hardware layer (SMH). One grade moved: SMH goes from B- to B, because distribution days fell from nine to seven and the gap to its 50-day average narrowed from 4.4% to 2.06%, which is a trend repairing rather than a price rising. VOO and LLY hold at A. The pattern that keeps repeating is worth naming: three sessions in a row, a single-name blow-up (AMD down 7%, then Western Digital down 11%, then Western Digital down another 3.8% to a 30-day low) did essentially nothing to the baskets holding them. That is the whole argument for this shortlist, and the market keeps making it for us. The one uncomfortable fact to sit with: after a record close, the broad index is at 100% of its 30-day range, which is the worst entry in a month. Keep buying on a schedule.",
+  "insights": [
+    {
+      "tag": "LIQUIDATION",
+      "layer": "Flow",
+      "title": "A record close with eight names being actively liquidated underneath it, and half of them are power companies",
+      "body": "This is the first briefing in a while where the flow data and the price data describe the same session, so read them together. On the surface Friday was clean: the S&P set a record, 57 of 70 names rose, 20 finished at or near a 30-day high, and there were zero heavy liquidation events across all 21 funds on the ETF shelf. Underneath, eight individual names carried a heavy liquidation flag, and where they cluster is the story. Four of the eight are in one section, nuclear infrastructure and power majors: Vistra, Southern, Dominion and Constellation. Vistra closed at the very bottom of its 30-day range with eight distribution days and volume 1.66 times average, and Southern also finished at a 30-day low on 1.44x volume. The other four are AMD, Western Digital (a 30-day low, 22.6% below its 50-day, 1.48x volume), Astera Labs and Novo Nordisk. The second thing to notice is how thin the rally itself was. On a record-setting day the semiconductor funds traded at roughly half their normal volume (SMH 0.52x, SOXX 0.48x), the technology fund at 0.71x, the Nasdaq fund at 0.75x and the S&P funds at 0.85x to 0.88x. Accumulated distribution has improved but has not cleared: SanDisk still leads the board at 11 days, followed by Intel, Vistra and MP Materials at eight, with VGT at eight and both semiconductor funds at seven, against just one for VOO.",
+      "matters": "A record close bought on half of normal volume is a weaker signal than the headline suggests, and the useful information for a long-term investor is not in the index level at all, it is in where the selling is concentrated. Right now that is power and memory, and those are very different situations. Memory is a cycle question (does NAND pricing hold), while the power majors are being sold as a proxy for AI capital-spending doubt even though electricity demand is a slower and more regulated business than the trade implies. The practical takeaway: keep the scheduled purchase in the broad index, since one distribution day at VOO says institutions are not selling it. If you want to be opportunistic, the discount is in the regulated power names, where Vistra, Southern, Entergy, PSEG and Dominion all sit at or near the bottom of their 30-day ranges. Buy those in pieces rather than at once, because eight distribution days at Vistra means the selling is not necessarily finished.",
+      "sources": [
+        [
+          "How major US stock indexes fared Friday 8/7/2026",
+          "https://www.washingtonpost.com/business/2026/08/07/stocks-dow-jones-iran-oil-fed-interest-rates/1f4daa84-929d-11f1-9fdc-0a725c989a7b_story.html"
+        ],
+        [
+          "Vistra slides as AI-power names weaken and no fresh company catalyst emerges",
+          "https://www.quiverquant.com/news/Vistra+slides+as+AI-power+names+weaken+and+no+fresh+company+catalyst+emerges"
+        ]
+      ]
+    },
+    {
+      "tag": "JOBS & FED",
+      "layer": "Macro",
+      "title": "The economy lost jobs in July, and that is why the market had its best week since April",
+      "body": "July payrolls fell by 23,000 against expectations of a gain, and the previous two months were revised down by a combined 103,000, which is the larger number of the two. The unemployment rate ticked down to 4.1% from 4.2%, but that reflects a smaller labour force rather than more hiring. Bonds moved first: the 10-year yield fell about 7 basis points to roughly 4.60% before settling near 4.65%, and the odds of a September rate hike dropped to about 42% from 58% the day before. Equities followed, and the S&P closed at a record 7,757.64 to finish its strongest week since April, up 3.58%, with the Nasdaq up 5.19%. Note the direction of the debate, because it is unusual: this Fed is arguing about whether to raise rates, not cut them. It held at 3.50-3.75% on Jul 29 in a 9-to-3 vote, its most divided since 2016, with three governors dissenting in favour of a hike, and Chair Warsh has said he would be prepared to hike in September if inflation runs hot. The macro chips on this page come from FRED and lag, so the 10-year chip still reads 4.69% from Aug 6 and the oil chip $81.96 from Aug 3.",
+      "matters": "The market is now trading a genuine two-sided macro setup, and Aug 12 resolves a large part of it. Weak employment argues against a hike; the inflation print argues either way. For a long-term investor the important point is that a bad jobs number was received as good news, which is a sign that rates, not earnings, are still the dominant variable for index-level returns. That has two practical consequences. First, do not read Friday's record as a verdict on business fundamentals; it was a verdict on the discount rate. Second, the groups that benefit most from lower yields are precisely the ones sitting at the bottom of their ranges right now: the regulated utilities in section 08 (Dominion, Southern, PSEG, Entergy all near 30-day lows) are rate-sensitive by construction. If the Aug 12 CPI print comes in soft, that is where the repair should show up first. If it comes in hot, the broad index at 100% of its range is the more exposed position.",
+      "sources": [
+        [
+          "US stocks jump as employers unexpectedly cut 23,000 jobs, raising hopes that rate hikes can wait",
+          "https://cdapress.com/news/2026/aug/07/us-stocks-jump-as-employers-unexpectedly-cut-23000-jobs-raising-hopes-that-rate-hikes-can-wait/"
+        ],
+        [
+          "Treasury Yields Fall Sharply After Weak Jobs Report",
+          "https://tradingeconomics.com/united-states/government-bond-yield/news/573816"
+        ]
+      ]
+    },
+    {
+      "tag": "MEMORY",
+      "layer": "Sector",
+      "title": "Memory is the only group that did not participate, and the round trip there has been brutal",
+      "body": "On a day when 57 of 70 names rose, the two worst performers on the board were Western Digital, down 3.81%, and SanDisk, down 3.68%. Both are now genuinely broken on the flow data. Western Digital finished at the absolute bottom of its 30-day range, 22.61% below its 50-day average, with a heavy liquidation flag and volume 1.48 times normal. SanDisk carries 11 distribution days, the highest count anywhere on either sheet, and trades 28.19% below its 50-day. The cause is now well documented: both companies beat on their fiscal fourth quarter, but SanDisk guided first-quarter fiscal 2027 revenue to $10.3 billion to $10.8 billion, a midpoint below the $10.8 billion consensus, and the market decided that was enough. The context explains the violence of the reaction: heading into those reports SanDisk was up about 469% year to date and Western Digital about 202%. The damage spread internationally, with SK Hynix down roughly 10% and Samsung nearly 6%. Micron has held up far better, down just 0.44% on Friday at 55% of its 30-day range, though it too carries six distribution days and sits 9.62% below its 50-day.",
+      "matters": "This is what it looks like when a cycle stock stops being priced on this year's earnings and starts being priced on next year's, and it is a useful lesson to internalise before it happens in a group you own. Nothing about NAND demand collapsed; the guidance simply failed to clear a bar set by a 469% run. For a long-term investor there are two honest readings and you should pick one deliberately. If you believe AI storage demand is structural, this is a 22% to 28% discount to the 50-day average in the exact part of the chain that was strongest, and the way to act on it is small, scheduled purchases over weeks, not a lump. If you would rather not adjudicate the NAND pricing cycle at all, own it through SMH, where memory is a modest weight and the basket rose 1.96% on the same day these two fell. That is the case for the fund over the stock, made about as clearly as it can be made.",
+      "sources": [
+        [
+          "Memory Stocks Slammed as Western Digital and SanDisk Outlooks Trigger Sector-Wide Profit-Taking",
+          "https://finance.biggo.com/news/dbb941d7-75d8-409d-a0da-5e8f6cba1e41"
+        ],
+        [
+          "Sandisk, Western Digital Sink as Memory Chips Sell Off Despite Earnings Beats",
+          "https://www.heygotrade.com/en/news/memory-chip-stocks-selloff-sandisk-western-digital-earnings/"
+        ]
+      ]
+    },
+    {
+      "tag": "POWER & NUCLEAR",
+      "layer": "Sector",
+      "title": "The nuclear sheet split in two: the developers ripped and the actual power companies were liquidated",
+      "body": "Friday produced one of the sharpest internal divergences this monitor has recorded. On the speculative sheet, Oklo rose 14.77% on 2.47 times average volume, the heaviest volume anywhere on the board, after its Groves Isotope Test Reactor achieved first criticality on Aug 6 and second-quarter revenue came in at $1.2 million against expectations of about $83,800. It still lost $48.5 million in the quarter, or $0.28 a share, and holds roughly $3 billion of cash. Centrus rose 7.49%, NuScale 3.70% and Nano Nuclear 7.04%, and the uranium funds followed, with URA up 3.96% on 1.15x volume and NLR up 3.47%. Meanwhile the established sheet went the other way. Vistra fell 0.56% to a 30-day low with a heavy liquidation flag, eight distribution days and 1.66x volume. Southern also closed at a 30-day low with a heavy flag. Entergy sits at 7% of its 30-day range, PSEG at 11% with seven distribution days, and Dominion at 12% with its own heavy flag. Constellation and Cameco were the exceptions, up 3.37% and 4.03%, with Cameco at a 30-day high.",
+      "matters": "The money moved from companies that currently sell electricity to companies that hope to one day generate it, which is close to the definition of a speculative rotation and worth treating with suspicion. Oklo's first criticality is a real technical milestone and it does change the company from purely pre-revenue to something demonstrable, but $1.2 million of revenue against a $48.5 million quarterly loss is not a business yet, and the stock still carries seven distribution days and trades 5.57% below its 50-day despite the 15% day. The more interesting long-term opportunity is on the other side of the divergence. Regulated utilities with real earnings are being sold to the bottom of their ranges partly because they are rate-sensitive and partly as a proxy for AI capital-spending doubt, even though the demand picture is intact (Vistra guides to 5% to 6% annual load growth in Texas through 2030, and US power consumption is expected to set records in 2026 and 2027). The practical takeaway: if you want nuclear exposure for a decade rather than a quarter, the discount is in section 08, not on the speculative sheet. Add in pieces, because eight distribution days at Vistra says institutional selling has not finished.",
+      "sources": [
+        [
+          "Why is Oklo stock surging today?",
+          "https://m.investing.com/news/stock-market-news/why-is-oklo-stock-surging-today-93CH-4842194"
+        ],
+        [
+          "Vistra Earnings Offer Window Into Power Generation Ramp-Up for AI Data Centers",
+          "https://www.thedailyupside.com/industries/energy/energy-companies-report-as-they-try-to-feed-power-hungry-ai-data-centers/"
+        ]
+      ]
+    },
+    {
+      "tag": "PHOTONICS",
+      "layer": "Sector",
+      "title": "Photonics was the best section on the board again, and this time real volume showed up behind it",
+      "body": "The photonics and optical interconnect section, split out of fiber optics on Aug 4, has quickly become the strongest group on either sheet. Coherent rose 13.44% on 2.12 times average volume and closed at a 30-day high, 10.54% above its 50-day average, which is the second-most extended reading on the board. Applied Optoelectronics gained 9.19% on 2.44x volume, also at a 30-day high, and Credo added 8.45%, with Lumentum and Fabrinet participating. Coherent is now up roughly 41% over the week. Two things are driving it. The first is policy: a draft US proposal would restrict imports of new Chinese optical transceivers, and the FCC is preparing to enact a ban on new Chinese transceiver models, which hands the addressable market directly to Western suppliers. The second is demand, with Coherent's most recent quarter showing revenue up 21% year over year and datacenter and communications contributing 75% of sales. Its fiscal fourth-quarter report lands on Aug 12, the same morning as the CPI print.",
+      "matters": "The distinction that matters here is between a demand story and a policy story, because they behave very differently over a decade. The AI datacenter demand for optical interconnect is durable and does not depend on any government, and it is the reason this section exists on the board. The transceiver import ban is a policy trade, and policy trades round-trip: the same draft rule has already repriced these stocks in both directions more than once this summer. Coherent at 10.5% above its 50-day average, at a 30-day high, after a 41% week, and reporting earnings on Aug 12 is about as poor an entry as this board offers. The practical takeaway for a long-term investor is to want this exposure and to refuse to pay this price for it. Either wait for the post-earnings reaction, or take the exposure through a fund where photonics is a component rather than the whole bet. If you already own it, this is a reasonable place to let it run rather than add.",
+      "sources": [
+        [
+          "Applied Optoelectronics Zooms 13% Higher on Pivotal Quarterly Print; Coherent Advances 13%, Lumentum Adds 8%",
+          "https://247wallst.com/investing/2026/08/07/applied-optoelectronics-zooms-13-higher-on-pivotal-quarterly-print-coherent-advances-13-lumentum-adds-8/"
+        ],
+        [
+          "Coherent jumps as investors weigh optical-networking policy tailwinds and AI demand",
+          "https://www.quiverquant.com/news/Coherent+jumps+as+investors+weigh+optical-networking+policy+tailwinds+and+AI+demand"
+        ]
+      ]
+    },
+    {
+      "tag": "SPECULATIVE BID",
+      "layer": "Flow",
+      "title": "The whole speculative sheet caught a bid at once, which is a sentiment signal rather than a news event",
+      "body": "Look at the top of Friday's leaderboard and notice how little of it is company-specific. Oklo rose 14.77% on genuine news. But IonQ rose 11.86%, Rigetti 8.53%, Intuitive Machines 9.85% and Rocket Lab 9.46%, and the catalysts there were an Argus broker upgrade of the space group and generic analyst enthusiasm for quantum, not results. Palantir rose 10.32% on 1.75x volume after Bank of America reaffirmed a Buy and raised its target to $255, building on a quarter that showed revenue up 93% to $1.935 billion and full-year guidance raised to $8.15 billion, with short covering amplifying the move. When rate-sensitive, long-duration, mostly unprofitable assets all rise 8% to 15% on the same afternoon, the common factor is the discount rate, not the news flow. That is what a 7-basis-point drop in the 10-year does to things whose value sits far in the future. Palantir now trades 29.72% above its 50-day average, by far the most extended name on either sheet, and IonQ, Rocket Lab, Intuitive Machines, Rigetti, Centrus, NuScale and Nano Nuclear all closed at 30-day highs.",
+      "matters": "Sheet 2 exists on this board so that speculative exposure stays small and clearly labelled, and days like Friday are exactly why that separation is worth maintaining. A group that rises 10% on a broker upgrade and a bond-market move can fall the same amount on the reverse, and the Aug 12 CPI print is a live candidate for the reverse. Note the internal warning signs even within the winners: Oklo carries seven distribution days and is still 5.57% below its 50-day despite a 15% session, and IonQ has seven distribution days while sitting 8.72% below its 50-day. Both rose hard while still being institutionally distributed, which usually means retail and short covering rather than accumulation. The practical takeaway is unglamorous: this is not the day to add to the speculative sheet, and if these positions have grown beyond the size you originally intended, a rally on a broker upgrade is a better place to trim back to that size than a selloff is.",
+      "sources": [
+        [
+          "Stock Market Today, Aug. 7: Palantir Surges on Bank of America Upbeat View After Strong Earnings",
+          "https://www.fool.com/coverage/stock-market-today/2026/08/07/stock-market-today-aug-7-palantir-surges-on-bank-of-america-upbeat-view-after-strong-earnings/"
+        ],
+        [
+          "SpaceX Rises 11%, Intuitive Machines Gains 9%, Rocket Lab Jumps 8% as Wall Street Gives the All-Clear on Space Stocks",
+          "https://247wallst.com/investing/2026/08/07/spacex-rises-11-intuitive-machines-gains-9-rocket-lab-jumps-8-as-wall-street-gives-the-all-clear-on-space-stocks/"
+        ]
+      ]
+    },
+    {
+      "tag": "HEALTHCARE",
+      "layer": "Sector",
+      "title": "Healthcare sat out the rally, and the calendar says why: comments on Medicare pricing close Aug 17",
+      "body": "Healthcare was the quietest section on the board on Friday, and its internal readings are the most washed out outside of memory and the power majors. UnitedHealth closed at 10% of its 30-day range, AbbVie at 11%, and Eli Lilly finished slightly lower at 67% of its range while almost everything else rose. The exception was Novo Nordisk, up 2.81%, though it carries a heavy liquidation flag and sits at 41% of its range. The XLV healthcare fund rose 0.75%, well behind the technology and semiconductor funds, and sits 4.96% above its 50-day with four distribution days, which is a healthier trend reading than the price action suggests. The policy calendar explains the caution. Public comments on the CMS proposed rule for Medicare drug price negotiation close on Aug 17, with the final rule expected in the autumn. The programme is in its third cycle: negotiated prices for the first ten Part D drugs took effect on Jan 1, 2026 at discounts of 38% to 79%, and 15 more Part D and Part B drugs have been selected with prices effective in 2028. The proposed rule targets high-expenditure biologics and fixed-combination products in particular.",
+      "matters": "Healthcare is the part of this board with the least connection to AI capital spending, which is precisely why it belongs in a long-term portfolio that is otherwise heavily exposed to one theme. Friday made that case by omission: while the AI complex rose on a bond-market move, healthcare did nothing, and a position that does nothing on the good days is usually the one that does nothing on the bad ones too. The near-term calendar is actually helpful for a buyer. Regulatory deadlines reliably produce headline-driven weakness, and Aug 17 is a firm date on the calendar rather than a vague risk. The practical takeaway: if you have been meaning to increase healthcare weight, the fortnight around that deadline is a more likely source of a good price than a record-setting week in technology. XLV is the diversified way to do it; Lilly is the concentrated one, with AbbVie and Novo Nordisk as the cheaper, more contrarian options.",
+      "sources": [
+        [
+          "CMS Issues First Proposed Rule for IRA Medicare Drug Price Negotiation",
+          "https://www.hklaw.com/en/insights/publications/2026/06/cms-issues-first-proposed-rule-for-ira-medicare-drug-price-negotiation"
+        ],
+        [
+          "Selected Drugs and Negotiated Prices",
+          "https://www.cms.gov/initiatives/medicare-prescription-drug-affordability/overview/medicare-drug-price-negotiation-program/selected-drugs-negotiated-prices"
+        ]
+      ]
+    }
+  ],
+  "smart_money": {
+    "intro": "Where the large, well-informed pools of money are actually positioned, read from the three sources a private investor can legitimately see: weekly CFTC futures positioning, published reports of Goldman Sachs prime-brokerage flow (the desk data itself is proprietary, so this is press reporting rather than a primary feed), and disclosed policy and corporate spending. It is a timing signal, not a guarantee, and institutions are wrong regularly. Treat it as context for when to add to a position you already believe in, never as the reason to own it. One timing note this week: the CFTC data below is dated Aug 4, so it describes how professionals were positioned going into Friday's jobs report and record close, not after it.",
+    "items": [
+      {
+        "tag": "PRIME BROKERAGE",
+        "title": "Hedge funds cut technology at a record pace over the past two months, while running record gross leverage",
+        "body": "Reported Goldman Sachs prime-brokerage data describes a firm-wide retreat from exactly the theme this board is built around. Hedge funds pulled back from US technology stocks at a record pace over roughly the past two months, with the cumulative reduction in market value totalling about 10%, the largest such retreat from the sector since the data series began more than a decade ago. Positioning in the mega-cap complex was pushed to its lowest point of the year, with a sharp reduction in both gross and net exposure. What sits alongside that is the harder number to square: gross leverage for the full prime brokerage book rose for a third consecutive year to the highest level on record by the end of 2025, and net leverage remains near three-year highs. So the money is heavily invested overall while being unusually light in the specific sector that has led the market.",
+        "matters": "Two readings are possible and both are worth holding. The bullish one is that a record de-grossing in technology removes the crowding risk that made this theme fragile, and leaves a pool of underexposed professional money that has to buy back in if the trade keeps working. Friday's 5.19% weekly gain in the Nasdaq is consistent with the beginning of that. The bearish one is that record gross leverage means the system has very little capacity to absorb a shock, so an unfavourable CPI print on Aug 12 forces selling that is mechanical rather than considered. For a long-term investor neither reading changes what you own, only how you buy it. The practical takeaway: this is an argument for adding on a schedule and in pieces, since a highly levered book with light technology exposure produces sharper moves in both directions than the underlying businesses justify.",
+        "sources": [
+          [
+            "Goldman Says Hedge Funds Sell US Tech Stocks at Record Pace",
+            "https://finance.yahoo.com/markets/stocks/articles/goldman-says-hedge-funds-sell-131619522.html"
+          ],
+          [
+            "2026 Hedge Fund Industry Outlook",
+            "https://marquee.gs.com/welcome/news/views-from-the-trading-floor/2026-hedge-fund-industry-outlook-generation-alpha"
+          ]
+        ]
+      },
+      {
+        "tag": "CFTC COT",
+        "title": "Fresh data at last: fast money bought volatility protection and deepened its index shorts into the rally",
+        "body": "The CFTC report finally refreshed on Friday afternoon, moving from the stale Jul 28 reading to Aug 4. The single largest change is in VIX futures, where leveraged funds flipped from a net short of 12,289 contracts to a net long of 3,773, a swing of 16,062 contracts in one week and the biggest positioning move anywhere in the report. They bought that protection when the VIX was sitting near 15, which is to say cheaply. At the same time they deepened their index shorts: the S&P e-mini net short widened by 32,523 contracts to 329,999 (having covered 25,389 the week before), and the Nasdaq-100 net short widened by 20,035 to 78,333. Asset managers, the slower long-only money, trimmed in both, cutting 7,737 contracts in the S&P (to 44.3% of open interest from 47.6%) and 12,400 in the Nasdaq (to 21.2% from 26.0%). Open interest in the S&P contract jumped from 1.98 million to 2.12 million. In the 10-year note, leveraged funds added another 75,931 to a net short of 2.23 million contracts, the familiar basis-trade position.",
+        "matters": "The timing is the whole point. This snapshot is dated Tuesday Aug 4, three days before the jobs report and the record close, so it shows professionals hedging into strength rather than reacting to weakness. That combination (deeper index shorts, a flip to long volatility, and long-only managers quietly trimming) is what caution looks like in positioning data, and it sat directly underneath the best week since April. Two honest caveats. First, leveraged funds are frequently wrong and their index shorts are often hedges against long cash equity rather than outright bearish bets. Second, this data is four days stale and Friday may have forced some of those shorts to cover, which would itself explain part of the move. The practical takeaway for a long-term investor is narrow: professionals were paying up for insurance ahead of Aug 12 while the index made a record. That is a reason to keep purchases scheduled and modest, not a reason to sell anything.",
+        "sources": [
+          [
+            "CFTC Traders in Financial Futures, report dated Aug 4, 2026",
+            "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm"
+          ],
+          [
+            "Weekly Economic & Market Commentary, August 7, 2026",
+            "https://www.oreillywealthadvisors.com/blog/weekly-economic-market-commentary-2026-08-07"
+          ]
+        ]
+      },
+      {
+        "tag": "CAPEX",
+        "title": "The $725 billion floor holds, and Microsoft says it cannot spend fast enough because there is not enough power",
+        "body": "The four largest hyperscalers plan roughly $725 billion of capital spending in 2026, up about 77% from last year's $410 billion. The breakdown: Amazon around $200 billion versus $125 billion last year, Google $175 billion to $185 billion versus $91 billion, Meta raised to $125 billion to $145 billion from a prior $115 billion to $135 billion citing higher component prices and additional datacenter costs, and Microsoft $110 billion to $120 billion versus $90 billion. The disclosure that matters most for this board is Microsoft's: an $80 billion backlog of Azure orders it cannot fulfil because of power constraints. Operators across the industry say they cannot keep pace with demand for AI capacity. The counterweight, and it is a real one, is that a growing share of this spending is debt financed rather than funded from operating cash flow, which is why the credit market has become the place the buildout gets tested first.",
+        "matters": "This is the number that decides whether the entire first sheet of this board is a durable investment or a cycle, and it is the reason the least glamorous layers are often the safest way in. Microsoft's $80 billion power-constrained backlog is the single most useful sentence in this section, because it says the bottleneck has moved from chips to electricity. That is a direct argument for the power section that the market spent Friday liquidating, and the divergence between the two is the clearest mismatch on the board right now. The practical takeaway: the demand evidence supports owning the picks-and-shovels layers (semiconductors through SMH, electrical and conduit, and the regulated power majors) rather than the speculative end. Watch the financing side as the thing that would change the thesis. Demand does not have to fall for this trade to unwind, only the cost of borrowing to fund it has to rise.",
+        "sources": [
+          [
+            "Big Tech AI spending plans reach $725 billion",
+            "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion"
+          ],
+          [
+            "Hyperscalers Hit $700 Billion in 2026 AI Spending Plans",
+            "https://finance.yahoo.com/sectors/technology/articles/hyperscalers-hit-700-billion-2026-111243744.html"
+          ]
+        ]
+      },
+      {
+        "tag": "POLICY",
+        "title": "Two government decisions are actively moving prices on this board, and both have dates attached",
+        "body": "The first is trade policy in optical networking. A draft US proposal would restrict imports of new Chinese optical transceivers, and the FCC is preparing to enact a ban on new Chinese transceiver models. That single draft rule is a large part of why Coherent rose 41% in a week and why Applied Optoelectronics gained 9.19% on 2.44 times average volume on Friday. It has repriced the same handful of stocks in both directions repeatedly this summer as the draft has advanced and stalled. The second is healthcare pricing. Public comments on the CMS proposed rule for Medicare drug price negotiation close on Aug 17, with the final rule expected in the autumn, and the proposed changes specifically target high-expenditure biologics, fixed-combination products and products that previously qualified for the small biotech exception. Separately, the GOV badges on this board mark names where the US government either holds equity (Intel, MP Materials, Lithium Americas) or is the anchor customer (Centrus, BWX, Rocket Lab, Palantir), and four of those seven rose more than 7% on Friday.",
+        "matters": "Policy-driven moves deserve a different treatment from demand-driven ones, and mixing them up is one of the more expensive mistakes available to a long-term investor. A draft rule can be softened, delayed or reversed, so any price move that depends on it should be treated as reversible until the rule is final. That argues for patience with the photonics names at 30-day highs, and it argues for using the Aug 17 healthcare deadline as a shopping window rather than a reason to avoid the sector. The GOV badges cut both ways too: government backing lowers the risk of a company running out of money and raises the risk that its fortunes turn on an election or an appropriation. The practical takeaway: when a position on this board moves on a policy headline, ask whether the underlying demand changed. On Friday, in photonics, it did not.",
+        "sources": [
+          [
+            "Coherent Corp. jumps 41% over the week as China optics restrictions coincide with earnings report",
+            "https://ts2.tech/en/coherent-corp-nysecohr-jumps-41-over-the-week-as-china-optics-restrictions-coincide-with-earnings-report/"
+          ],
+          [
+            "Key Facts About Medicare Drug Price Negotiation",
+            "https://www.kff.org/medicare/faqs-about-the-inflation-reduction-acts-medicare-drug-price-negotiation-program/"
+          ]
+        ]
+      }
+    ]
+  },
+  "primer": {
+    "intro": "A large AI data center is a machine built in physical layers, and money flows into it from the top (the customers who order it) down through every supplier who makes a piece. Here is where the dollars land, and why the least glamorous layers can be the safest way to invest.",
+    "sections": [
+      {
+        "h": "Start at the top: the customers",
+        "p": "The hyperscalers (Microsoft, Alphabet, Amazon, Meta, Oracle) announce the giant spending budgets, now roughly $725B in 2026, that everyone else competes to capture. Owning them is the most diversified way to own the theme, because their core businesses (ads, cloud, software) fund the AI bet and keep earning even if AI spending pauses. Two cautions: the market now scrutinizes the return on that capex, and roughly a third of it is now funded with debt rather than cash flow, which hands the bond market a vote it did not previously have. Meta's latest raise was attributed to higher component prices rather than more capacity, which is a cost increase dressed as an investment increase."
+      },
+      {
+        "h": "Layer 1: Silicon, the brains",
+        "p": "Nvidia (NVDA) designs the GPUs that do the AI math; AMD (AMD) is the challenger; Broadcom (AVGO) builds the custom chips hyperscalers increasingly design in-house, a trend now challenging Nvidia's near-monopoly. None own factories: TSMC (TSM) prints the chips using machines only ASML (ASML) makes, and every GPU needs memory from Micron (MU). Highest growth, highest risk, and the layer that falls first on any overcapacity or competition scare. It is also now the layer priced for perfection: AMD grew data-center revenue 107% and the stock still fell 7%."
+      },
+      {
+        "h": "Layer 1b: Memory, the new bottleneck",
+        "p": "Memory deserves its own line. Samsung, SK Hynix and Micron control over 95% of global DRAM and have shifted a large majority of combined output to high-bandwidth memory for AI accelerators. That has sent AI memory pricing sharply higher and left consumer-grade memory scarce, which is a margin tailwind for MU, SNDK and WDC and a cost shock for every device maker. It makes this the most cyclical layer of the buildout, and the most crowded: about 16% of Goldman's prime-brokerage exposure was tied to AI memory names as of June 30, which is why guidance misses here move the whole group violently. The live fundamental question is efficiency: compression techniques that shrink the memory footprint of AI models could either soften the shortage or, by making inference cheaper, spread AI workloads widely enough to increase memory demand overall. SK Hynix is Seoul-listed, so US investors reach it mainly through the baskets."
+      },
+      {
+        "h": "Layer 2: The box and the room",
+        "p": "The chips get assembled into servers by Super Micro (SMCI) and Dell (DELL). A rack of AI chips runs blazing hot, so it needs advanced cooling and power distribution from Vertiv (VRT), and fast switches from Arista (ANET) to connect racks together. This is the guts of the room, and these are project businesses whose revenue lands unevenly quarter to quarter, which is why single-day moves of 5% or more are routine here in both directions."
+      },
+      {
+        "h": "Layer 3: Moving the data",
+        "p": "AI splits one job across thousands of chips, so they must talk at the speed of light over fiber. Transceivers and lasers come from Coherent (COHR) and Lumentum (LITE), contract manufacturing from Fabrinet (FN), long-haul interconnect from Ciena (CIEN), and the actual glass fiber from Corning (GLW). Optics content rises with every hardware generation as 800G gives way to 1.6T. This layer is now also a policy battleground, with a draft US rule targeting Chinese-made optical modules that has sent the group up 21%, down 2% and up 3% in four sessions without the rule itself changing at all."
+      },
+      {
+        "h": "Layer 4: The electrical bones",
+        "p": "The least glamorous and often most attractive layer: switchgear from Eaton (ETN) and Hubbell (HUBB), the steel and PVC conduit that carries every wire from Atkore (ATKR), jobsite supply from WESCO (WCC), transmission and substation build from Quanta (PWR), and the raw steel from Nucor (NUE). Physical, hard-to-substitute, multi-year backlogs. Four of these six names are sitting at or near the very top of their 30-day ranges, which is what sustained accumulation looks like."
+      },
+      {
+        "h": "Layer 5: The power",
+        "p": "A data center is useless without electricity, and AI has made power the true bottleneck. Existing-reactor operators signing long deals are Constellation (CEG), Vistra (VST) and Talen (TLN); the regulated fleet owners are Dominion (D), Southern (SO), PSEG (PEG) and Entergy (ETR); fuel comes from Cameco (CCJ) and Centrus (LEU); reactor and SMR technology from BWX (BWXT), Oklo (OKLO) and NuScale (SMR); and near-term gas-turbine and grid power from GE Vernova (GEV). Because the regulated names are effectively bond proxies, this layer trades against the 10-year yield as much as against the AI story, which is why it has been the weakest part of Sheet 1 while yields climbed."
+      },
+      {
+        "h": "Chips versus picks-and-shovels",
+        "p": "Follow a dollar of capex: it lands most heavily on the chip layer, which captures the most dollars but carries the most risk (a rival can win a socket, custom silicon can erode the moat, and an overcapacity or return-on-investment scare hits it first). The power, conduit, cooling and fiber layers are lower-binary: whatever chip and model win, the building still needs steel, copper, transformers and megawatts. A newer distinction sits alongside that one: how the buyer is financed. Suppliers paid by hyperscalers with real cash flow are on firmer ground than pure-plays that borrow to buy chips, which is why the neoclouds trade on credit spreads rather than on demand."
+      }
+    ]
+  },
+  "macro_strategy": {
+    "regime_label": "A rate-driven melt-up: the best week since April was bought on thin volume, with professionals hedging into it and the selling concentrated in power and memory",
+    "regime_detail": "The quant model reads the market as an uptrend at normal volatility, and Friday's record close supports it: the S&P rose 0.62% to 7,757.64, the Nasdaq 1.30% to 26,690.62, and 57 of 70 names on this board finished higher with 20 at or near 30-day highs. Three forces define the regime. First, the driver is rates rather than earnings. July payrolls fell 23,000 with 103,000 of downward revisions to May and June, the 10-year fell about 7 basis points to roughly 4.60% before settling near 4.65%, and September hike odds dropped to about 42% from 58%. The assets that rose most were the longest-duration ones (quantum up 8% to 12%, space up 9% to 10%, Palantir up 10%), which is a discount-rate move, not a fundamentals move. Second, participation was thin. The semiconductor funds traded at roughly half normal volume on a record day (SMH 0.52x, SOXX 0.48x), the technology fund at 0.71x and the S&P funds at 0.85x to 0.88x. Third, the selling that remains is concentrated and identifiable: eight heavy liquidation events, four of them in the nuclear infrastructure and power majors section (Vistra, Southern, Dominion, Constellation) and two in memory, with SanDisk still carrying the highest distribution-day count on the board at 11. Underlying inflation continues to improve (June CPI 3.5% from 4.2%, core 2.6% from 2.8%), unemployment is 4.1%, the VIX is 15.15 and the 10-year to 2-year curve is positive at about 0.44 points. This is a genuine disinflation backdrop with a positioning problem layered on top, not a growth scare.",
+    "drivers": [
+      {
+        "driver": "Interest rates",
+        "reading": "A hawkish hold that just got less hawkish. Fed funds sit at 3.50-3.75% after the Jul 29 decision, held on a 9-to-3 vote with Hammack, Kashkari and Logan dissenting in favour of a hike, the most divided committee since 2016. Friday's payroll miss cut September hike odds to roughly 42% from 58% and pulled the 10-year down about 7 basis points to near 4.65%. The FRED chip on this page lags and still reads 4.69% from Aug 6. The 2-year is 4.25% and the curve is positively sloped by about 0.44 points, which is a normal, non-recessionary shape. Chair Warsh has been clear he would still hike if inflation runs hot.",
+        "playbook": "Keep buying the broad index on schedule and let the rate path resolve itself, because you cannot forecast it and the committee itself is split three ways. Where rates do change what you buy is at the margin: rate-sensitive, dividend-paying assets are the cheapest things on this board right now, with Dominion, Southern, PSEG and Entergy all at or near 30-day lows. If you want to lean into a lower-yield outcome, that section is where the leaning is cheapest. Do not lean into it through the speculative sheet, which has already priced Friday's move in full."
+      },
+      {
+        "driver": "Inflation",
+        "reading": "Genuinely improving, with one live test on Aug 12. Headline CPI fell to 3.5% year over year in June from 4.2%, and core to 2.6% from 2.8%. Energy has been the swing factor all summer: crude peaked near $86 Brent in late July and the FRED chip reads $81.96 from Aug 3, so July's print should carry an energy tailwind. The Aug 12 release of July data is the number that decides whether September is a hike or a hold, and it lands the same morning as Coherent's earnings.",
+        "playbook": "Do not position for the print in either direction. What you can do is decide in advance what you would buy on a hot number, because that is the scenario that produces the better prices this board has been short of. The list writes itself from the flow columns: the broad index would come off 100% of its 30-day range, the regulated utilities would get cheaper still, and the extended names (Palantir at 29.7% above its 50-day, Coherent at 10.5% above) would give back the most. Have the shopping list before Wednesday morning rather than after."
+      },
+      {
+        "driver": "Growth and the labour market",
+        "reading": "Cooling, and the market currently likes that. Employers cut 23,000 jobs in July against expectations of a gain, and May and June were revised down by a combined 103,000, which is the more meaningful figure. Unemployment ticked down to 4.1% from 4.2%, but that reflects a shrinking labour force rather than more hiring. Set against that, corporate demand in the AI complex remains extraordinary, with roughly $725 billion of hyperscaler capital spending planned for 2026 and Microsoft disclosing an $80 billion Azure backlog it cannot fill because of power constraints.",
+        "playbook": "Watch for the point where cooling stops being read as good news, because that is the regime change that matters more than any single CPI print. The tell would be weak employment data arriving alongside falling equity prices rather than rising ones. Until then, the barbell that this board is built around still holds: own the diversified core (VOO or VTI) as the largest position, own the AI buildout through baskets rather than single names, and keep a genuine non-AI position (healthcare, dividend value) so that one theme does not decide your outcome."
+      },
+      {
+        "driver": "Positioning and flows",
+        "reading": "Cautious professionals, thin participation, and a record close anyway. The CFTC report dated Aug 4 shows leveraged funds flipping to net long VIX futures (a 16,062-contract swing) while deepening S&P shorts by 32,523 and Nasdaq shorts by 20,035, with long-only asset managers trimming both. Reported Goldman prime-brokerage data shows hedge funds cutting US technology at a record pace over roughly two months, about 10% of market value, while gross leverage sits at record highs. On this board, one distribution day at VOO against seven at both semiconductor funds and eight at VGT says the selling has been in the theme, not the market.",
+        "playbook": "Read light positioning as fuel and record leverage as fragility, and let both argue for the same behaviour: buy in pieces, on a schedule, and do not chase strength. The specific instruction the flow data supports is to keep the broad index as the scheduled purchase (the flow reading there is the cleanest on the board) and to make any opportunistic purchase in the sections carrying the discount rather than the ones carrying the momentum. Right now that means power and memory, not photonics and space."
+      }
+    ],
+    "scenarios": [
+      {
+        "trigger": "If the Aug 12 CPI print lands soft and September is priced out",
+        "response": "The 10-year eases from the mid-4s and the rotation runs in favour of exactly what has been sold. The groups with the most room are the ones furthest below their 50-day averages and nearest the bottom of their 30-day ranges: the regulated utilities and merchant power names in section 08 (Vistra 9.4% below its 50-day at a 30-day low, Southern at a 30-day low, PSEG 4.6% below, Entergy 4.1% below), memory (SanDisk 28.2% below its 50-day, Western Digital 22.6% below, Micron 9.6% below), and chip equipment. The practical response is to have already been buying those in pieces rather than to start after the print, since the first day of that repair is usually the most expensive one."
+      },
+      {
+        "trigger": "If the Aug 12 CPI print runs hot and September becomes a live hike",
+        "response": "The record close gives back quickly and the most extended names give back most. Palantir at 29.7% above its 50-day, Coherent at 10.5% above and the 20 names sitting at 30-day highs are where the air is. The broad index at 100% of its 30-day range has no cushion either. This is the scenario a scheduled buyer should quietly welcome, because it is the only realistic path to better entry prices in the near term. The response is to make the next scheduled purchase on time and slightly larger, not to wait for a bottom that will not announce itself."
+      },
+      {
+        "trigger": "If AI credit spreads keep widening while capital-spending plans stay intact",
+        "response": "This is the slow risk and the one least visible in the equity price. Roughly a third of the $725 billion of 2026 hyperscaler capital spending is debt financed, so a rising cost of that debt can unwind the trade without demand ever falling. The names most exposed are the ones whose entire business is borrowing to build capacity, which on this board is the neocloud section (Nebius sits 15.9% below its 50-day already) and the pre-revenue developers on sheet 2. The response is to keep sheet 2 small, to prefer the layers that get paid regardless of who wins (semiconductors, electrical equipment, power generation), and to treat widening credit spreads as a more reliable warning than any equity chart."
+      }
+    ],
+    "positioning": "The stance is unchanged, and after a week like this the consistency is the point: a record close and the best week since April are noise against a ten-year plan, in the same way that three single-name collapses were noise against it. Keep the diversified core (VOO or VTI) as the largest position and keep adding on a schedule, noting that at 100% of its 30-day range this is a fine scheduled purchase and a poor opportunistic one. Own the AI buildout through baskets rather than single names, because the basket has now absorbed a 7% drop in AMD, an 11% drop in Western Digital and a further 3.8% drop to a 30-day low without meaningful damage. Keep a real non-AI position, which on this board means healthcare and dividend value, and use the Aug 17 Medicare comment deadline as a likely source of a better price there. Where you want to be opportunistic, buy the discount rather than the momentum: the regulated power majors and memory are the two places on this board sitting at the bottom of their ranges, and both should be bought in pieces over weeks rather than in a lump, because the distribution-day counts say institutional selling has not finished. Keep sheet 2 small and clearly labelled. Friday was a reminder of how fast it moves on a broker upgrade and a bond-market move, and moves like that run in both directions."
+  },
+  "watchlist_notes": "Two sheets, same columns. Sheet 1 is the established, large-dollar side across ten sections: semis and fab, chip equipment, memory and storage, servers and cooling, fiber optics and cabling, photonics and optical interconnect, electrical and steel, nuclear infrastructure and power majors, big tech, and healthcare. Sheet 2 is the smaller-dollar speculative side (nuclear developers and fuel, quantum, space and defense, government-backed materials and small AI infra, neoclouds). Read the Bull Score first: it is six checks on whether the long-term case holds, and hovering it shows which checks passed. No timing caveat this week, which is a change from the last two briefings: every price is a genuine Friday, Aug 7 closing print and every positioning column is computed from that same session, so the price and flow columns describe the same moment. What to look at first: the pos30 column shows how many names are stretched (20 at or near 30-day highs) against the handful at the bottom (Western Digital, Vistra and Southern at 0%, Entergy 7%, UnitedHealth 10%, PSEG and AbbVie 11%, Dominion 12%). The D-Days column is where the accumulated institutional selling shows: SanDisk 11, then Intel, Vistra and MP Materials at eight. The GOV badges flag names where the US government holds equity (Intel, MP Materials, Lithium Americas) or is the anchor customer (Centrus, BWX, Rocket Lab, Palantir)."
 }
