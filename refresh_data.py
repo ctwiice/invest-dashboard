@@ -24,6 +24,7 @@ WATCHLIST = {
     "Nuclear Infrastructure & Power Majors": ["CEG", "VST", "CCJ", "BWXT", "GEV",
                                               "TLN", "D", "SO", "PEG", "ETR"],
     "Big Tech & Hyperscalers": ["AAPL", "MSFT", "GOOGL", "AMZN", "META", "ORCL", "IBM", "PLTR"],
+    "AI Capital & Financiers": ["BLK", "KKR", "APO", "OWL"],
     "Healthcare & Pharma": ["LLY", "NVO", "UNH", "JNJ", "ABBV", "MRK"],
     # ---- Sheet 2: smaller-dollar / speculative ----
     "Nuclear Developers & Fuel": ["OKLO", "SMR", "LEU", "NNE"],

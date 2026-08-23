@@ -19,7 +19,7 @@ import anthropic
 
 MODEL = "claude-opus-5"
 BRIEFING_KEYS = ["date", "asof", "close_date", "macro", "top_picks", "top_picks_note",
-                 "insights", "smart_money", "primer", "macro_strategy", "watchlist_notes"]
+                 "insights", "smart_money", "primer", "macro_strategy", "watchlist_notes", "thesis"]
 
 
 def load(path):
@@ -84,6 +84,11 @@ Rules for the JSON:
   headlines. Keep the "signal, not a guarantee" framing.
 - macro_strategy, primer, top_picks_note, watchlist_notes: update if the facts moved, else carry
   forward with light edits.
+- thesis: the Roaring-20s five-battlefields object (objective/constraint/focus, metrics, risks,
+  watchlist). Update the metrics values and trends when the facts move (hyperscaler capex guidance,
+  power demand, uranium spot, GPU supply tightness, AI-infra credit spreads, 10Y); refresh the
+  watchlist with the actual upcoming catalysts; keep risks current. Each metric keeps label/value/
+  trend(up|down|flat)/tone(good|warn|bad)/delta/note.
 - Every card ends with a practical takeaway for a long-term, buy-and-hold investor referencing tickers
   on the board. Plain English; the reader is not an economist. Not financial advice.
 - STYLE: never use em dashes or en dashes anywhere. Use commas, colons, parentheses, or periods.

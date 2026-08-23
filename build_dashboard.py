@@ -29,6 +29,7 @@ NAMES = {
     "UNH": "UnitedHealth", "JNJ": "Johnson & Johnson", "ABBV": "AbbVie",
     "MRK": "Merck", "IONQ": "IonQ", "RGTI": "Rigetti", "QBTS": "D-Wave Quantum",
     "QUBT": "Quantum Computing Inc", "IBM": "IBM",
+    "BLK": "BlackRock", "KKR": "KKR", "APO": "Apollo Global", "OWL": "Blue Owl",
     "SNDK": "SanDisk", "WDC": "Western Digital", "INTC": "Intel",
     "PLTR": "Palantir", "RKLB": "Rocket Lab", "LUNR": "Intuitive Machines",
     "ASTS": "AST SpaceMobile", "MP": "MP Materials", "LAC": "Lithium Americas",
@@ -75,7 +76,9 @@ SECTOR_META = [
      "Nuclear you can actually buy today: companies that already own reactors, fuel or the ability to build them, with real revenue and real cash flow. Constellation runs the largest US nuclear fleet, Vistra and Talen own merchant reactors selling power straight to data centers, Southern completed Vogtle (the only new US reactors this century), Dominion, PSEG and Entergy operate regulated fleets that earn a rate-regulated return, Cameco mines the uranium and BWX Tech builds the Navy's reactors, while GE Vernova sells the turbines. Utilities here pay dividends and move slowly; the merchant names (CEG, VST, TLN) carry more upside and more power-price risk. This is the established counterweight to the pre-revenue SMR developers on Sheet 2.", 1),
     ("Big Tech & Hyperscalers", "09", "THE CUSTOMERS",
      "The mega-cap companies whose capital-expenditure budgets pay for the entire build-out above, plus the government-software giant. Owning them is the most diversified way to own the theme.", 1),
-    ("Healthcare & Pharma", "10", "OUTSIDE THE THEME",
+    ("AI Capital & Financiers", "10", "THE CAPITAL",
+     "Trillions in capital decide who can build the infrastructure. The asset managers and private-credit giants financing data centers, power deals and the AI debt stack. Access to cheap, patient capital is the alpha of battlefield three.", 1),
+    ("Healthcare & Pharma", "11", "OUTSIDE THE THEME",
      "A reminder that good businesses live outside AI. Obesity drugs, insurers and diversified pharma, driven by demographics rather than compute demand.", 1),
     ("Nuclear Developers & Fuel", "S1", "NEXT-GEN NUCLEAR",
      "SMR developers and the US enrichment play. Mostly pre-revenue: the reactors are paper until the late 2020s. Venture-sized positions only. If you want nuclear that already owns the infrastructure and earns cash today, that is section 08 on Sheet 1, not this one.", 2),
@@ -783,6 +786,110 @@ def sector_sections(board):
 CLOSE_DATE = INS.get("close_date", "the latest market close")
 
 
+# ---- Roaring 20s AI thesis: five battlefields, computed from the board ----
+BATTLEFIELDS = [
+    ("1", "Compute Leadership", "#6EA8DC",
+     ["NVDA", "AMD", "AVGO", "TSM", "INTC", "ASML", "AMAT", "LRCX", "KLAC", "MU", "SNDK"],
+     "Whoever controls the best chips, manufacturing and systems wins. Determines the AI capability ceiling; supply chain and manufacturing dominance are the bottleneck for deployment velocity."),
+    ("2", "Power Leadership", "#57B583",
+     ["CEG", "VST", "GEV", "CCJ", "BWXT", "TLN", "D", "SO", "PEG", "ETR", "LEU", "OKLO", "SMR", "NNE"],
+     "AI runs on electricity: power availability equals compute velocity. New build plus grid modernization is critical, energy security is national security, and scarcity is the ultimate bottleneck."),
+    ("3", "Capital Leadership", "#B08CD9",
+     ["BLK", "KKR", "APO", "OWL"],
+     "Trillions in capital decide who can build the infrastructure. An enormous capex cycle is ahead, access to cheap patient capital is alpha, and the financiers control the pace and scale of the build-out."),
+    ("4", "AI Adoption Leadership", "#E0A458",
+     ["MSFT", "GOOGL", "AMZN", "META", "ORCL", "IBM", "PLTR"],
+     "Value is realized when AI is widely deployed. Adoption turns compute into economic value; software, data and workflows are the moats; adoption breadth beats model leadership."),
+    ("5", "Geopolitical Leadership", "#5FBFB0",
+     ["INTC", "MP", "LAC", "LEU", "BWXT", "RKLB", "PLTR"],
+     "Nations that secure compute, energy and supply chains lead the next century. Export controls reshape access, compute sovereignty is national priority, and the GOV-badged names are where Washington already owns a piece."),
+]
+
+
+def _bf_stats(tickers):
+    rows = [METR[t] for t in tickers if t in METR]
+    if not rows:
+        return None
+    def mean(vals):
+        vals = [v for v in vals if v is not None]
+        return sum(vals) / len(vals) if vals else None
+    ch30 = mean([r.get("c30") for r in rows])
+    above200 = [r for r in rows if (r.get("v200") or 0) > 0]
+    trend_pct = 100 * len(above200) / len(rows)
+    passes, avail = 0, 0
+    for r in rows:
+        checks = [
+            None if r.get("peg") is None else r["peg"] <= 1.5,
+            None if r.get("roe") is None else r["roe"] >= 10,
+            None if r.get("fpe") is None else (True if r.get("pe") is None else r["fpe"] < r["pe"]),
+            None if r.get("de") is None else r["de"] <= 1.5,
+            None if r.get("v200") is None else r["v200"] > 0,
+            None if r.get("dd") is None else (r["dd"] < 5 and not r.get("hv")),
+        ]
+        passes += sum(1 for c in checks if c is True)
+        avail += sum(1 for c in checks if c is not None)
+    score_pct = 100 * passes / avail if avail else 0
+    best = max(rows, key=lambda r: (r.get("c30") or -999))
+    worst = min(rows, key=lambda r: (r.get("c30") or 999))
+    if trend_pct >= 65 and (ch30 or 0) > 0:
+        verdict, vcls = "LEADING", "sc-good"
+    elif trend_pct < 40:
+        verdict, vcls = "LAGGING", "sc-bad"
+    else:
+        verdict, vcls = "MIXED", "sc-mid"
+    return dict(n=len(rows), ch30=ch30, trend_pct=trend_pct, score_pct=score_pct,
+                verdict=verdict, vcls=vcls, best=best, worst=worst)
+
+
+def thesis_section():
+    th = INS.get("thesis") or {}
+    cards = []
+    for num, name, color, tickers, why in BATTLEFIELDS:
+        s = _bf_stats(tickers)
+        if not s:
+            continue
+        chips = " ".join(
+            f'<span class="bf-tkr" title="{E(NAMES.get(t, t))}: 30-day change {signed(METR[t].get("c30")) or "n/a"}">{t}</span>'
+            for t in tickers if t in METR)
+        cards.append(f"""
+        <div class="bf" style="--bfc:{color}">
+          <div class="bf-head"><span class="bf-num">{num}</span><h3>{E(name)}</h3>
+            <span class="score {s['vcls']} bf-verdict" title="Computed daily from this battlefield's basket: {s['trend_pct']:.0f}% of its {s['n']} names are above their 200-day average, the basket is {signed(s['ch30']) or 'flat'} over 30 days, and it passes {s['score_pct']:.0f}% of its Bull Score checks.">{s['verdict']}</span></div>
+          <p class="bf-why">{E(why)}</p>
+          <div class="bf-stats">
+            <span title="Average 30-day price change across the basket.">30D {signed(s['ch30']) or 'n/a'}</span>
+            <span title="Share of the basket trading above its 200-day average (long-term uptrend).">{s['trend_pct']:.0f}% in uptrend</span>
+            <span title="Share of all Bull Score checks passed across the basket.">{s['score_pct']:.0f}% checks pass</span>
+            <span title="Strongest and weakest names by 30-day change.">best {s['best']['s']} {signed(s['best'].get('c30'))} &middot; worst {s['worst']['s']} {signed(s['worst'].get('c30'))}</span>
+          </div>
+          <p class="bf-players">{chips}</p>
+        </div>""")
+
+    metrics = "".join(
+        f'<div class="chip t-{m.get("tone", "info")}" title="{E(m.get("note", ""))}">'
+        f'<span class="chip-label">{E(m["label"])}</span><span class="chip-value">{E(str(m["value"]))} '
+        f'<span class="bf-trend">{ {"up": "&#8599;", "down": "&#8600;"}.get(m.get("trend"), "&#8594;") }</span></span>'
+        f'<span class="chip-delta">{E(m.get("delta", ""))}</span></div>'
+        for m in th.get("metrics", []))
+    risks = "".join(f'<li>{E(r)}</li>' for r in th.get("risks", []))
+    watch = "".join(f'<li>{E(w)}</li>' for w in th.get("watchlist", []))
+    side = ""
+    if risks or watch:
+        side = f"""
+      <div class="bf-side">
+        {f'<div class="liq-card"><h4>&#9888; Risk monitor: what kills the thesis</h4><ul class="bf-list">{risks}</ul></div>' if risks else ''}
+        {f'<div class="liq-card"><h4>&#9745; Research watch list</h4><ul class="bf-list">{watch}</ul></div>' if watch else ''}
+      </div>"""
+    return f"""
+    <section class="thesis">
+      <h2 class="section-title">The Thesis: Five Battlefields</h2>
+      <p class="section-sub"><strong>Objective:</strong> {E(th.get("objective", "own the enablers of the AI supercycle"))} &middot; <strong>Primary constraint:</strong> {E(th.get("constraint", "compute + power"))} &middot; <strong>Current focus:</strong> {E(th.get("focus", "execution advantage"))}. Each battlefield's verdict is computed fresh every day from its basket's trend, 30-day change and Bull Score checks, so this is a living scorecard, not a poster.</p>
+      {f'<div class="macro bf-metrics">{metrics}</div>' if metrics else ''}
+      <div class="bf-grid">{"".join(cards)}</div>
+      {side}
+    </section>"""
+
+
 def fold(summary, inner):
     """Collapse a full section into a click-to-expand block to keep the page lean."""
     if not inner:
@@ -1006,6 +1113,29 @@ td.score-cell {{ text-align: center; }}
 .pick-deep > summary::before {{ content: "\\25B8 "; color: var(--copper); }}
 .pick-deep[open] > summary::before {{ content: "\\25BE "; }}
 
+/* thesis battlefields */
+.thesis {{ margin-top: 40px; }}
+.bf-metrics {{ margin: 0 0 14px; }}
+.bf-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }}
+.bf {{ background: var(--panel); border: 1px solid var(--line); border-top: 3px solid var(--bfc, var(--copper));
+  border-radius: 4px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }}
+.bf-head {{ display: flex; align-items: center; gap: 10px; }}
+.bf-num {{ font-family: var(--disp); font-weight: 600; font-size: 17px; color: var(--bfc, var(--copper));
+  border: 1px solid var(--bfc, var(--copper)); border-radius: 50%; width: 28px; height: 28px;
+  display: grid; place-items: center; flex: none; }}
+.bf h3 {{ margin: 0; font-size: 15px; font-weight: 600; }}
+.bf-verdict {{ margin-left: auto; }}
+.bf-why {{ margin: 0; font-size: 12.8px; color: var(--mut); }}
+.bf-stats {{ display: flex; flex-wrap: wrap; gap: 4px 14px; font-family: var(--mono); font-size: 11.5px;
+  color: #C6C9CE; border-top: 1px solid var(--line); padding-top: 8px; }}
+.bf-players {{ margin: 0; display: flex; flex-wrap: wrap; gap: 5px; }}
+.bf-tkr {{ font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--ink);
+  background: var(--panel-2); border: 1px solid var(--line); border-radius: 3px; padding: 2px 6px; cursor: help; }}
+.bf-trend {{ font-size: 14px; }}
+.bf-side {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; margin-top: 12px; }}
+.bf-list {{ margin: 0; padding-left: 16px; font-size: 12.8px; color: #C6C9CE; }}
+.bf-list li {{ margin: 3px 0; }}
+
 /* legend */
 .legend {{ margin-top: 48px; border-top: 1px solid var(--line); padding-top: 26px; }}
 .legend-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }}
@@ -1116,6 +1246,8 @@ th[data-tip], td[data-tip] {{ cursor: help; }}
   </section>
 
   {macro_strategy_section()}
+
+  {thesis_section()}
 
   <section class="stack">
     <h2 class="section-title">Sheet 1: Established, Large-Dollar Names</h2>
