@@ -112,6 +112,7 @@ ETF_META = {
     "BOTZ": ("Thematic",    "Global X Robotics & AI: companies in industrial robotics, automation and AI. The US analog of the Canada-listed RBOT.", "0.68%"),
     "UFO":  ("Thematic",    "Procure Space ETF: satellites, launch, rockets and space-tech names. The US analog of London's JEDG (VanEck Space Innovators).", "0.75%"),
     "SEMI": ("Sector",      "Columbia Select Technology ETF (formerly Semiconductor & Technology): a concentrated chip-and-tech basket. Overlaps SMH and VGT.", "0.75%"),
+    "GRNY": ("Growth",      "Fundstrat Granny Shots (Tom Lee): an actively managed, roughly equal-weight basket of ~40 US large caps chosen where several long-term themes overlap (AI, energy, millennials, cybersecurity, and more). Beat SPY by about 5.5 points since its Nov 2024 launch and gathered over $2B fast. The fee is the cost of active management.", "0.75%"),
     "VXUS": ("International","Stocks outside the US, developed and emerging markets.", "0.05%"),
 }
 ETF_ROLE_ORDER = {"Core": 0, "Growth": 1, "Dividend": 2, "Sector": 3, "Thematic": 4, "International": 5}

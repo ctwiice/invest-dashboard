@@ -56,6 +56,7 @@ INDEX_ETFS = {
     "BOTZ (Robotics & AI)": ("BOTZ", "e"),
     "UFO (Space)": ("UFO", "e"),
     "SEMI (Semiconductor & Tech)": ("SEMI", "e"),
+    "GRNY (Fundstrat Granny Shots)": ("GRNY", "e"),
     "VXUS (International ex-US)": ("VXUS", "e"),
 }
 
