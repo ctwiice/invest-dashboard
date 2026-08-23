@@ -161,6 +161,8 @@ def compact():
                 "lo30": pos.get("lo30"), "hi30": pos.get("hi30"),
                 "v50": pos.get("vs50"), "dd": pos.get("ddays"),
                 "hv": pos.get("heavy"), "vr": pos.get("volRatio"),
+                "vol": pos.get("vol"), "volAvg": pos.get("volAvg20"),
+                "volWk": pos.get("volWk"), "volWkAvg": pos.get("volWkAvg"),
             })
         out.append({"sector": sector, "rows": rows})
     return out
@@ -400,6 +402,25 @@ def smart_money_section():
 
 
 # ------------------------------------------------------------------ ETF shelf
+def fmt_vol(v):
+    if v is None:
+        return None
+    v = float(v)
+    if v >= 1e9: return f"{v/1e9:.2f}B"
+    if v >= 1e6: return f"{v/1e6:.1f}M"
+    if v >= 1e3: return f"{v/1e3:.0f}K"
+    return f"{v:.0f}"
+
+
+def vol_td(v, avg):
+    if v is None:
+        return '<td class="m-na">n/a</td>'
+    ratio = (v / avg) if avg else None
+    cls = "" if ratio is None else ("m-good" if ratio >= 1.5 else "m-bad" if ratio < 0.6 else "")
+    tip = "" if ratio is None else f' title="{ratio:.2f}x its average ({fmt_vol(avg)})"'
+    return f'<td class="{cls}"{tip}>{fmt_vol(v)}</td>'
+
+
 def etf_shelf():
     rows = []
     items = []
@@ -424,6 +445,8 @@ def etf_shelf():
         <tr>
           <td class="co"><span class="sym">{E(t)}</span><span class="etf-role">{E(role)}</span></td>
           <td>${fmt(d.get("price"))} <span class="{cls_updown(cp)}">{signed(cp, 2) or ""}</span></td>
+          {vol_td(p.get("vol"), p.get("volAvg20"))}
+          {vol_td(p.get("volWk"), p.get("volWkAvg"))}
           <td class="{cls_updown(p.get("ch30"))}">{signed(p.get("ch30")) or "n/a"}</td>
           <td class="{cls_updown(y1)}">{signed(y1) or "n/a"}</td>
           <td>{rangebar or "n/a"}</td>
@@ -437,6 +460,8 @@ def etf_shelf():
       <div class="table-wrap"><table class="etf-table"><thead><tr>
         <th title="The fund's ticker and its role in a portfolio.">ETF</th>
         <th title="Latest share price and today's move.">Price</th>
+        <th title="Shares traded in the latest session, colored against the 20-day average (green 1.5x+, red under 0.6x).">Day Vol</th>
+        <th title="Shares traded over the last 5 sessions, colored against the prior 4-week average.">Wk Vol</th>
         <th title="Price change over the last 30 days.">30D %</th>
         <th title="Price change over the past year.">1Y %</th>
         <th title="Where the price sits inside its last 30 days of range, low (0%) to high (100%).">30D Range</th>
@@ -872,7 +897,7 @@ a:focus-visible {{ outline: 2px solid var(--copper); outline-offset: 2px; }}
 
 /* etf shelf */
 .etf-sec {{ margin-top: 38px; }}
-table.etf-table {{ min-width: 900px; }}
+table.etf-table {{ min-width: 1060px; }}
 .etf-role {{ color: var(--mut); font-size: 11px; margin-left: 8px; font-family: var(--body); }}
 .etf-holds {{ text-align: left; font-family: var(--body); color: var(--mut); white-space: normal;
   min-width: 240px; font-size: 12.5px; }}
@@ -892,7 +917,7 @@ table.etf-table {{ min-width: 900px; }}
 .layer-desc {{ color: var(--mut); font-size: 13px; margin: 3px 0 0; max-width: 68ch; }}
 .table-wrap {{ overflow-x: auto; border: 1px solid var(--line); border-radius: 4px;
   background: var(--panel); }}
-table {{ border-collapse: collapse; width: 100%; min-width: 880px; font-size: 13px; }}
+table {{ border-collapse: collapse; width: 100%; min-width: 1040px; font-size: 13px; }}
 table.mini {{ min-width: 0; }}
 th, td {{ padding: 8px 10px; text-align: right; white-space: nowrap; }}
 th {{ font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase;
@@ -1135,6 +1160,9 @@ th[data-tip], td[data-tip] {{ cursor: help; }}
       <div class="lg"><h4><span class="k">vs 200D</span> The long-term trend</h4>
         <p>Distance from the 200-day moving average, the classic dividing line between long-term uptrend and downtrend. Above it, time is on your side; below it, you are fighting the tide (fine for slow accumulation of quality, bad for lump sums). More than 10% below is serious trend damage.</p>
         <span class="rule">check: price above the 200-day &middot; red &lt; -10%</span></div>
+      <div class="lg"><h4><span class="k">Day Vol / Wk Vol</span> Did the move have conviction?</h4>
+        <p>Shares traded in the latest session and over the last five. Price tells you what happened; volume tells you how many people agreed. A breakout on 1.5x average volume (green) is institutions participating; a rally on 0.6x (red) is thin air that reverses easily. Weekly volume smooths out one-day noise: rising weekly volume on an up move is accumulation, on a down move distribution.</p>
+        <span class="rule">green &ge; 1.5x average &middot; red &lt; 0.6x &middot; hover for the exact ratio</span></div>
       <div class="lg"><h4><span class="k">D-Days</span> Is big money leaving?</h4>
         <p>Distribution days: sessions in the last 25 that fell at least 0.2% on above-average volume, the footprint of institutions selling into the market. A cluster warns you even when price looks fine. &#9888; flags a heavy dump (down &ge;1.5% on &ge;1.5x volume) within the last 5 sessions.</p>
         <span class="rule">check: fewer than 5 and no &#9888; &middot; amber at 3-4</span></div>
@@ -1245,6 +1273,8 @@ function bullScore(r) {{
 const COLS = [
   {{k:"co", label:"Company", tip:"The company's ticker symbol and name.", sort:(r)=>r.s}},
   {{k:"p", label:"Price", tip:"The most recent share price, with the latest session's move.", sort:(r)=>r.p}},
+  {{k:"vol", label:"Day Vol", tip:"Shares traded in the latest session. Green = at least 1.5x the 20-day average (a move with conviction); red = under 0.6x (a move on thin volume, easier to reverse). Hover a value for the exact ratio.", sort:(r)=>r.vol}},
+  {{k:"volWk", label:"Wk Vol", tip:"Shares traded over the last 5 sessions (one trading week), colored against the average of the prior 4 weeks. Rising weekly volume on an up move is accumulation; rising volume on a down move is distribution.", sort:(r)=>r.volWk}},
   {{k:"spark", label:"52 wk", tip:"A mini chart of weekly closing prices over the past year. Green ended the year up, red down. The copper dot is the latest close.", sort:(r)=>r.y}},
   {{k:"fpe", label:"Fwd P/E", tip:"Forward P/E: today's price divided by next year's EXPECTED profit per share. Low (under ~15) usually means cheap or doubted; high (over ~30) means the market expects big growth and has already paid for some of it. Compare within an industry, not across.", sort:(r)=>r.fpe}},
   {{k:"peg", label:"PEG", tip:"PEG: the P/E adjusted for how fast profits are growing. Around 1.0 is fair value, under 1.0 growth is going cheap, over 2.0 you are paying up. The single best one-number valuation check for a growth stock.", sort:(r)=>r.peg}},
@@ -1290,6 +1320,21 @@ function rangeBar(r) {{
     `<span class="rbar ${{cls}}"><span style="left:${{r.p30}}%"></span></span></td>`;
 }}
 
+function fmtVol(v) {{
+  if (v === null || v === undefined) return null;
+  if (v >= 1e9) return (v / 1e9).toFixed(2) + "B";
+  if (v >= 1e6) return (v / 1e6).toFixed(1) + "M";
+  if (v >= 1e3) return (v / 1e3).toFixed(0) + "K";
+  return String(v);
+}}
+function volCell(v, avg) {{
+  if (v === null || v === undefined) return '<td class="m-na">n/a</td>';
+  const ratio = avg ? v / avg : null;
+  const cls = ratio === null ? "" : ratio >= 1.5 ? "m-good" : ratio < 0.6 ? "m-bad" : "";
+  const tip = ratio === null ? "" : ` title="${{ratio.toFixed(2)}}x its average (${{fmtVol(avg)}})"`;
+  return `<td class="${{cls}}"${{tip}}>${{fmtVol(v)}}</td>`;
+}}
+
 function rowHtml(r) {{
   const dayCls = r.cp > 0 ? "pos" : r.cp < 0 ? "neg" : "";
   const ddTxt = r.dd === null || r.dd === undefined ? null
@@ -1303,6 +1348,8 @@ function rowHtml(r) {{
   return `<tr>
     <td class="co"><span class="sym">${{r.s}}</span><span class="nm">${{r.nm}}</span>${{gov}}</td>
     ${{cell(r.p, "", "$" + fmt(r.p) + dayTxt)}}
+    ${{volCell(r.vol, r.volAvg)}}
+    ${{volCell(r.volWk, r.volWkAvg)}}
     <td class="spark-cell"><canvas data-sym="${{r.s}}" role="img" aria-label="52 week price trend for ${{r.s}}"></canvas></td>
     ${{cell(r.fpe, flag(r.fpe, [[v => v > 40, "m-warn"], [v => v <= 20, "m-good"]]), fmt(r.fpe, 1))}}
     ${{cell(r.peg, flag(r.peg, [[v => v <= 1, "m-good"], [v => v > 2, "m-warn"]]), fmt(r.peg))}}

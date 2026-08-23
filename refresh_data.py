@@ -137,9 +137,14 @@ def positioning(sym, kind="s"):
             heavy += 1                          # heavy liquidation, last 5 sessions
     avg20 = sum(vols[-21:-1]) / 20 if len(vols) >= 21 else None
     vr = round(vols[-1] / avg20, 2) if avg20 else None
+    vol_day = vols[-1]
+    vol_wk = sum(vols[-5:])                     # last 5 sessions (one trading week)
+    vol_wk_avg = sum(vols[-25:-5]) / 4 if len(vols) >= 25 else None   # avg of prior 4 weeks
     return {"pos30": round(pos30), "hi30": round(hi30, 2), "lo30": round(lo30, 2),
             "ch30": round(ch30, 2) if ch30 is not None else None,
-            "vs50": round(vs50, 2), "ddays": ddays, "heavy": heavy, "volRatio": vr}
+            "vs50": round(vs50, 2), "ddays": ddays, "heavy": heavy, "volRatio": vr,
+            "vol": vol_day, "volAvg20": round(avg20) if avg20 else None,
+            "volWk": vol_wk, "volWkAvg": round(vol_wk_avg) if vol_wk_avg else None}
 
 def fred_series(series_id):
     """Full (date, value) history for a FRED series, no auth needed."""
