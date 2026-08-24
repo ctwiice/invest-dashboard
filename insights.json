@@ -1,6 +1,6 @@
 {
-  "date": "Saturday, August 22, 2026",
-  "asof": "Market data as of the Fri Aug 21, 2026 close. Macro chips update automatically from FRED (July CPI is the latest print; the 10-year reads Aug 20). COT positioning is the CFTC's Aug 18 report.",
+  "date": "Sunday, August 23, 2026",
+  "asof": "Weekend edition: market data is the Fri Aug 21, 2026 close (markets closed). Macro chips update automatically from FRED; COT positioning is the CFTC's Aug 18 report.",
   "close_date": "Aug 21, 2026",
   "macro": {
     "nextCpi": {
@@ -415,7 +415,7 @@
     ],
     "positioning": "The stance is unchanged, and after a week like this the consistency is the point: a record close and the best week since April are noise against a ten-year plan, in the same way that three single-name collapses were noise against it. Keep the diversified core (VOO or VTI) as the largest position and keep adding on a schedule, noting that at 100% of its 30-day range this is a fine scheduled purchase and a poor opportunistic one. Own the AI buildout through baskets rather than single names, because the basket has now absorbed a 7% drop in AMD, an 11% drop in Western Digital and a further 3.8% drop to a 30-day low without meaningful damage. Keep a real non-AI position, which on this board means healthcare and dividend value, and use the Aug 17 Medicare comment deadline as a likely source of a better price there. Where you want to be opportunistic, buy the discount rather than the momentum: the regulated power majors and memory are the two places on this board sitting at the bottom of their ranges, and both should be bought in pieces over weeks rather than in a lump, because the distribution-day counts say institutional selling has not finished. Keep sheet 2 small and clearly labelled. Friday was a reminder of how fast it moves on a broker upgrade and a bond-market move, and moves like that run in both directions."
   },
-  "watchlist_notes": "Refreshed on the Aug 21 close. Next week decides the tone into September: Nvidia earnings and Fed Chair Warsh at Jackson Hole (Aug 27-29), with the 10-year at 4.69% as the pressure gauge. On the board: whether SMH and SOXX reclaim their 50-day averages (they are 5-7% below, with 4-5 distribution days each), whether the S&P keeps its clean 2 D-Day count, URA and the fuel names after a breakout to the top of their ranges (wait for a pullback to add), and healthcare (XLV at 92% of range, +8% in 30 days) which remains the strongest trend on the board. Sept 10 CPI and Sep 15-16 FOMC follow.",
+  "watchlist_notes": "Weekend edition on the Aug 21 close. This is the most loaded week of the quarter, and almost all of it lands Wednesday: Nvidia reports after the bell (the single biggest test of the AI trade; expectations are so high that anything short of perfect may read as a miss), and that same morning brings the Q2 GDP revision, July Core PCE (the Fed's preferred inflation gauge) and durable goods. Fed Chair Warsh gives his first Jackson Hole address as chair (Aug 27-29), the first real look at how he communicates without forward guidance. CrowdStrike and Salesforce also report Wednesday, Marvell and Dell Thursday. The tape going in: every major index finished last week lower on the bond selloff (10-year 4.69%), semis sit 5-7% below their 50-day averages, and the S&P carries a clean 2 distribution days. If Nvidia delivers and Warsh stays measured, the chip pullback likely gets bought; if either disappoints, the leveraged funds running record gross exposure have a lot to de-gross.",
   "thesis": {
     "objective": "own the enablers of the AI supercycle and the next era of abundance",
     "constraint": "compute + power",
@@ -479,12 +479,12 @@
       "A hot CPI print or a 10-year push toward 5% re-rates every enabler lower"
     ],
     "watchlist": [
-      "Nvidia earnings and Warsh at Jackson Hole (both next week)",
+      "Wednesday: Nvidia earnings after the bell, the AI trade's biggest test",
+      "Wednesday morning: July Core PCE, Q2 GDP revision, durable goods (data convergence)",
+      "Warsh's first Jackson Hole address as Fed chair (Aug 27-29)",
+      "CrowdStrike and Salesforce Wed; Marvell and Dell Thu (AI adoption + semis read-through)",
       "Hyperscaler Q3 capex guidance (late Oct): confirm or cut",
-      "TSMC 2nm and CoWoS capacity ramp",
-      "HBM supply and pricing (MU, SNDK earnings commentary)",
-      "Nuclear: new PPA announcements and SMR construction approvals",
-      "Enterprise ROI evidence from AI (adoption breadth over model leadership)"
+      "Nuclear: new PPA announcements and SMR construction approvals"
     ]
   }
 }
