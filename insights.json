@@ -1,7 +1,7 @@
 {
-  "date": "Sunday, August 23, 2026",
-  "asof": "Weekend edition: market data is the Fri Aug 21, 2026 close (markets closed). Macro chips update automatically from FRED; COT positioning is the CFTC's Aug 18 report.",
-  "close_date": "Aug 21, 2026",
+  "date": "Tuesday, August 25, 2026",
+  "asof": "Market data as of the Tue Aug 25, 2026 close. Macro chips update automatically from FRED; COT positioning is the CFTC's latest weekly report. Nvidia reports tomorrow after the bell.",
+  "close_date": "Aug 25, 2026",
   "macro": {
     "nextCpi": {
       "label": "Next CPI print",
@@ -143,17 +143,21 @@
     {
       "tag": "LIQUIDATION",
       "layer": "all",
-      "title": "Distribution has cleared on the S&P, but the selling moved into chips",
-      "body": "The index-level picture is the cleanest it has been since June: SPY carries just 2 distribution days in the last 25 sessions (it was 8 in mid-July), sits at 75% of its 30-day range about 2% below its record, and is up 3.7% over 30 days. The week itself was a giveback, S&P -1.4%, driven by Treasury yields: the 10-year pushed to 4.69%, the highest of the year, and that hit the long-duration names first. The Philadelphia semiconductor index fell about 5% on the week; SMH now sits 4.9% below its 50-day average with 5 distribution days, SOXX is 6.9% below, and QQQ carries 6. So the answer to 'are people pulling out' is now sector-specific: no at the index level, yes in semiconductors, while money is clearly flowing INTO healthcare (XLV +8.2% over 30 days, 92% of range) and nuclear (URA +12%, pinned at 100% of range after Friday's +5%).",
-      "matters": "For a long-term buyer this is the better kind of tape: the broad market is healthy and the weakness is concentrated in one group that got ahead of itself on rates. The Bull Score sheets will show the chip names failing the trend check (below the 200-day) while still passing valuation and profitability, which is the textbook accumulation setup, provided you scale in and let the rate shock settle. The two events that decide whether semis get bought back: Nvidia earnings and Warsh at Jackson Hole, both next week.",
+      "title": "Calm, thin tape into the storm: the market is waiting for Nvidia",
+      "body": "Two green sessions to start the week, but on notably light volume: Tuesday's S&P rose 0.32% to 7,677 on just 0.58x average volume, with tech and healthcare leading. The index remains clean (2 distribution days, 1.8% above its 50-day), and even semis bounced into the event: SMH gained 1.65% Tuesday and Nvidia rallied 2.2% to $213.05, reclaiming its 50-day average with only 3 distribution days, though the broader chip basket still sits 5.3% below its own. The real volume story is nuclear: URA jumped another 5.4% on 1.35x average volume and is now up 19.4% over 30 days, 11.6% above its 50-day, a textbook accumulation breakout that has now run far enough to be extended. Moderna's +14% on a cancer-vaccine readout kept the healthcare bid alive.",
+      "matters": "Light-volume drift before a binary event is the market saying 'positioned, waiting.' Everything prices off tomorrow: Nvidia after the bell (roughly $94B expected revenue, ~96% growth, 58 of 61 analysts at Buy, so the bar is perfection) plus Core PCE, the Q2 GDP revision and durable goods the same morning, then Warsh at Jackson Hole. For a long-term holder the plan does not change with the event: hold through it, and know in advance what you would buy on a disappointment-driven flush (the Bull Score sheet's 5-6/6 names). Do not add to URA up here; the add was a month ago, the next one is on a pullback to the 50-day.",
       "sources": [
         [
-          "TheStreet Aug 21",
-          "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-21-2026"
+          "TheStreet Aug 25",
+          "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-25-2026"
         ],
         [
-          "CNBC Aug 21",
-          "https://www.cnbc.com/2026/08/20/stock-market-today-live-updates.html"
+          "Kiplinger NVDA earnings live",
+          "https://www.kiplinger.com/investing/live/nvidia-earnings-live-updates-and-commentary-august-2026"
+        ],
+        [
+          "Yahoo Aug 25 recap",
+          "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-aug-25-132700491.html"
         ]
       ]
     },
@@ -415,7 +419,7 @@
     ],
     "positioning": "The stance is unchanged, and after a week like this the consistency is the point: a record close and the best week since April are noise against a ten-year plan, in the same way that three single-name collapses were noise against it. Keep the diversified core (VOO or VTI) as the largest position and keep adding on a schedule, noting that at 100% of its 30-day range this is a fine scheduled purchase and a poor opportunistic one. Own the AI buildout through baskets rather than single names, because the basket has now absorbed a 7% drop in AMD, an 11% drop in Western Digital and a further 3.8% drop to a 30-day low without meaningful damage. Keep a real non-AI position, which on this board means healthcare and dividend value, and use the Aug 17 Medicare comment deadline as a likely source of a better price there. Where you want to be opportunistic, buy the discount rather than the momentum: the regulated power majors and memory are the two places on this board sitting at the bottom of their ranges, and both should be bought in pieces over weeks rather than in a lump, because the distribution-day counts say institutional selling has not finished. Keep sheet 2 small and clearly labelled. Friday was a reminder of how fast it moves on a broker upgrade and a bond-market move, and moves like that run in both directions."
   },
-  "watchlist_notes": "Weekend edition on the Aug 21 close. This is the most loaded week of the quarter, and almost all of it lands Wednesday: Nvidia reports after the bell (the single biggest test of the AI trade; expectations are so high that anything short of perfect may read as a miss), and that same morning brings the Q2 GDP revision, July Core PCE (the Fed's preferred inflation gauge) and durable goods. Fed Chair Warsh gives his first Jackson Hole address as chair (Aug 27-29), the first real look at how he communicates without forward guidance. CrowdStrike and Salesforce also report Wednesday, Marvell and Dell Thursday. The tape going in: every major index finished last week lower on the bond selloff (10-year 4.69%), semis sit 5-7% below their 50-day averages, and the S&P carries a clean 2 distribution days. If Nvidia delivers and Warsh stays measured, the chip pullback likely gets bought; if either disappoints, the leveraged funds running record gross exposure have a lot to de-gross.",
+  "watchlist_notes": "Refreshed on the Aug 25 close. Tomorrow is the day: Nvidia reports after the bell (consensus near $94B revenue, about 96% growth; priced for perfection), with Core PCE, the Q2 GDP revision and durable goods that morning, and CrowdStrike and Salesforce the same day. Warsh's first Jackson Hole address as Fed chair follows (Aug 27-29), with the 10-year at 4.70% as the pressure gauge. On the board: NVDA reclaimed its 50-day into the print ($213, 3 D-Days); SMH is still 5.3% below its 50-day, so a strong quarter has room to run the laggards; URA is now +19% over 30 days on real volume and extended (wait for the 50-day to add); healthcare keeps leading quietly (XLV 7.8% above its 50-day) with Moderna's cancer-vaccine surge the latest driver.",
   "thesis": {
     "objective": "own the enablers of the AI supercycle and the next era of abundance",
     "constraint": "compute + power",
@@ -479,12 +483,11 @@
       "A hot CPI print or a 10-year push toward 5% re-rates every enabler lower"
     ],
     "watchlist": [
-      "Wednesday: Nvidia earnings after the bell, the AI trade's biggest test",
-      "Wednesday morning: July Core PCE, Q2 GDP revision, durable goods (data convergence)",
+      "TOMORROW: Nvidia earnings after the bell (~$94B expected, ~96% growth); Core PCE + Q2 GDP + durables that morning",
+      "CrowdStrike and Salesforce Wed; Marvell and Dell Thu (adoption + semis read-through)",
       "Warsh's first Jackson Hole address as Fed chair (Aug 27-29)",
-      "CrowdStrike and Salesforce Wed; Marvell and Dell Thu (AI adoption + semis read-through)",
-      "Hyperscaler Q3 capex guidance (late Oct): confirm or cut",
-      "Nuclear: new PPA announcements and SMR construction approvals"
+      "Uranium breakout follow-through: URA +19% in 30 days on 1.35x volume, now extended",
+      "Hyperscaler Q3 capex guidance (late Oct): confirm or cut"
     ]
   }
 }
