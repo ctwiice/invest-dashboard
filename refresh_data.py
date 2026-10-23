@@ -58,6 +58,8 @@ INDEX_ETFS = {
     "UFO (Space)": ("UFO", "e"),
     "SEMI (Semiconductor & Tech)": ("SEMI", "e"),
     "GRNY (Fundstrat Granny Shots)": ("GRNY", "e"),
+    "CIBR (Cybersecurity, First Trust)": ("CIBR", "e"),
+    "IHAK (iShares Cybersecurity)": ("IHAK", "e"),
     "VXUS (International ex-US)": ("VXUS", "e"),
 }
 

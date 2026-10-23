@@ -25,6 +25,16 @@ every KPI (the user is not an economist).
 **Live artifact:** https://claude.ai/code/artifact/7a04e61f-e3c5-4ed9-bd92-6237c16cb9ac
 (favicon 📡, title "Long-Term Investing Monitor")
 
+**Bond Market Dial (added Oct 23, 2026, Julie's request):** the very first block on
+the page is a simple bond-market read, on the rule that bond volatility becomes
+market volatility (violent Treasury moves are where crashes come from). Fully
+computed in build_dashboard.py bond_dial() from data already fetched (10Y FRED
+spark + VIX), no editorial input: choppiness = average absolute daily move of the
+10Y over the last 10 sessions in bp (under 4 calm, 4-8 jumpy, 8+ violent), plus the
+30-day move, VIX confirmation, and a penalty point when the level is 5%+. Verdicts
+STEADY / WATCH / STORM with fixed plain-English guidance per state. Do not remove
+or bury it; it stays at the very top above the macro strip.
+
 ## Daily refresh pipeline
 
 FULLY AUTOMATED IN THE CLOUD (as of Aug 17, 2026). The GitHub Actions workflow
@@ -134,6 +144,10 @@ Two boards, same columns (as of Jul 19, 2026, at the user's request):
   PLTR). The user explicitly wants government-holding names flagged.
 - The user mentioned a ticker "TWS" that could not be identified; TSSI was
   added as the closest small-cap AI-infra guess. Swap it if she clarifies.
+- Cybersecurity added to the ETF shelf Oct 23, 2026 at the user's request: CIBR
+  (First Trust, biggest and most liquid cyber fund) and IHAK (iShares, cheaper
+  fee, purer security-vendor weighting). Theme owned via ETFs only, no
+  single-name cyber stocks on the sheets unless she asks.
 
 Edit `WATCHLIST` and `INDEX_ETFS` in `refresh_data.py`, and `NAMES`, `GOV`,
 `SECTOR_META`, `ETF_META` in `build_dashboard.py`, to add or remove

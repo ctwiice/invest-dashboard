@@ -116,6 +116,8 @@ ETF_META = {
     "UFO":  ("Thematic",    "Procure Space ETF: satellites, launch, rockets and space-tech names. The US analog of London's JEDG (VanEck Space Innovators).", "0.75%"),
     "SEMI": ("Sector",      "Columbia Select Technology ETF (formerly Semiconductor & Technology): a concentrated chip-and-tech basket. Overlaps SMH and VGT.", "0.75%"),
     "GRNY": ("Growth",      "Fundstrat Granny Shots (Tom Lee): an actively managed, roughly equal-weight basket of ~40 US large caps chosen where several long-term themes overlap (AI, energy, millennials, cybersecurity, and more). Beat SPY by about 5.5 points since its Nov 2024 launch and gathered over $2B fast. The fee is the cost of active management.", "0.75%"),
+    "CIBR": ("Thematic",    "First Trust Nasdaq Cybersecurity: the biggest and most liquid cyber fund (~$15B). Holds the whole industry: CrowdStrike, Palo Alto, Zscaler, Fortinet, plus Broadcom and Cisco. The default way to own cybersecurity.", "0.59%"),
+    "IHAK": ("Thematic",    "iShares Cybersecurity & Tech: the iShares version of the cyber theme, cheaper fee and more purely weighted to dedicated security vendors than CIBR. Smaller fund, same core holdings.", "0.47%"),
     "VXUS": ("International","Stocks outside the US, developed and emerging markets.", "0.05%"),
 }
 ETF_ROLE_ORDER = {"Core": 0, "Growth": 1, "Dividend": 2, "Sector": 3, "Thematic": 4, "International": 5}
@@ -637,6 +639,101 @@ def chip(label, value, delta, tone, tip):
             f'<span class="chip-delta">{E(delta)}</span></div>')
 
 
+def bond_dial():
+    """The simple version, at the very top. One idea: when the bond market gets
+    violent, stocks usually follow (often with a crash); when bonds are calm,
+    stocks can breathe. Everything here is computed from the FRED 10-year series
+    and VIX already in market_data.json, so it updates daily with no editing.
+
+    Choppiness = average absolute daily move of the 10-year yield over the last
+    10 trading days, in basis points (1bp = 0.01%). Historically under ~4bp/day
+    is calm, 4-8 is jumpy, and sustained 8+ is the kind of bond volatility that
+    precedes or accompanies equity crashes (1987, 2008, Mar 2020, 2022)."""
+    t10 = DATA.get("t10") or {}
+    spark = [v for v in (t10.get("spark") or []) if v is not None]
+    level = t10.get("value")
+    if level is None or len(spark) < 12:
+        return ""
+    diffs_bp = [(spark[i] - spark[i - 1]) * 100 for i in range(1, len(spark))]
+    chop = sum(abs(d) for d in diffs_bp[-10:]) / min(10, len(diffs_bp))
+    move30 = (level - t10["prev30"]) * 100 if t10.get("prev30") is not None else None
+    vix = (MACRO_AUTO.get("vix") or {}).get("value")
+
+    score, why = 0, []
+    if chop >= 8:
+        score += 2; why.append(f"the 10-year is swinging {chop:.1f}bp a day (violent)")
+    elif chop >= 4:
+        score += 1; why.append(f"the 10-year is swinging {chop:.1f}bp a day (jumpy)")
+    else:
+        why.append(f"the 10-year is moving only {chop:.1f}bp a day (calm)")
+    if move30 is not None:
+        if abs(move30) >= 40:
+            score += 2; why.append(f"it has moved {move30:+.0f}bp in a month (a violent repricing)")
+        elif abs(move30) >= 20:
+            score += 1; why.append(f"it has moved {move30:+.0f}bp in a month (fast)")
+    if vix is not None:
+        if vix >= 30:
+            score += 2; why.append(f"stocks are already panicking (VIX {vix:.0f})")
+        elif vix >= 20:
+            score += 1; why.append(f"stock fear is elevated (VIX {vix:.0f})")
+    if level >= 5.0:
+        score += 1; why.append(f"the level itself ({level:.2f}%) is high enough to pull money out of stocks")
+
+    if score >= 4:
+        cls, verdict = "bd-storm", "STORM"
+        plain = ("The bond market is violent right now, and violent bond markets are where stock "
+                 "crashes come from. Protect first: no new risk, no chasing dips in speculative names, "
+                 "and expect big ugly days until Treasuries settle down. Scheduled long-term buys into "
+                 "broad funds are the only buying that makes sense here.")
+    elif score >= 2:
+        cls, verdict = "bd-watch", "WATCH"
+        plain = ("Bonds are jumpy. When Treasury yields move this fast, stocks get knocked around, "
+                 "so expect chop and headline scares. Not crash conditions yet, but this is the "
+                 "warning light: keep scheduled buys running, hold off on new speculative positions, "
+                 "and check this dial before reacting to any big red day.")
+    else:
+        cls, verdict = "bd-steady", "STEADY"
+        plain = ("Bonds are calm, and calm bonds let stocks breathe. No storm signal from the market "
+                 "that actually causes crashes. Normal long-term buying conditions.")
+
+    def tile(label, value, note, tone, tip):
+        return (f'<div class="bd-stat s-{tone}" title="{E(tip)}"><span class="l">{E(label)}</span>'
+                f'<span class="v">{value}</span><span class="d">{E(note)}</span></div>')
+
+    lvl_tone = "bad" if level >= 5.0 else "warn" if level >= 4.5 else "good"
+    chop_tone = "bad" if chop >= 8 else "warn" if chop >= 4 else "good"
+    mv_tone = "bad" if move30 is not None and abs(move30) >= 40 else "warn" if move30 is not None and abs(move30) >= 20 else "good"
+    vix_tone = "bad" if (vix or 0) >= 30 else "warn" if (vix or 0) >= 20 else "good"
+    tiles = [
+        tile("10-year yield", f"{level:.2f}%", "what the US pays to borrow",
+             lvl_tone, T10_TIP),
+        tile("Bond choppiness", f"{chop:.1f} bp/day", "avg daily swing, 2 weeks",
+             chop_tone, ("How violently the 10-year yield is moving day to day, in basis points "
+                         "(1bp = 0.01%). Under 4 is calm, 4-8 jumpy, 8+ is the violence that "
+                         "historically shows up right before or during stock crashes. This is the "
+                         "single best simple crash early-warning on the page.")),
+    ]
+    if move30 is not None:
+        tiles.append(tile("30-day move", f"{move30:+.0f} bp", "fast repricing hurts stocks",
+                          mv_tone, ("How far the 10-year yield traveled in a month. Direction matters "
+                                    "less than speed: a 40bp+ move in either direction forces every "
+                                    "investor to reprice everything at once.")))
+    if vix is not None:
+        tiles.append(tile("VIX (stock fear)", f"{vix:.1f}", "confirms or denies the bonds",
+                          vix_tone, ("The stock market's own fear gauge. When bond choppiness AND the "
+                                     "VIX are high together, take the storm signal seriously; if bonds "
+                                     "are calm, a high VIX is usually a buyable scare.")))
+
+    return (f'<section class="bonddial {cls}">'
+            f'<div class="bd-top"><span class="bd-kicker">Bond Market Dial &middot; the simple version</span>'
+            f'<span class="bd-verdict">{verdict}</span></div>'
+            f'<p class="bd-plain">{E(plain)}</p>'
+            f'<p class="bd-why">Why: {E("; ".join(why))}. Rule of thumb: bond volatility becomes market '
+            f'volatility. Treasuries are the foundation every other price is built on, so when they shake, '
+            f'everything above them shakes harder.</p>'
+            f'<div class="bd-stats">{"".join(tiles)}</div></section>')
+
+
 def macro_strip():
     """The macro command strip. Every number here is pulled automatically from
     FRED at refresh time; only the two calendar chips come from the briefing."""
@@ -928,6 +1025,30 @@ a:focus-visible {{ outline: 2px solid var(--copper); outline-offset: 2px; }}
 .kicker-sub {{ margin: 6px 0 0; color: var(--mut); font-size: 13px; }}
 .asof {{ margin: 8px 0 0; color: var(--dim); font-size: 12.5px; font-family: var(--mono); }}
 .tiphint {{ margin: 6px 0 0; color: var(--copper); font-size: 12px; }}
+
+/* bond market dial */
+.bonddial {{ margin: 20px 0 6px; background: var(--panel); border: 1px solid var(--line);
+  border-left: 5px solid var(--up); border-radius: 6px; padding: 16px 18px 14px; }}
+.bonddial.bd-watch {{ border-left-color: var(--warn); }}
+.bonddial.bd-storm {{ border-left-color: var(--down); }}
+.bd-top {{ display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }}
+.bd-kicker {{ font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--mut); }}
+.bd-verdict {{ font-family: var(--disp); font-size: 26px; font-weight: 600; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--up); }}
+.bd-watch .bd-verdict {{ color: var(--warn); }}
+.bd-storm .bd-verdict {{ color: var(--down); }}
+.bd-plain {{ margin: 6px 0 12px; font-size: 14.5px; color: var(--ink); max-width: 72ch; }}
+.bd-why {{ margin: 0 0 12px; font-size: 12px; color: var(--mut); max-width: 80ch; }}
+.bd-stats {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }}
+.bd-stat {{ background: var(--panel-2); border: 1px solid var(--line); border-radius: 4px;
+  padding: 8px 11px 7px; cursor: help; }}
+.bd-stat .l {{ font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--mut);
+  display: block; text-decoration: underline dotted rgba(140,150,164,.5); text-underline-offset: 3px; }}
+.bd-stat .v {{ font-family: var(--mono); font-size: 19px; font-variant-numeric: tabular-nums; }}
+.bd-stat .d {{ font-size: 11px; color: var(--mut); display: block; }}
+.bd-stat.s-good .v {{ color: var(--up); }}
+.bd-stat.s-warn .v {{ color: var(--warn); }}
+.bd-stat.s-bad .v {{ color: var(--down); }}
 
 /* macro strip */
 .macro {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -1229,6 +1350,7 @@ th[data-tip], td[data-tip] {{ cursor: help; }}
     <h1>Long-Term Investing <span class="amp">Monitor</span></h1>
     <span class="date">{E(INS["date"])}</span>
   </header>
+  {bond_dial()}
   <p class="kicker-sub">Built for long-term holding decisions, in priority order: the macro regime, a six-check Bull Score on every name (valuation, profitability, balance sheet, trend), and the briefing. Flow and positioning data lives in the collapsed timing tools at the bottom: it helps you time buys, never choose them.</p>
   <p class="asof">{E(INS["asof"])} Refreshed daily.</p>
   <p class="tiphint">&#9432; Hover any KPI, column header, or macro chip for a plain-English explanation (on a phone, tap it).</p>
