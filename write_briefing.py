@@ -31,6 +31,7 @@ def compact_market(md):
     """Trim market_data.json to what the writer needs (numbers, not sparklines)."""
     out = {"fetched_at": md.get("fetched_at"), "sectors": {}, "indices": {},
            "macro_auto": md.get("macro_auto"), "cot": md.get("cot"),
+           "correction_inputs": md.get("correction"),
            "treasury10y": {k: v for k, v in (md.get("treasury10y") or {}).items() if k != "spark"}}
     for sector, syms in md.get("sectors", {}).items():
         out["sectors"][sector] = {}
@@ -70,6 +71,12 @@ Research checklist (use web search; cite real URLs you actually found):
 Ground every claim in the market data provided. The user's core daily questions are: where are prices
 relative to their recent ranges, are institutions pulling out (distribution days, volume ratios, COT
 week-over-week), and what does the macro regime favor? Use those numbers explicitly.
+
+The page opens with two computed gauges the reader checks first: a Bond Market Dial (10-year yield
+choppiness) and a 6-Month Correction Risk score built from correction_inputs (junk-bond spreads, the
+10Y-3M yield curve, Sahm rule, jobless claims, Fed policy change, 10-year pressure, oil shock, Chicago
+Fed financial conditions, S&P 500 P/E, trend and breadth, VIX vs VIX3M, and heavy-liquidation breadth).
+When any of those inputs moves meaningfully, say so in the briefing and explain it in plain English.
 
 Rules for the JSON:
 - date: the full weekday date for {today}. asof: state the actual last market close date the quotes

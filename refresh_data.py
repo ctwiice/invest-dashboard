@@ -195,6 +195,59 @@ def macro_auto():
         time.sleep(0.3)
     return m
 
+def correction_inputs():
+    """Raw inputs for the 6-month correction-risk gauge: credit, recession,
+    policy and volatility series from FRED, plus S&P 500 valuation from the
+    SPY fund page. Scoring lives in build_dashboard.py so thresholds can be
+    tuned without refetching. Daily FRED rows are trading days, so 63 rows is
+    about 3 months, 126 about 6 and 252 about a year."""
+    def back(rows, n):
+        return rows[-1 - n][1] if len(rows) > n else None
+    c = {}
+    for key, sid in [("hy_oas", "BAMLH0A0HYM2"), ("t10y3m", "T10Y3M"), ("sahm", "SAHMREALTIME"),
+                     ("claims", "ICSA"), ("nfci", "NFCI"), ("vix", "VIXCLS"), ("vix3m", "VXVCLS"),
+                     ("t10", "DGS10"), ("wti", "DCOILWTICO"), ("fedfunds", "FEDFUNDS")]:
+        try:
+            rows = fred_series(sid)
+            d, v = rows[-1]
+            e = {"date": d, "value": v}
+            if key in ("hy_oas", "t10y3m"):
+                yr = [x for _, x in rows[-252:]]
+                e["min1y"] = min(yr)
+                e["ago63"] = back(rows, 63)
+                if key == "t10y3m":
+                    e["days_inverted_1y"] = sum(1 for x in yr if x < 0)
+            elif key == "claims":
+                vals = [x for _, x in rows[-30:]]
+                avg4 = [sum(vals[i - 3:i + 1]) / 4 for i in range(3, len(vals))]
+                e["avg4"] = round(avg4[-1])
+                e["avg4_low26"] = round(min(avg4[-26:]))
+            elif key == "nfci":
+                e["ago13"] = back(rows, 13)
+            elif key in ("t10", "wti"):
+                e["ago63"] = back(rows, 63)
+                e["ago126"] = back(rows, 126)
+            elif key == "fedfunds":
+                e["ago6"] = back(rows, 6)
+            c[key] = e
+        except Exception as ex:
+            print(f"correction {key} FAILED: {ex}", file=sys.stderr)
+        time.sleep(0.3)
+    try:
+        j = get("https://stockanalysis.com/etf/spy/__data.json")
+        for node in j.get("nodes", []):
+            if not node or node.get("type") != "data":
+                continue
+            flat = node["data"]
+            for item in flat:
+                if isinstance(item, dict) and "peRatio" in item and "peForward" in item:
+                    c["spx_pe"] = {"value": resolve(flat, item["peRatio"]),
+                                   "forward": resolve(flat, item["peForward"])}
+                    break
+    except Exception as ex:
+        print(f"correction spx_pe FAILED: {ex}", file=sys.stderr)
+    return c
+
 # CFTC Traders in Financial Futures (weekly, futures-only). Field layout after
 # the quoted market name: [1]yymmdd [2]date ... [7]open interest, then
 # long/short/spread for Dealer(8-10), Asset Manager(11-13), Leveraged(14-16),
@@ -279,6 +332,11 @@ try:
     out["cot"] = cot_positioning()
 except Exception as e:
     print(f"cot FAILED: {e}", file=sys.stderr)
+
+try:
+    out["correction"] = correction_inputs()
+except Exception as e:
+    print(f"correction FAILED: {e}", file=sys.stderr)
 
 json.dump(out, open("market_data.json", "w"))
 print("WROTE market_data.json")

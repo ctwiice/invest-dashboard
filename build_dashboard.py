@@ -734,6 +734,220 @@ def bond_dial():
             f'<div class="bd-stats">{"".join(tiles)}</div></section>')
 
 
+def _f(x):
+    try:
+        return float(x)
+    except (TypeError, ValueError):
+        return None
+
+
+def correction_gauge():
+    """6-Month Correction Risk: twelve classic warning signs, each scored 0
+    (quiet), 1 (warming) or 2 (flashing), summed and scaled to 0-100. Inputs
+    come from refresh_data.py correction_inputs() plus the board itself, so it
+    updates daily with no editing. A factor with no data is left out of the
+    denominator rather than scored as safe."""
+    ci = MD.get("correction") or {}
+    if not ci:
+        return ""
+    factors = []
+
+    def add(group, label, pts, value, note, tip):
+        factors.append({"g": group, "l": label, "p": pts, "v": value, "n": note, "t": tip})
+
+    REC, POL, MKT = "Recession early-warnings", "Rates, policy & energy", "The market itself"
+
+    hy = ci.get("hy_oas") or {}
+    if hy.get("value") is not None:
+        widen = hy["value"] - hy["min1y"] if hy.get("min1y") is not None else 0
+        pts = 2 if hy["value"] >= 5 or widen >= 1.0 else 1 if hy["value"] >= 4 or widen >= 0.5 else 0
+        add(REC, "Junk-bond spreads", pts, f"{hy['value']:.2f}%", f"{widen:+.2f}pp off 1-yr low",
+            "The extra interest risky companies pay over Treasuries. Lenders smell trouble before stock "
+            "investors do, so spreads widening off their lows is one of the most reliable early warnings "
+            "of a selloff. Under 4% is calm; a 1-point jump off the low, or 5%+, is a red flag.")
+
+    yc = ci.get("t10y3m") or {}
+    if yc.get("value") is not None:
+        inv_days = yc.get("days_inverted_1y") or 0
+        if yc["value"] < 0:
+            pts, note = 2, "INVERTED"
+        elif inv_days > 0:
+            pts, note = 2, "just un-inverted: the danger zone"
+        elif yc["value"] < 0.25:
+            pts, note = 1, "flat"
+        else:
+            pts, note = 0, "normal upward slope"
+        add(REC, "Yield curve (10Y-3M)", pts, f"{yc['value']:+.2f}pp", note,
+            "Long-term minus short-term Treasury rates. An inverted curve has preceded every US "
+            "recession since the 1960s, and the most dangerous stretch is usually right AFTER it "
+            "un-inverts. A normal positive slope is a quiet signal.")
+
+    sa = ci.get("sahm") or {}
+    if sa.get("value") is not None:
+        v = sa["value"]
+        pts = 2 if v >= 0.5 else 1 if v >= 0.3 else 0
+        add(REC, "Sahm rule (jobs)", pts, f"{v:.2f}", "0.50 = recession has begun" if pts == 2 else
+            "rising: watch" if pts == 1 else "no recession signal",
+            "Created by economist Claudia Sahm: when the 3-month average unemployment rate rises 0.5 "
+            "points above its low of the past year, a recession has historically already started. "
+            "Bear markets and recessions travel together.")
+
+    cl = ci.get("claims") or {}
+    if cl.get("avg4") and cl.get("avg4_low26"):
+        rise = (cl["avg4"] / cl["avg4_low26"] - 1) * 100
+        pts = 2 if rise >= 20 else 1 if rise >= 10 else 0
+        add(REC, "Jobless claims", pts, f"{cl['avg4'] / 1000:.0f}K/wk", f"{rise:+.0f}% vs 6-month low",
+            "New unemployment filings, averaged over 4 weeks. The fastest-moving read on layoffs: "
+            "a 20%+ climb off the low has shown up ahead of most downturns.")
+
+    ff = ci.get("fedfunds") or {}
+    if ff.get("value") is not None and ff.get("ago6") is not None:
+        chg = ff["value"] - ff["ago6"]
+        pts = 2 if chg >= 0.75 else 1 if chg >= 0.10 else 0
+        add(POL, "Fed policy", pts, f"{ff['value']:.2f}%",
+            f"{chg:+.2f}pp in 6 months" + (": hiking" if chg >= 0.10 else ""),
+            "The Fed's policy rate versus six months ago. 'Don't fight the Fed': rate-hiking cycles "
+            "are when most corrections and bear markets begin, because rising borrowing costs squeeze "
+            "both company profits and what investors will pay for them.")
+
+    t10 = ci.get("t10") or {}
+    if t10.get("value") is not None and t10.get("ago126") is not None:
+        chg = t10["value"] - t10["ago126"]
+        pts = 2 if (t10["value"] >= 5.0 and chg >= 0.5) or chg >= 1.0 else \
+            1 if t10["value"] >= 4.75 or chg >= 0.5 else 0
+        add(POL, "10-year pressure", pts, f"{t10['value']:.2f}%", f"{chg:+.2f}pp in 6 months", T10_TIP)
+
+    wti = ci.get("wti") or {}
+    if wti.get("value") is not None and wti.get("ago63"):
+        c3 = (wti["value"] / wti["ago63"] - 1) * 100
+        c6 = (wti["value"] / wti["ago126"] - 1) * 100 if wti.get("ago126") else 0
+        hi = wti["value"] >= 100
+        pts = 2 if c3 >= 30 or c6 >= 50 or (hi and c3 >= 15) else 1 if hi or c3 >= 15 or c6 >= 25 else 0
+        add(POL, "Oil shock", pts, f"${wti['value']:.0f}", f"{c3:+.0f}% in 3 months",
+            "Sharp oil spikes preceded the 1973, 1990 and 2008 downturns: they act like a tax on "
+            "every consumer and push inflation up, which forces the Fed to stay tough. Oil over "
+            "$100 that got there fast is the danger pattern.")
+
+    nf = ci.get("nfci") or {}
+    if nf.get("value") is not None:
+        chg = nf["value"] - nf["ago13"] if nf.get("ago13") is not None else 0
+        pts = 2 if nf["value"] > 0 else 1 if chg >= 0.15 else 0
+        add(POL, "Financial conditions", pts, f"{nf['value']:+.2f}",
+            "tighter than average" if nf["value"] > 0 else f"loose ({chg:+.2f} in 3 months)",
+            "The Chicago Fed's index of how easy money is to get across 100+ measures of lending, "
+            "credit and markets. Negative means looser than average; crossing above zero means money "
+            "is getting hard to find, and stocks usually notice.")
+
+    pe = ci.get("spx_pe") or {}
+    pev = _f(pe.get("value"))
+    if pev:
+        pts = 2 if pev >= 27 else 1 if pev >= 22 else 0
+        fwd = _f(pe.get("forward"))
+        add(MKT, "S&P 500 valuation", pts, f"{pev:.1f}x",
+            f"trailing P/E{f' ({fwd:.1f}x forward)' if fwd else ''}",
+            "What investors pay per dollar of the last year's S&P 500 profits; the long-run average is "
+            "about 16-17x. Rich valuations rarely CAUSE a selloff, but they set how far prices can fall "
+            "once something else does: expensive markets correct deeper.")
+
+    spy = (MD.get("indices") or {}).get("SPY (S&P 500)") or {}
+    sp = [x for x in (spy.get("spark") or []) if x]
+    board = [r for syms in MD.get("sectors", {}).values() for r in syms.values()]
+    above = total = heavy = 0
+    for r in board:
+        p = (r.get("quote") or {}).get("p")
+        s200 = n(r.get("stats") or {}, "sma200")
+        if p and s200:
+            total += 1
+            above += p > s200
+        if ((r.get("pos") or {}).get("heavy") or 0) > 0:
+            heavy += 1
+    if spy.get("price") and len(sp) >= 40:
+        sma200 = sum(sp[-40:]) / 40
+        vs = (spy["price"] / sma200 - 1) * 100
+        dd = (spy.get("pos") or {}).get("ddays") or 0
+        breadth = round(above / total * 100) if total else None
+        pts = 2 if vs < 0 else 1 if dd >= 5 or (breadth is not None and breadth < 50) else 0
+        add(MKT, "Trend & breadth", pts, f"{vs:+.1f}%",
+            f"SPY vs 200-day; {breadth}% of board above theirs, {dd} D-days" if breadth is not None
+            else f"SPY vs 200-day, {dd} distribution days",
+            "Is the market itself still healthy? Below the 200-day average is a downtrend. Five or more "
+            "distribution days (institutional selling days) in five weeks, or fewer than half the board "
+            "above their own 200-day lines, means the rally is narrowing: tops form this way.")
+
+    vx, v3 = (ci.get("vix") or {}).get("value"), (ci.get("vix3m") or {}).get("value")
+    if vx and v3:
+        ratio = vx / v3
+        pts = 2 if ratio >= 1.0 else 1 if ratio >= 0.92 else 0
+        add(MKT, "Fear structure", pts, f"{ratio:.2f}",
+            "PANIC: near-term fear above long-term" if pts == 2 else
+            "near-term fear rising" if pts == 1 else "calm term structure",
+            "Today's VIX divided by the 3-month VIX. Normally traders expect calm now and more "
+            "uncertainty later (under 0.9). When near-term fear catches up to or overtakes long-term "
+            "fear (0.92 and up, especially over 1.0), the market is in active stress.")
+
+    if board:
+        share = heavy / len(board) * 100
+        pts = 2 if share >= 20 else 1 if share >= 10 else 0
+        add(MKT, "Institutional selling", pts, f"{heavy} of {len(board)}",
+            "names with heavy-liquidation days",
+            "How many names on this board took a heavy-volume selling day (down 1.5%+ on 1.5x normal "
+            "volume) in the last week. One name is news; a fifth of the board at once means big money "
+            "is de-risking across the whole market, not just trimming a position.")
+
+    if not factors:
+        return ""
+    got, mx = sum(f["p"] for f in factors), 2 * len(factors)
+    score = round(got / mx * 100)
+    if score >= 65:
+        band, cls, plain = "HIGH", "cr-high", (
+            "Many of the classic warning signs are flashing at once. Historically this is when 10-20% "
+            "drops happen. Protect first: keep scheduled buys into broad funds small and steady, add "
+            "nothing speculative, and make sure you could hold every position through a deep drawdown.")
+    elif score >= 45:
+        band, cls, plain = "ELEVATED", "cr-elev", (
+            "Several warning signs are on. A correction over the next six months is more likely than "
+            "usual. Not a reason to sell long-term holdings, but a reason to buy in smaller pieces, "
+            "favor quality and broad funds, and keep some dry powder for better prices.")
+    elif score >= 25:
+        band, cls, plain = "MODERATE", "cr-mod", (
+            "A few warning signs are on, mostly the slow-burn kind, not the recession kind. Normal "
+            "pullback risk with some extra pressure points worth watching. Keep buying on schedule; "
+            "stay picky with new money and spread big buys out over time.")
+    else:
+        band, cls, plain = "LOW", "cr-low", (
+            "Few warning signs. The conditions that usually come before big drops are mostly absent. "
+            "Pullbacks still happen in good markets, but the backdrop supports long-term buying.")
+
+    hot = sorted([f for f in factors if f["p"]], key=lambda f: -f["p"])
+    drivers = ", ".join(f'{f["l"]} ({"flashing" if f["p"] == 2 else "warming"})' for f in hot[:4])
+    if len(hot) > 4:
+        drivers += f", plus {len(hot) - 4} more warming"
+    quiet = [f["l"] for f in factors if not f["p"]]
+
+    groups = ""
+    for g in (REC, POL, MKT):
+        tiles = "".join(
+            f'<div class="bd-stat s-{("good", "warn", "bad")[f["p"]]}" title="{E(f["t"])}">'
+            f'<span class="l">{E(f["l"])}</span><span class="v">{f["v"]}</span>'
+            f'<span class="d">{E(f["n"])}</span></div>'
+            for f in factors if f["g"] == g)
+        if tiles:
+            groups += f'<h4 class="cr-group">{E(g)}</h4><div class="bd-stats">{tiles}</div>'
+
+    return (f'<section class="riskgauge {cls}">'
+            f'<div class="bd-top"><span class="bd-kicker">6-Month Correction Risk &middot; '
+            f'{len(factors)} warning signs</span><span class="cr-band">{band}</span>'
+            f'<span class="cr-score">{score}/100</span></div>'
+            f'<div class="cr-meter" role="img" aria-label="Risk score {score} of 100">'
+            f'<span style="width:{score}%"></span></div>'
+            f'<p class="bd-plain">{E(plain)}</p>'
+            f'<p class="bd-why">Pushing it up: {E(drivers) if drivers else "nothing"}. '
+            f'Quiet: {E(", ".join(quiet)) if quiet else "nothing"}. A risk score, not a forecast: '
+            f'10% corrections arrive every year or two on average even in strong markets. This tells '
+            f'you whether today\'s conditions make one more or less likely than usual.</p>'
+            f'{groups}</section>')
+
+
 def macro_strip():
     """The macro command strip. Every number here is pulled automatically from
     FRED at refresh time; only the two calendar chips come from the briefing."""
@@ -1039,7 +1253,7 @@ a:focus-visible {{ outline: 2px solid var(--copper); outline-offset: 2px; }}
 .bd-storm .bd-verdict {{ color: var(--down); }}
 .bd-plain {{ margin: 6px 0 12px; font-size: 14.5px; color: var(--ink); max-width: 72ch; }}
 .bd-why {{ margin: 0 0 12px; font-size: 12px; color: var(--mut); max-width: 80ch; }}
-.bd-stats {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }}
+.bd-stats {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; }}
 .bd-stat {{ background: var(--panel-2); border: 1px solid var(--line); border-radius: 4px;
   padding: 8px 11px 7px; cursor: help; }}
 .bd-stat .l {{ font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--mut);
@@ -1049,6 +1263,29 @@ a:focus-visible {{ outline: 2px solid var(--copper); outline-offset: 2px; }}
 .bd-stat.s-good .v {{ color: var(--up); }}
 .bd-stat.s-warn .v {{ color: var(--warn); }}
 .bd-stat.s-bad .v {{ color: var(--down); }}
+
+/* 6-month correction risk gauge */
+.riskgauge {{ margin: 12px 0 6px; background: var(--panel); border: 1px solid var(--line);
+  border-left: 5px solid var(--up); border-radius: 6px; padding: 16px 18px 14px; }}
+.riskgauge.cr-mod {{ border-left-color: var(--warn); }}
+.riskgauge.cr-elev {{ border-left-color: #E08A4F; }}
+.riskgauge.cr-high {{ border-left-color: var(--down); }}
+.cr-band {{ font-family: var(--disp); font-size: 26px; font-weight: 600; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--up); }}
+.cr-mod .cr-band {{ color: var(--warn); }}
+.cr-elev .cr-band {{ color: #E08A4F; }}
+.cr-high .cr-band {{ color: var(--down); }}
+.cr-score {{ font-family: var(--mono); font-size: 15px; color: var(--mut); }}
+.cr-meter {{ position: relative; height: 8px; margin: 10px 0 2px; border-radius: 4px; overflow: hidden;
+  background: linear-gradient(90deg, rgba(87,181,131,.25) 0 25%, rgba(212,175,84,.25) 25% 45%,
+  rgba(224,138,79,.25) 45% 65%, rgba(224,101,79,.25) 65% 100%); }}
+.cr-meter span {{ position: absolute; left: 0; top: 0; bottom: 0; border-radius: 4px;
+  background: var(--up); }}
+.cr-mod .cr-meter span {{ background: var(--warn); }}
+.cr-elev .cr-meter span {{ background: #E08A4F; }}
+.cr-high .cr-meter span {{ background: var(--down); }}
+.cr-group {{ margin: 12px 0 6px; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--copper); font-weight: 600; }}
 
 /* macro strip */
 .macro {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -1351,6 +1588,7 @@ th[data-tip], td[data-tip] {{ cursor: help; }}
     <span class="date">{E(INS["date"])}</span>
   </header>
   {bond_dial()}
+  {correction_gauge()}
   <p class="kicker-sub">Built for long-term holding decisions, in priority order: the macro regime, a six-check Bull Score on every name (valuation, profitability, balance sheet, trend), and the briefing. Flow and positioning data lives in the collapsed timing tools at the bottom: it helps you time buys, never choose them.</p>
   <p class="asof">{E(INS["asof"])} Refreshed daily.</p>
   <p class="tiphint">&#9432; Hover any KPI, column header, or macro chip for a plain-English explanation (on a phone, tap it).</p>

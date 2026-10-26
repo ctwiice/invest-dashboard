@@ -35,6 +35,18 @@ spark + VIX), no editorial input: choppiness = average absolute daily move of th
 STEADY / WATCH / STORM with fixed plain-English guidance per state. Do not remove
 or bury it; it stays at the very top above the macro strip.
 
+**6-Month Correction Risk gauge (added Oct 26, 2026, Julie's request):** sits
+directly under the Bond Market Dial. Twelve warning signs, each scored 0 quiet /
+1 warming / 2 flashing, summed and scaled 0-100 (LOW <25, MODERATE 25-44,
+ELEVATED 45-64, HIGH 65+). Inputs: refresh_data.py correction_inputs() fetches FRED
+BAMLH0A0HYM2 (junk spreads), T10Y3M (curve), SAHMREALTIME, ICSA (claims), NFCI,
+VIXCLS + VXVCLS (fear term structure), DGS10, DCOILWTICO, FEDFUNDS, plus SPY
+trailing/forward P/E from stockanalysis; the board itself supplies trend/breadth
+(SPY vs 200-day from 40 weekly closes, % of board above 200-day, SPY D-days) and
+heavy-liquidation breadth. Scoring thresholds live in build_dashboard.py
+correction_gauge(). Missing inputs drop out of the denominator rather than
+scoring as safe. It is labeled a risk score, not a forecast.
+
 ## Daily refresh pipeline
 
 FULLY AUTOMATED IN THE CLOUD (as of Aug 17, 2026). The GitHub Actions workflow
