@@ -1,18 +1,18 @@
 {
-  "date": "Monday, October 26, 2026",
-  "asof": "Quotes captured live intraday Mon Oct 26, 2026 (~12:05 PM ET), mid-rebound. Macro chips and both gauges at the top update automatically from FRED with a lag of a day or more.",
-  "close_date": "Oct 26, 2026",
+  "date": "Wednesday, October 28, 2026",
+  "asof": "Quotes captured live intraday Wed Oct 28, 2026 (~2:01 PM ET), one minute after the Fed's decision and before Warsh's 2:30 press conference and the Microsoft and Alphabet reports after the close. Macro chips and both gauges at the top update automatically from FRED, which runs a day or more behind (10-year as of Oct 26, oil and junk spreads as of Oct 27).",
+  "close_date": "Oct 28, 2026",
   "macro": {
     "nextCpi": {
       "label": "Next CPI print",
       "value": "~Nov 12",
-      "delta": "October data. September re-accelerated to 3.7%, and October carries the oil spike (Brent hit $116.72 Friday, its highest close since April). Before that, Thursday brings Q3 GDP (forecast about 3.0%) and the PCE inflation gauge the Fed prefers.",
+      "delta": "October data, which carries the oil spike (Brent near $111 today, WTI about $103). September ran 3.7%. Before that: Q3 GDP and PCE inflation Thursday, the jobs report Fri Nov 6, and the midterm elections Tue Nov 3.",
       "tone": "warn"
     },
     "nextFomc": {
       "label": "Next FOMC",
-      "value": "Wed Oct 28",
-      "delta": "Decision Wednesday, with futures putting roughly 90% odds on a hold after September's hike to 3.75-4.00%. The real event is what Warsh says about December. Microsoft and Alphabet report after the close the same day, and Amazon Thursday.",
+      "value": "Wed Dec 9",
+      "delta": "Today: held at 3.75-4.00%, but 10-2 with Governor Cook and Cleveland's Hammack voting for another hike. Statement: inflation 'remains elevated', growth 'strong', no promise either way. Two hawkish dissents keep a December hike live.",
       "tone": "warn"
     }
   },
@@ -23,8 +23,8 @@
       "name": "Vanguard S&P 500 ETF",
       "type": "ETF / Core",
       "thesis": "You like ETFs because you own the whole field without betting the farm on one company, and the last two weeks made the case again. VOO holds the 500 largest US companies for a rock-bottom 0.03% fee. It closed Friday at 703.71, about 1.5% off its record, 1.8% above its 50-day average and up 3.7% over 30 days, with just 3 distribution days in the trailing window against 5 to 6 for the semiconductor and Nasdaq funds. Underneath, the week split hard: chips fell about 5% on rising Treasury yields while healthcare, uranium and the quantum names ran. Owning all 500 turned that tug-of-war into a mild -1.4% week and a still-rising 30-day trend.",
-      "why_now": "The correction gauge's 'moderate, no recession' reading is VOO's ideal environment for scheduled buying: SPY sits at 30% of its 30-day range, 4.9% above its 200-day, with no heavy-liquidation events, while the board's 18 flagged names sit inside the sectors that get diluted in an index. Monday's bounce changes nothing about the schedule.",
-      "risk": "Five distribution days on SPY is the classic narrowing signal, and only 40% of the board sits above its own 200-day line. If Microsoft and Alphabet disappoint Wednesday, the index's AI-heavy top weights pull it lower too, just less than the theme funds.",
+      "why_now": "The setup for scheduled buying improved this week: SPY has slipped to 4 distribution days (from 5), sits at 58% of its 30-day range and about 5.6% above its 200-day with no heavy-liquidation events, and VOO itself carries only 1 distribution day. The correction gauge's 'moderate, no recession' reading is exactly what an index schedule is built for.",
+      "risk": "Only 36% of the board sits above its own 200-day line, so the index is being carried by fewer names. Microsoft and Alphabet are top weights reporting tonight, and a hawkish Fed with a 5% 10-year caps how much investors will pay for earnings (the S&P trades at 24.6x trailing).",
       "sources": [
         [
           "Stock market today: Dow, S&P 500, Nasdaq rise after July jobs report surprises to the downside",
@@ -55,7 +55,7 @@
         }
       ],
       "factors": "Quality and breadth. This is the only holding on the shortlist where you are not making a sector bet, and the flow data says institutions agree: one distribution day, zero heavy liquidation events, and no heavy liquidation events across any of the 21 funds on the ETF shelf. The 30-day range position of 100% is the one factor arguing for patience.",
-      "trade_reasoning": "Treat the levels below as a discipline for sizing, not a trading plan. The reference entry is Friday's 710.71 close, which is a poor opportunistic price and a perfectly ordinary scheduled one. The volatility-based stop near 620.56 is roughly 12.7% lower, which is useful mainly as a reminder of how much ordinary noise this fund produces in a normal year rather than as an instruction to sell. Monte Carlo puts one-year odds of a loss at about 23% with a median gain near 14%, which is the honest shape of buying a broad index at a high: usually fine, occasionally uncomfortable, rarely permanent."
+      "trade_reasoning": "Treat the levels as a sizing discipline, not a trading plan. The reference entry is about 708.84 (today's price). The volatility-based stop near 642.77 is about 9.3% lower, mainly a reminder of how much ordinary noise a broad index produces in a normal year, and the take-profit near 873.24 gives a 2.49 reward-to-risk. Monte Carlo puts one-year odds of a loss at about 26.8% with a median gain near 10.6%, and three-year odds of a loss near 14.7%: usually fine, occasionally uncomfortable, rarely permanent."
     },
     {
       "rank": 2,
@@ -63,8 +63,8 @@
       "name": "Eli Lilly",
       "type": "Stock / Healthcare",
       "thesis": "The reason this sits at number two is that it is the one holding on the shortlist whose fortunes have almost nothing to do with AI capital spending. Lilly closed at 1,185.71 on Friday, down 0.52% on a day when 57 of 70 names rose, which tells you exactly what it is: the ballast. The business case rests on the two GLP-1 franchises, which grew 91% and 123% in the most recent quarter and drove revenue up 48%, with full-year guidance raised to $85 billion to $87 billion. US market share widened to 60.9% against Novo Nordisk's 38.8% after Novo's CagriSema lost a head-to-head trial. The quant history is the strongest of the three: a 31.1% ten-year compound return, a Sharpe of 0.94, and the best reward-to-risk setup on the shortlist at 3.71.",
-      "why_now": "Still the steadiest pick: +8.1% in 30 days, 7.7% above its 50-day average, and only 2 distribution days, the cleanest flow reading among the large caps. It sits inside the one sector (healthcare, XLV at 85% of its range) the rotation keeps favoring.",
-      "risk": "Monday shows the rotation risk: money flowing back into chips pulled Merck and UnitedHealth lower. A strong Wednesday for tech could extend that. Medicare pricing negotiation and oral GLP-1 competition remain the structural overhangs.",
+      "why_now": "Still the steadiest pick: +9.1% in 30 days, 8.4% above its 50-day average, at 91% of its 30-day range with only 2 distribution days, the cleanest flow reading among the large caps. It sits in healthcare (XLV +5.4% in a month), the sector a higher-for-longer Fed keeps favoring.",
+      "risk": "It is near the top of its range, so new money buys strength, not a dip; a strong tech night could pull money out of healthcare as it did Monday (Merck carries a heavy-selling flag). Medicare price negotiation and oral GLP-1 competition remain the structural overhangs.",
       "sources": [
         [
           "CMS Issues First Proposed Rule for IRA Medicare Drug Price Negotiation",
@@ -95,7 +95,7 @@
         }
       ],
       "factors": "Quality and growth at a full price. The strongest fundamentals on the shortlist and the best reward-to-risk ratio in the quant work (3.71), offset by the fullest valuation. The flow factors are neutral, which is exactly what you want in the position meant to behave differently from everything else you own.",
-      "trade_reasoning": "The reference entry is Friday's 1,185.71 close. The volatility-based stop near 992.03 is about 16.3% lower, which is a fair description of how much this stock moves on a single trial result or policy headline, and the take-profit near 1,903.91 produces the best reward-to-risk on the shortlist at 3.71. Monte Carlo puts one-year odds of a loss at about 18.8%, the lowest of the three, with a median gain near 31.2%. The practical approach is to scale in rather than buy at once, and to treat the Aug 17 comment deadline as a likely source of a cheaper print rather than a reason to avoid the name."
+      "trade_reasoning": "The reference entry is about 1,292 (today's price). The volatility-based stop near 1,044.54 is about 19.2% lower, a fair description of how much this stock moves on a trial result or policy headline, and the take-profit near 2,214.61 gives the best reward-to-risk of the three at 3.72. Monte Carlo puts one-year odds of a loss at about 17.2% (the lowest of the three) with a median gain near 37.6%, though that simulation draws on an unusually strong decade for the stock. Scale in rather than buying at once."
     },
     {
       "rank": 3,
@@ -103,8 +103,8 @@
       "name": "VanEck Semiconductor ETF",
       "type": "ETF / AI hardware",
       "thesis": "This is the diversified way to own the AI hardware layer without picking which chip company wins. It closed at 582.70 on Friday, up 1.96%, and the case for owning the basket rather than the parts has now been demonstrated three sessions running from three different directions: it lost only 1.04% while AMD fell 7%, gained about 1% while Western Digital fell 11%, and on Friday rose 1.96% while Western Digital fell another 3.8% to a 30-day low. The fund is doing exactly what a basket is supposed to do. The underlying demand is not in question: roughly $725 billion of hyperscaler capital spending in 2026, up about 77% year over year, with Microsoft disclosing an $80 billion Azure order backlog it cannot fill because of power constraints.",
-      "why_now": "Bouncing 2.8% Monday on Anthropic's IPO filing, from 10.7% down over 30 days and 5.6% under its 50-day. The demand case is intact and getting more evidence (a frontier lab disclosing $16.29 billion of half-year revenue is a GPU, memory and networking order book). Wednesday's capex reports are the checkpoint; tranches around them beat a lump sum.",
-      "risk": "Semiconductors slipped into a bear market last week and SMH still carries 7 distribution days; bounces inside a liquidation often fail. Financing stress (CCC spreads at multi-year highs, about $600 billion of AI-related debt this year) is the risk that could outlast any one earnings week.",
+      "why_now": "A three-day bounce (+1.3% today) led by the most beaten-down layers, from a starting point 6.7% down over 30 days and 1.3% under its 50-day. The demand evidence keeps building: a roughly $63 billion financing package for AI compute is a chip, memory and networking order book. Tonight's capex reports are the checkpoint; tranches either side of them beat a lump sum.",
+      "risk": "SMH still carries 7 distribution days and a heavy-liquidation flag, and much of the chip-equipment group (Lam, Applied, KLA, TSMC) is still flagged. Bounces inside a liquidation can fail, and debt-funded AI spending plus a 5% 10-year is the risk that could outlast any one earnings week.",
       "sources": [
         [
           "Big Tech AI spending plans reach $725 billion",
@@ -135,131 +135,139 @@
         }
       ],
       "factors": "Momentum and cyclical growth, currently in a repair phase. The fundamental driver is hyperscaler capital spending, which is still rising sharply. The flow factors are the constraint: seven distribution days, still below the 50-day average, and half-normal volume on the up days. Improving, not yet healthy.",
-      "trade_reasoning": "The reference entry is Friday's 582.70 close, which sits in the middle of the 30-day range and below the 50-day average, so it is a more reasonable opportunistic price than the broad index. The volatility-based stop near 437.96 is about 24.8% lower, which is an honest reflection of how much this fund can fall in a cycle turn (its worst historical drawdown was -44.5%). Take-profit near 950.33 gives a 2.54 reward-to-risk. Monte Carlo puts one-year odds of a loss at 17.1%, the lowest of the three, with a median gain near 33.8%, but note the fifth-percentile outcome of -18.3% is the fat tail you are accepting. Scale in on weakness."
+      "trade_reasoning": "The reference entry is about 565.30 (today's price), just under the 50-day average, a more reasonable opportunistic price than the index. The volatility-based stop near 497.25 is about 12% lower and the take-profit near 929.45 gives a 5.35 reward-to-risk. Monte Carlo puts one-year odds of a loss at 21% with a median gain near 31.2%, but the fifth-percentile outcome of -25.1% is the fat tail you accept here (the fund's worst historical drawdown was -44.5%). Scale in on weakness."
     }
   ],
-  "top_picks_note": "Reviewed Oct 26: all three stay. The new correction gauge reads MODERATE with recession signals quiet, which is the environment this mix was designed for: the index on schedule, the defensive sleeve holding, and the growth sleeve offering better prices with Wednesday as its checkpoint. Research, not financial advice.",
+  "top_picks_note": "Reviewed Oct 28: all three stay. The Fed's hawkish hold and a 5% 10-year favor exactly this mix: the index on schedule, the cash-generating healthcare leader, and the chip fund bought in pieces while the institutional selling clears. Tonight's Microsoft and Alphabet reports are the next checkpoint for SMH. Research, not financial advice.",
   "insights": [
     {
       "tag": "LIQUIDATION",
       "layer": "Positioning",
-      "title": "A relief rally into the biggest week of the quarter, but the institutional selling has not cleared",
-      "body": "Monday is a genuine bounce: SMH +2.8%, SOXX +3.1%, and the hardest-hit photonics names lead the board (Lumentum +8.3%, Applied Optoelectronics +6.8%, Ciena +6%, Fabrinet +5.5%), with the S&P up 0.7% and the Nasdaq 100 up 1.2% at midday. It comes after the S&P and Nasdaq logged back-to-back weekly losses and the semiconductor index slipped into a bear market (20% off its high). The board says to respect the bounce but not trust it yet: 18 names still carry heavy-liquidation flags (down only from 20), SOXX carries 9 distribution days, SMH 7, and the uranium funds 8 to 9 each. SPY itself has 5 distribution days, the classic threshold where rallies start to narrow. Bounces inside a liquidation are normal and often sharp; the tell that selling is finished is the heavy-volume flags disappearing, not one green day.",
-      "matters": "Nothing changes for scheduled buys: they continue. For new discretionary money into chips or nuclear, Wednesday's FOMC and the Microsoft and Alphabet capex reports are 48 hours away and will decide whether this bounce has legs. Buying in pieces before and after Wednesday beats guessing which side of it the low sits on.",
+      "title": "A third green day for chips, and the S&P's selling pressure is easing, but 19 names still carry heavy-selling flags",
+      "body": "The bounce has stretched into a third session. Today's leaders are the most beaten-up AI hardware layers: Vertiv +14.6% on earnings, Fabrinet +8.5%, SanDisk +5.5%, Lam +5.3%, Applied Materials +4.9%, Corning +4.5%, Micron +4.4%, Quanta +4.0%. SMH is +1.3% and SOXX +1.1%. The index itself looks healthier: SPY has slipped from 5 distribution days to 4, sits at 58% of its 30-day range with zero heavy-liquidation events, and VOO carries just 1. Under the surface the repair is not finished: 19 of 74 names still have a heavy-liquidation day inside the last five sessions (18 Monday), mostly chip equipment, electrical and photonics (Lam, Applied, KLA, Corning, Quanta, Eaton, Hubbell, Coherent, TSMC, Arista, GE Vernova), and only 36% of the board sits above its own 200-day line. SOXX still carries 8 distribution days and the uranium funds 7 to 9.",
+      "matters": "This is what the early part of a recovery looks like, not proof of one. The tell is the heavy-volume flags rolling off over the next week without new ones appearing. Tonight's Microsoft and Alphabet reports are the event most likely to add or clear flags, so new discretionary money into chips still goes in pieces either side of them. Scheduled VOO buys are unaffected.",
       "sources": [
         [
-          "Yahoo: Oct 26 rally on Anthropic filing, tech earnings week",
-          "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-26-dow-sp-500-nasdaq-101153035.html"
+          "Yahoo: Oct 28 live, Fed decision and Big Tech earnings",
+          "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
         ],
         [
-          "Invezz: Nasdaq opens higher as tech gains",
-          "https://invezz.com/news/2026/10/26/nasdaq-opens-higher-as-tech-names-gain-after-anthropic-files-for-ipo/"
+          "Yahoo/AOL: tech rises a third day",
+          "https://www.aol.com/articles/tech-rises-third-day-row-134910000.html"
         ]
       ]
     },
     {
-      "tag": "NEW GAUGE",
-      "layer": "Risk",
-      "title": "The new 6-Month Correction Risk gauge reads MODERATE (42/100): pressure without recession",
-      "body": "Added at the top of the page under the Bond Market Dial: twelve classic warning signs that have historically come before corrections, each scored quiet, warming, or flashing. Today 8 of 12 are on, and the pattern matters more than the number. Flashing: the oil shock ($108 WTI, up 23% in three months, the pattern that preceded the 1973, 1990 and 2008 downturns) and institutional selling breadth (18 of 74 names with heavy-liquidation days). Warming: junk-bond spreads (3.38%, up 0.78 points off their one-year low), a hiking Fed, a 10-year near 5%, a rich 24.5x S&P trailing P/E, narrow breadth (only 40% of the board above its own 200-day line even though SPY itself is 4.9% above its), and near-term fear creeping up to long-term fear (VIX/VIX3M 0.95). Quiet, and this is the important part: every recession signal. The yield curve is normal (+0.78), the Sahm rule is at 0.00, jobless claims are flat near 198K a week, and Chicago Fed financial conditions are still looser than average.",
-      "matters": "This is what a correction-prone market looks like, not a crash-prone one: expensive, rate-pressured, oil-shocked and de-grossing, but with the economy and credit system still sound. Those conditions usually produce 10-15% pullbacks rather than bear markets. The two inputs to watch most: junk-bond spreads (a jump toward 4.5-5% would mean credit, not just stocks, is worried) and jobless claims (a 20% climb off the low would turn the recession column on). Hover any tile for what it measures.",
+      "tag": "BOND DIAL",
+      "layer": "Macro",
+      "title": "The Bond Market Dial moved from STEADY to WATCH: the 10-year touched 5% and is getting jumpier",
+      "body": "Two things changed at the top of the page. The Bond Market Dial now reads WATCH: the 10-year is moving 4.6 basis points a day on average (the 'jumpy' band starts at 4) and sits right at 5.00%, a level that pulls money out of stocks on its own. It traded near 5.02% just before the Fed's decision. The 6-Month Correction Risk gauge holds at 42/100, MODERATE, but its mix shifted: 10-year pressure is now flashing (5% plus a 0.69-point rise in six months), while fear structure calmed (VIX 17.5 against 19.6 for the 3-month VIX, a normal, relaxed shape) and junk spreads eased to 3.18% from 3.38%. Oil ($103 WTI, +20% in three months) and institutional selling remain flashing. All four recession signals are still quiet.",
+      "matters": "The risk has moved from stocks toward bonds this week. That matters for long-duration growth names (quantum, space, the nuclear developers) more than for cash-generating ones, which is why the speculative sheet lagged today while chips rose. Nothing here argues for selling long-term holdings; it argues for not stretching on speculative new positions until the 10-year calms.",
       "sources": [
         [
-          "FRED: ICE BofA high yield spread",
-          "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+          "Yahoo: Fed holds in split 10-2 vote",
+          "https://finance.yahoo.com/economy/policy/live/fed-meeting-live-updates-federal-reserve-october-meeting-kevin-warsh-161129201.html"
         ],
         [
-          "FRED: Sahm rule real-time",
-          "https://fred.stlouisfed.org/series/SAHMREALTIME"
+          "Yahoo: Oct 28 live, Fed decision and Big Tech earnings",
+          "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
+        ]
+      ]
+    },
+    {
+      "tag": "FED",
+      "layer": "Macro",
+      "title": "The Fed held, but two officials wanted another hike: a hawkish pause into the midterms",
+      "body": "The FOMC kept the funds rate at 3.75-4.00% today, as about 92% of futures pricing expected, after September's first hike since 2023. The vote was 10-2: Governor Lisa Cook and Cleveland Fed President Beth Hammack dissented in favor of raising rates a quarter point. The statement says inflation remains elevated, describes growth as strong with robust capital investment, and gives no explicit guidance on further moves, citing geopolitical developments as a source of uncertainty. Chair Warsh's 2:30 press conference had not happened when these quotes were captured. Stocks were modestly higher into the decision (S&P +0.1-0.2%), and the 10-year was near 5.02%.",
+      "matters": "Two dissents for a hike is the market's warning that December (Dec 9) is a live meeting, especially if October CPI on Nov 12 carries the oil spike. Higher for longer keeps favoring cash flow: VOO on schedule, LLY and the healthcare sleeve, regulated utilities, and the cyber funds' recurring revenue. It is a headwind, not a crisis, for the profitable AI hardware names.",
+      "sources": [
+        [
+          "Federal Reserve: Oct 28 FOMC statement",
+          "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
         ],
         [
-          "FRED: Chicago Fed NFCI",
-          "https://fred.stlouisfed.org/series/NFCI"
+          "Yahoo: Fed holds in split 10-2 vote",
+          "https://finance.yahoo.com/economy/policy/live/fed-meeting-live-updates-federal-reserve-october-meeting-kevin-warsh-161129201.html"
+        ],
+        [
+          "CNN: Fed keeps rates unchanged before midterms",
+          "https://www.cnn.com/2026/10/28/business/live-news/federal-reserve-interest-rate-october"
         ]
       ]
     },
     {
       "tag": "AI CAPITAL",
       "layer": "Capital",
-      "title": "Anthropic files to go public, and chips lead the rebound on it",
-      "body": "Anthropic publicly filed its IPO registration Monday, planning to list on Nasdaq under the ticker ANT with trading possible as soon as November 16; no price range or offer size is set yet. The filing shows $16.29 billion of revenue in the first half of 2026 versus about $1.16 billion a year earlier, and a large net loss that the company attributes mostly to accounting charges. The market read it as a demand signal for the compute supply chain: Nvidia +2.1%, Broadcom +2.6% and Micron +3.4% at midday. It also lands squarely on last week's fear: AI labs need staggering amounts of capital, and a public listing is one more funding channel beside hyperscaler budgets and debt. Disclosure: this briefing is written by Claude, an Anthropic model, so treat this card as facts from the filing coverage only, not an opinion on the stock.",
-      "matters": "For the board, the relevant read is supply-chain demand, not the IPO itself: revenue growth of that size at a frontier AI lab translates into GPU, memory, networking and power orders, which supports the SMH thesis and the power names. A new mega-listing can also pull money out of existing AI stocks as funds make room for it, a real short-term headwind in the weeks around pricing.",
+      "title": "Broadcom's giant AI-chip financing lit the chip rally; tonight Microsoft and Alphabet show whether spending is paying off",
+      "body": "Tuesday's chip-led gain followed reports of a roughly $63 billion financing structure, arranged by Broadcom with a bank consortium, to build AI compute capacity tied to Anthropic (Disclosure: this briefing is written by Claude, an Anthropic model, so it reports only what coverage says and offers no view on Anthropic). Earlier reporting described the package as more than $60 billion of senior and junior debt. Microsoft and Alphabet report after today's close. Expectations cited for Microsoft include EPS around $4.27 on about $90.6 billion of revenue with Azure growth near 22.5%, and options price roughly a 5% move for Microsoft and 6% for Alphabet through Friday. A useful earnings-season detail: the average reporting company has been rising after results, but the biggest companies have not, so cap-weighted reactions have lagged equal-weighted ones.",
+      "matters": "The financing headline is a double-edged data point. It shows real money committed to AI compute (good for SMH, Broadcom, memory and networking), and it shows how much of the buildout now runs on debt, which is the risk the credit card below tracks. For a long-term holder, tonight's question is simple: does cloud revenue keep pace with capex? If yes, the hardware layers keep recovering; if not, expect the heavy-selling flags to multiply.",
       "sources": [
         [
-          "CNN: Anthropic files for IPO",
-          "https://edition.cnn.com/2026/10/26/tech/anthropic-files-ipo"
+          "Yahoo: Oct 28 live, Fed decision and Big Tech earnings",
+          "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
         ],
         [
-          "Beinsure: stocks rise as Anthropic filing lifts chipmakers",
-          "https://beinsure.com/news/us-stocks-rise-as-anthropic-ipo-filing-lifts-ai-chipmakers/"
+          "Investing.com: small moves ahead of Fed, Mag 7",
+          "https://investing.com/news/stock-market-news/us-stock-futures-flat-with-fed-rate-decision-megacap-tech-earnings-on-tap-4977314"
+        ],
+        [
+          "TNW: Broadcom's AI-chip debt for Anthropic",
+          "https://thenextweb.com/news/broadcom-60bn-ai-chip-debt-anthropic"
+        ],
+        [
+          "investingLive: Microsoft and Alphabet report tonight",
+          "https://investinglive.com/stocks/microsoft-and-alphabet-report-tonight-wall-street-s-earnings-recovery-has-a-catch/"
         ]
       ]
     },
     {
       "tag": "OIL & GEOPOLITICS",
       "layer": "Macro",
-      "title": "Brent hit a six-month high on Saudi attacks, then eased on talks: the gauge's loudest warning",
-      "body": "Brent settled at $116.72 Friday, its highest close since April, as traders priced the risk of a US-Israeli strike on Iran over the weekend. The Houthis then claimed strikes on Saudi oil infrastructure (Aramco's Yanbu facilities, the Rabigh refinery and the East-West Pipeline), which Saudi Arabia has not confirmed damaged. Monday brought de-escalation: Trump said the US would not strike Iran Sunday, Qatari mediators went to Tehran, and Saudi Arabia's defense minister traveled there for talks, easing Brent toward the $115 area. The latest WTI print in the gauge is $108, up 23% in three months.",
-      "matters": "Oil is the factor most likely to turn a moderate risk reading into an elevated one, because it hits consumers, lifts inflation, and boxes the Fed in all at once. A real de-escalation that takes oil back under $100 would remove the gauge's biggest flashing light. Meanwhile, expensive oil keeps strengthening the long-term case for nuclear and grid power (CEG, VST, the regulated utilities).",
+      "title": "Oil climbed again on a reported Saudi refinery attack: still the gauge's loudest warning",
+      "body": "Brent rose more than 1% toward $111 and WTI traded around $101-103 today, with headlines citing an attack on a Saudi refinery after Monday's brief easing on Saudi-Iran talks. FRED's daily WTI read is $103.37, up about 20% in three months, which keeps the correction gauge's oil factor flashing. CNN ties the inflation pressure the Fed is fighting directly to the war with Iran pushing up energy prices.",
+      "matters": "Oil is the bridge between geopolitics and every rate decision on this board: it feeds October CPI, which feeds December's Fed meeting, which feeds the 10-year that just pushed the Bond Dial to WATCH. Expensive oil also strengthens the long-run case for nuclear and grid owners (CEG, VST, the regulated utilities), so those are reasonable places to add on schedule even while the nuclear funds remain under heavy distribution.",
       "sources": [
         [
-          "CNBC: oil falls as Saudi minister travels to Iran",
-          "https://www.cnbc.com/2026/10/26/oil-prices-today-wti-brent.html"
+          "Yahoo: Oct 28 live, Fed decision and Big Tech earnings",
+          "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
         ],
         [
-          "FinanceFeeds: Brent $116.72 into Sunday",
-          "https://financefeeds.com/brent-crude-oil-price-116-72-sunday-futures-open-houthi-yanbu-rabigh-claims-riyadh-intercepts-fed-week-bull-120-bear-108/"
-        ]
-      ]
-    },
-    {
-      "tag": "FED & EARNINGS WEEK",
-      "layer": "Macro",
-      "title": "Wednesday is the doubleheader that decides whether the AI trade's correction is over",
-      "body": "The FOMC decides Wednesday with about 90% odds of a hold; the market cares about Warsh's December language after September's hike. After the close, Microsoft (consensus about $4.72 a share on $90.75 billion of revenue) and Alphabet (about $3.00 on $127.83 billion) report, then Amazon Thursday alongside Q3 GDP and PCE inflation. Earnings themselves are not the problem: about a quarter of the S&P has reported, roughly 83% beat, and aggregate growth is running above 30%. What changed is the question: investors now grade capex intensity, cash flow and return on investment rather than headline beats, which is why Meta fell on a beat last week. The board's positioning heading in: Microsoft is the healthy one (2.7% above its 30-day start, 4.2% above its 50-day), Alphabet the weak one (7 distribution days, 6.6% under its 50-day).",
-      "matters": "Confident capex plans paired with strong cloud revenue would answer the financing fear and give the chip and power names room to recover. A guide-down, or a capex raise without the revenue to justify it, would reopen the liquidation. Either way, it is the single most informative 48 hours of the quarter for the SMH pick.",
-      "sources": [
-        [
-          "Yahoo: what to expect this week",
-          "https://finance.yahoo.com/markets/stocks/articles/expect-markets-week-googl-msft-152700674.html"
+          "Yahoo/AOL: tech rises a third day",
+          "https://www.aol.com/articles/tech-rises-third-day-row-134910000.html"
         ],
         [
-          "TradingKey: Fed, Microsoft, Alphabet, Amazon week",
-          "https://www.tradingkey.com/analysis/stocks/us-stocks/262237761-weekly-fed-microsoft-alphabet-amazon-earnings-tradingkey"
+          "CNN: Fed keeps rates unchanged before midterms",
+          "https://www.cnn.com/2026/10/28/business/live-news/federal-reserve-interest-rate-october"
         ]
       ]
     },
     {
       "tag": "CREDIT",
       "layer": "Capital",
-      "title": "Credit is splitting in two: the riskiest and AI-tied borrowers are paying up while the middle stays calm",
-      "body": "The broad junk-bond spread (3.38%) is still modest by history, but it has widened 0.78 points off its one-year low, and underneath the average the stress is concentrated. Goldman reported in late September that heavy issuance pushed junk spreads to their widest since April and that CCC-rated spreads hit their highest since 2023, while tracking nearly $600 billion of AI-related debt supply this year. Deutsche Bank found AI financing costs manageable overall, but noted the gap: AA-rated borrowers like Meta and Nvidia pay about 5-5.5%, while BBB-rated Oracle pays 8-8.5% on long debt.",
-      "matters": "Credit leads stocks, which is why junk spreads lead the correction gauge's recession column. Today it reads 'warming', not 'flashing'. If the stress spreads from the weakest borrowers to the middle of the market, it flips. For the board, the most leveraged AI builders (the neoclouds CRWV and NBIS, down 31-35% in a month) are where credit stress shows up first.",
+      "title": "Junk spreads eased this week, so the recession column stays quiet",
+      "body": "High-yield spreads came in to 3.18% from 3.38% Monday, still 0.58 points above their one-year low (the gauge scores that 'warming', not flashing). The yield curve (10-year minus 3-month) is a normal +0.77, the Sahm rule reads 0.00, weekly jobless claims are near 194,000 and flat against their six-month low, and the Chicago Fed's financial conditions index (-0.49) still shows easy money. That is the core reason the gauge reads MODERATE rather than ELEVATED despite oil, the Fed and the 10-year.",
+      "matters": "As long as credit and jobs stay quiet, pullbacks in quality names are buying opportunities rather than warnings. The two readings that would change that fastest are junk spreads jumping toward 4.5-5% or claims climbing 20% from their low. Both are on the page and update daily.",
       "sources": [
         [
-          "ROIC: Goldman warns junk supply overwhelming investors",
-          "https://www.roic.ai/news/goldman-sachs-warns-junk-bond-supply-is-overwhelming-investors-09-28-2026"
+          "Yahoo: Fed holds in split 10-2 vote",
+          "https://finance.yahoo.com/economy/policy/live/fed-meeting-live-updates-federal-reserve-october-meeting-kevin-warsh-161129201.html"
         ],
         [
-          "Crypto Briefing: Deutsche Bank flags AI credit stress",
-          "https://cryptobriefing.com/deutsche-bank-us-bonds-ai-credit-stress/"
-        ],
-        [
-          "Penn Mutual: quality starts to matter again",
-          "https://www.pennmutualam.com/market-insights/blogs/monday-morning-perspectives/2026-10-19-quality-starts-to-matter-again"
+          "investingLive: Microsoft and Alphabet report tonight",
+          "https://investinglive.com/stocks/microsoft-and-alphabet-report-tonight-wall-street-s-earnings-recovery-has-a-catch/"
         ]
       ]
     },
     {
       "tag": "LEADERSHIP",
-      "layer": "Defensives",
-      "title": "Cybersecurity is the board's quiet winner, and healthcare is still holding the line",
-      "body": "Three days after joining the shelf, the cyber funds are the strongest ETFs on it: IHAK sits at 100% of its 30-day range, up 15.4% in a month and 14% above its 50-day; CIBR is at 85% of its range, up 7.3%. Both carry zero heavy-liquidation flags while the chip funds carry 7 to 9 distribution days. Healthcare remains the other refuge (XLV at 85% of its range, +4.9% in a month), led over 30 days by UnitedHealth +9.2%, AbbVie +8.4% and Lilly +8.1%, though Merck and UnitedHealth gave some back today as money rotated into the chip bounce. IBM (+12.6%) and the regulated utilities (Southern +11.7%, Talen +11.9%) round out the month's leaders.",
-      "matters": "This is what a healthy rotation looks like: money stayed invested and moved toward recurring, non-discretionary revenue. For a new cyber position, the strength is good news for the thesis but means the entry is no bargain this week; a small first slice and a monthly schedule handles that without guessing.",
+      "layer": "Rotation",
+      "title": "Money rotated back into hardware today and out of the recent winners: cyber and quantum lagged",
+      "body": "Today's rotation runs from the recent winners into the beaten-down hardware layers. The cyber funds slipped (CIBR -1.6%, IHAK -1.2%) but remain the shelf's strongest month (IHAK +14.4%, CIBR +5.8%). Healthcare is steady (XLV at 91% of its 30-day range, +5.4% in a month; LLY +9.1%). The speculative end lagged: quantum pure-plays fell about 2.4% on average (QBTS -4.3%, IONQ -2.9%), space names fell (LUNR -2.3%, ASTS -1.9%) and OKLO -2.5%, all now 20-30% lower over 30 days. Palantir dipped 2.3%.",
+      "matters": "Rotation days are noise for a long-term plan, but they are useful for entry prices: the leaders (cyber, healthcare) are being offered slightly cheaper today, and the laggards (chip equipment, photonics, nuclear) remain the zone where bargains form. The speculative sheet stays on hold: rising long-term yields hit pre-profit companies hardest.",
       "sources": [
         [
-          "US News: best cybersecurity ETFs",
-          "https://money.usnews.com/investing/articles/best-cybersecurity-etfs"
+          "Yahoo: Oct 28 live, Fed decision and Big Tech earnings",
+          "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
         ]
       ]
     }
@@ -269,17 +277,13 @@
     "items": [
       {
         "tag": "PRIME BROKERAGE",
-        "title": "Goldman's desk: record tech selling through Oct 15; watch whether this week's bounce is short covering or real buying",
-        "body": "The latest published prime brokerage read remains the week through Oct 15: hedge funds cut tech at the fastest pace since at least 2016, semiconductors took the largest dollar losses, and net leverage fell to a one-year low of 48.6%. Tech still made up 23.5% of the book, the 90th percentile of five years. Monday's chip-led bounce comes from that de-risked starting point, which is why bounces can be violent: less leverage means fewer forced sellers left. The next Goldman read will show whether funds bought back in or used the bounce to sell more. A signal about flows, not a verdict on the companies.",
-        "matters": "Record leverage means the fast money is fully invested and extended: good for the tape while it works, and the fuel for sharp de-grossing if Nvidia or Jackson Hole disappoints. For a long-term holder the read is simple: do not be the one buying what leveraged funds are forced to sell in a de-gross, which is why the chip pullback is a scale-in, not a lump sum.",
+        "title": "Goldman's desk: record tech selling through Oct 15 left funds light, which is why this week's chip bounce is so sharp",
+        "body": "The latest published prime brokerage read is still the week through Oct 15: hedge funds cut tech at the fastest pace since at least 2016, semiconductors took the largest dollar losses, the selling was mostly long liquidation (selling existing holdings rather than new shorts), and net leverage fell to a one-year low. Tech still made up 23.5% of the book. A de-risked starting point is what produces three-day rallies like this one: there are fewer forced sellers left, and some funds now need to buy back in. The next Goldman read will show whether this week was short covering or real re-buying. A signal about flows, not a verdict on the companies.",
+        "matters": "For a long-term holder the useful part is the asymmetry: after record de-grossing, the pros are under-exposed, so a good Microsoft and Alphabet night could pull them back in fast. That argues for keeping scheduled chip buys running rather than waiting for a perfect bottom, while still sizing new money in pieces.",
         "sources": [
           [
-            "Bloomberg: fastest tech cut in a decade",
-            "https://www.bloomberg.com/news/articles/2026-10-19/hedge-funds-cut-tech-at-fastest-pace-in-a-decade-goldman-says"
-          ],
-          [
-            "Hedgeweek: funds slash tech exposure",
-            "https://hedgeweek.com/news/hedge-funds-slash-tech-exposure-at-fastest-pace-in-a-decade"
+            "24/7 Wall St: Goldman, fastest tech selling in a decade",
+            "https://247wallst.com/investing/2026/10/20/hedge-funds-dumped-tech-stocks-at-the-fastest-pace-in-a-decade-goldman-says/"
           ]
         ]
       },
@@ -301,17 +305,21 @@
       },
       {
         "tag": "CAPEX",
-        "title": "Capex keeps rising ($720-800B this year, ~$1.2T projected for 2027), and Wednesday is the next checkpoint",
-        "body": "Hyperscaler 2026 capex runs about $720-800 billion depending on the count, with Goldman projecting about $1.2 trillion for 2027 and roughly $600 billion of AI-related debt issued this year. Anthropic's IPO filing (first-half revenue of $16.29 billion, up from about $1.16 billion) adds a new funding channel and a demand data point. Microsoft and Alphabet report Wednesday after the close: the market now wants the capex AND the revenue to justify it.",
+        "title": "Capex keeps rising ($720-800B this year, ~$1.2T projected for 2027), and tonight is the checkpoint",
+        "body": "Hyperscaler 2026 capex runs about $720-800 billion depending on the count, with Goldman projecting about $1.2 trillion for 2027. Broadcom's roughly $63 billion financing structure for Anthropic-linked compute, reported this week, shows how much of that buildout now runs on borrowed money. Microsoft and Alphabet report after today's close (Amazon Thursday): the market wants both the capex and the revenue that justifies it.",
         "matters": "This is the number that decides whether the entire first sheet of this board is a durable investment or a cycle, and it is the reason the least glamorous layers are often the safest way in. Microsoft's $80 billion power-constrained backlog is the single most useful sentence in this section, because it says the bottleneck has moved from chips to electricity. That is a direct argument for the power section that the market spent Friday liquidating, and the divergence between the two is the clearest mismatch on the board right now. The practical takeaway: the demand evidence supports owning the picks-and-shovels layers (semiconductors through SMH, electrical and conduit, and the regulated power majors) rather than the speculative end. Watch the financing side as the thing that would change the thesis. Demand does not have to fall for this trade to unwind, only the cost of borrowing to fund it has to rise.",
         "sources": [
           [
-            "Big Tech AI spending plans reach $725 billion",
-            "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion"
+            "Yahoo: Oct 28 live, Fed decision and Big Tech earnings",
+            "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
           ],
           [
-            "Hyperscalers Hit $700 Billion in 2026 AI Spending Plans",
-            "https://finance.yahoo.com/sectors/technology/articles/hyperscalers-hit-700-billion-2026-111243744.html"
+            "investingLive: Microsoft and Alphabet report tonight",
+            "https://investinglive.com/stocks/microsoft-and-alphabet-report-tonight-wall-street-s-earnings-recovery-has-a-catch/"
+          ],
+          [
+            "TNW: Broadcom's AI-chip debt for Anthropic",
+            "https://thenextweb.com/news/broadcom-60bn-ai-chip-debt-anthropic"
           ]
         ]
       },
@@ -371,47 +379,47 @@
     ]
   },
   "macro_strategy": {
-    "regime_label": "A correction-prone market, not a crash-prone one: expensive, oil-shocked and de-grossing, with the economy and credit system still sound",
-    "regime_detail": "The new 6-Month Correction Risk gauge puts a number on the regime: 42/100, MODERATE. Eight of twelve warning signs are on, led by an oil shock (WTI $108, Brent's $116.72 Friday close the highest since April) and the broadest institutional selling on this board since launch (18 of 74 names with heavy-liquidation days, chips formally in a bear market). But all four recession signals are quiet: the yield curve is normal, the Sahm rule reads zero, jobless claims are flat, and financial conditions remain looser than average. Bonds agree: the Bond Market Dial reads STEADY. Historically that combination produces corrections of 10-15% rather than bear markets. Monday's relief rally (chips +3%, photonics +5-8% on Anthropic's IPO filing and easing oil) arrives 48 hours before the week that decides the next leg: the FOMC and Microsoft plus Alphabet Wednesday, then Amazon, GDP and PCE Thursday.",
+    "regime_label": "A correction-prone market, not a crash-prone one: the pressure has shifted toward bonds and the Fed, while credit and jobs stay sound",
+    "regime_detail": "The 6-Month Correction Risk gauge holds at 42/100, MODERATE, but the reasons moved. Oil ($103 WTI, +20% in three months) and institutional selling (19 of 74 names with heavy-liquidation days) still flash, and now the 10-year joins them at 5.00%, up 0.69 points in six months. The Bond Market Dial moved from STEADY to WATCH. On the other side, fear calmed (VIX 17.5 below its 3-month version) and junk spreads eased to 3.18%. All four recession signals remain quiet. Today the Fed held at 3.75-4.00% with two officials voting to hike, a hawkish pause that keeps December live. Chips are on a three-day bounce led by AI hardware, and Microsoft and Alphabet report tonight, then Amazon, GDP and PCE Thursday, the midterms Tuesday, and October CPI Nov 12.",
     "drivers": [
       {
         "driver": "Oil shock",
-        "reading": "WTI $108 (+23% in three months) and Brent's $116.72 Friday close the highest since April, on Iran strike risk and claimed Houthi attacks on Saudi oil infrastructure. Monday eased on Saudi-Iran talks.",
+        "reading": "WTI about $103 (+20% in three months), Brent near $111 today after a reported Saudi refinery attack, following Monday's brief easing on Saudi-Iran talks.",
         "playbook": "The gauge's loudest light. Oil back under $100 on real de-escalation would cut the risk score noticeably; a sustained move toward $120 pushes it toward ELEVATED. Expensive oil strengthens the long-term nuclear and grid case either way."
       },
       {
-        "driver": "AI financing and the Wednesday checkpoint",
-        "reading": "The market's question shifted from 'is demand real' to 'who pays for it'. About $600B of AI-related debt this year, CCC spreads at their highest since 2023, and Meta sold off on a beat for spending more.",
-        "playbook": "Microsoft and Alphabet on Oct 28 are the answer. Strong cloud revenue alongside confident capex lets the chip and power names recover; capex without revenue reopens the selloff."
+        "driver": "AI financing and tonight's checkpoint",
+        "reading": "The question is 'who pays for it'. Broadcom's roughly $63 billion financing structure for Anthropic-linked compute lit Tuesday's chip rally, and shows how debt-funded the buildout has become.",
+        "playbook": "Microsoft and Alphabet tonight are the answer. Strong cloud revenue alongside confident capex lets the chip and power names keep recovering; capex without revenue reopens the selloff."
       },
       {
-        "driver": "The Fed in a holding pattern after a hike",
-        "reading": "About 90% odds of a hold Wednesday after September's hike to 3.75-4.00%. CPI at 3.7% with an oil spike landing on October's number keeps a December hike in play.",
-        "playbook": "Higher for longer remains the base case. Favor cash flow (healthcare, regulated utilities, dividend value, and now cybersecurity's recurring revenue) for new money until inflation turns."
+        "driver": "A hawkish Fed pause",
+        "reading": "Held at 3.75-4.00% today, 10-2, with Cook and Hammack voting for a hike. Statement: inflation elevated, growth strong, no guidance. The 10-year sits at 5% and the Bond Dial reads WATCH.",
+        "playbook": "Higher for longer is the base case and December (Dec 9) is live. Favor cash flow (VOO, healthcare, regulated utilities, cyber's recurring revenue) for new money; go slow on pre-profit speculative names that rising yields hit hardest."
       },
       {
         "driver": "Recession signals are still quiet",
-        "reading": "Normal yield curve (+0.78), Sahm rule 0.00, claims flat near 198K a week, financial conditions looser than average, and the Bond Market Dial STEADY.",
+        "reading": "Normal yield curve (+0.77), Sahm rule 0.00, claims flat near 194K a week, financial conditions looser than average (-0.49), and junk spreads easing to 3.18%.",
         "playbook": "This is why the reading is MODERATE, not HIGH, and why long-term holdings do not need defending. Watch junk spreads and claims: those two flipping would change the picture fastest."
       }
     ],
     "scenarios": [
       {
-        "trigger": "Wednesday goes well and oil de-escalates",
-        "response": "Microsoft and Alphabet show revenue to match capex, the Fed holds calmly, and oil drifts under $100. Two of the gauge's flashing lights fade, the heavy-liquidation flags start clearing, and the washed-out chip and nuclear names lead. The relief rally becomes a recovery."
+        "trigger": "Tonight goes well and oil de-escalates",
+        "response": "Microsoft and Alphabet show revenue to match capex and oil drifts under $100. The heavy-liquidation flags roll off, the oil light fades, and the washed-out chip, photonics and nuclear names lead. The three-day bounce becomes a recovery."
       },
       {
-        "trigger": "Wednesday disappoints",
-        "response": "A capex guide-down, or spending without revenue, restarts the liquidation from a still-crowded base. Expect the bounce to fail and chips to retest their lows; defensives and cyber extend their lead. The gauge likely moves toward ELEVATED as breadth and selling worsen."
+        "trigger": "Tonight disappoints or Warsh leans hard toward December",
+        "response": "Spending without revenue, or a clear hike signal that pushes the 10-year above 5% and the Bond Dial toward STORM, restarts the liquidation from a still-crowded base. Chips retest their lows; healthcare and cyber hold up better."
       },
       {
         "trigger": "Oil spikes again or credit cracks",
         "response": "Brent toward $120+, or junk spreads jumping toward 4.5-5%, would flip the gauge's recession column on for the first time. That is the path from correction to something deeper; watch the top of the page for it."
       }
     ],
-    "positioning": "Steady hands, smaller pieces. Scheduled buys continue (VOO especially). The defensive sleeve and the new cyber funds are working; hold them, add on a schedule rather than chasing. Chips and nuclear are where the bargains are forming, but the board still shows institutions selling them, so any new money goes in tranches around Wednesday's results rather than all at once. Nothing new on the speculative sheet until its heavy-liquidation flags clear. Check both gauges at the top before reacting to any big day."
+    "positioning": "Steady hands, smaller pieces. Scheduled buys continue (VOO especially). The defensive sleeve and the cyber funds are working; today's dip in them is a fair scheduled entry, not a warning. Chips and nuclear are where bargains are forming, but 19 heavy-selling flags say add in tranches around tonight's results rather than all at once. Nothing new on the speculative sheet while the 10-year sits at 5%. Check both gauges at the top before reacting to any big day."
   },
-  "watchlist_notes": "Refreshed midday Mon Oct 26 during a chip-led bounce (photonics +5-8%, SMH +2.8%) on Anthropic's IPO filing and easing oil. Month leaders: IBM +12.6%, TLN +11.9%, SO +11.7%, UNH +9.2%, ABBV +8.4%, LLY +8.1%; on the shelf IHAK +15.4% and CIBR +7.3%. Month laggards: SMR -36%, CRWV -35%, ASTS -34%, QBTS -33%, LUNR -32%, NBIS and IONQ -31%, LEU -31%. Heavy-liquidation flags: 18 names (from 20). New at the top: the 6-Month Correction Risk gauge, 42/100 MODERATE. Wednesday: FOMC plus Microsoft and Alphabet after the close.",
+  "watchlist_notes": "Refreshed ~2:01 PM ET Wed Oct 28, just after the Fed held (10-2, two votes for a hike). Today's leaders: VRT +14.6% on earnings, FN +8.5%, SNDK +5.5%, LRCX +5.3%, AMAT +4.9%, GLW +4.5%, MU +4.4%, PWR +4.0%. Laggards: QBTS -4.3%, IONQ -2.9%, OKLO -2.5%, PLTR -2.3%, LUNR -2.3%; cyber funds -1 to -2% after a big month (IHAK +14.4%). Heavy-liquidation flags: 19 names (18 Monday). Bond Dial moved to WATCH; Correction Risk 42/100 MODERATE. Tonight: Microsoft and Alphabet after the close.",
   "thesis": {
     "objective": "own the enablers of the AI supercycle and the next era of abundance",
     "constraint": "compute + power",
@@ -423,7 +431,7 @@
         "trend": "up",
         "tone": "good",
         "delta": "2026 guidance; Goldman projects ~$1.2T for 2027",
-        "note": "Microsoft and Alphabet guide Wednesday Oct 28, Amazon Thursday. Anthropic's IPO filing adds a new funding channel for frontier compute."
+        "note": "Microsoft and Alphabet guide tonight (Oct 28), Amazon Thursday. Broadcom's ~$63B Anthropic-linked financing shows the buildout increasingly runs on debt."
       },
       {
         "label": "Data-center power demand",
@@ -446,41 +454,42 @@
         "value": "TIGHT",
         "trend": "flat",
         "tone": "warn",
-        "delta": "Nvidia held up best in the flush (-5.9% over 30 days)",
+        "delta": "Memory leads the bounce: MU +4.4%, SNDK +5.5% today",
         "note": "Supply tightness unchanged; memory (HBM) gave back price gains on positioning, not on demand."
       },
       {
         "label": "AI-infra credit spreads",
-        "value": "WIDENING",
-        "trend": "down",
-        "tone": "bad",
-        "delta": "Junk spreads +0.78pp off 1-yr low; CCC at highest since 2023",
-        "note": "About $600B of AI-related debt this year. Stress is concentrated in the weakest and AI-tied borrowers; the correction gauge scores it 'warming'."
+        "value": "ELEVATED",
+        "trend": "flat",
+        "tone": "warn",
+        "delta": "Junk spreads 3.18%, +0.58pp off 1-yr low but easing this week",
+        "note": "Stress remains concentrated in the weakest and AI-tied borrowers; the correction gauge scores it 'warming'. A jump toward 4.5-5% would flip the recession column on."
       },
       {
         "label": "10Y Treasury",
-        "value": "4.96%",
-        "trend": "flat",
+        "value": "5.00%",
+        "trend": "up",
         "tone": "bad",
-        "delta": "+0.66pp in 6 months; back under 5% on safe-haven buying",
-        "note": "High level, but bonds rallying during the equity rout is the healthy pattern. See the Bond Market Dial up top."
+        "delta": "+0.69pp in 6 months; near 5.02% into the Fed decision",
+        "note": "The Bond Market Dial moved to WATCH and the correction gauge's 10-year factor is now flashing. Rising long yields hit pre-profit names hardest."
       }
     ],
     "risks": [
-      "The de-grossing resumes: tech is still 90th-percentile owned in the prime book after the fastest selling in a decade",
-      "AI financing stress: debt-funded capex at 4% Fed funds; widening credit spreads eventually slow the buildout",
-      "A December hike plus a hot Nov 12 CPI extends multiple compression across every long-duration name",
-      "Hyperscaler capex guidance disappoints (Microsoft and Alphabet report Oct 28, the single biggest near-term checkpoint)",
+      "The de-grossing resumes: 19 names still carry heavy-liquidation flags despite the three-day bounce",
+      "AI financing stress: debt-funded capex (Broadcom's ~$63B package) with a 5% 10-year; widening credit spreads eventually slow the buildout",
+      "A December hike (two officials already voted for one) plus a hot Nov 12 CPI extends multiple compression across every long-duration name",
+      "Hyperscaler results disappoint tonight (Microsoft, Alphabet), the single biggest near-term checkpoint",
       "Power shortages slow AI deployment (grid interconnect queues, transformer lead times)",
       "Semiconductor supply chain disruption or Taiwan escalation"
     ],
     "watchlist": [
-      "Wed Oct 28: FOMC decision (about 90% hold odds) and Microsoft + Alphabet earnings after the close",
-      "Thu Oct 29: Amazon earnings, Q3 GDP (about 3.0% expected) and PCE inflation",
+      "Tonight Oct 28: Microsoft + Alphabet earnings after the close; Warsh's press conference tone on December",
+      "Thu Oct 29: Amazon earnings, Q3 GDP and PCE inflation",
       "Oct 30: Cameco Q3, whether record uranium prices reach miner earnings",
-      "Oil: Saudi-Iran talks vs. further attacks; WTI back under $100 would cut the correction gauge's loudest signal",
+      "Tue Nov 3: midterm elections; Fri Nov 6: October jobs report",
+      "Thu Nov 12: October CPI (carries the oil spike); Wed Dec 9: next FOMC, with two officials already voting to hike",
       "Anthropic IPO pricing (possible Nov 16 debut, ticker ANT): watch for money rotating out of existing AI names to make room",
-      "Correction gauge recession column: junk spreads toward 4.5-5% or a 20% climb in jobless claims would flip it on"
+      "Correction gauge: the 10-year back under 4.75% would cool a flashing light; junk spreads toward 4.5-5% would turn the recession column on"
     ]
   }
 }
